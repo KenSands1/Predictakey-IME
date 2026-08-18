@@ -17,7 +17,7 @@ import androidx.core.content.ContextCompat
 class SymbolKeyboardView(context: Context) : LinearLayout(context) {
 
     private val ROW_DIGITS = "1234567890"
-    private val ROW_SYMBOLS_1 = "@#$_&-+()/"
+    private val ROW_SYMBOLS_1 = "@#\$_&-+()/"
     private val ROW_SYMBOLS_2 = "*\"':;!?~"
 
     var listener: KeyboardActionListener? = null
