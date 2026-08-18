@@ -1,0 +1,11 @@
+<resources>
+    <color name="key_bg">#FFFFFF</color>
+    <color name="key_bg_pressed">#E0E0E0</color>
+    <color name="key_text">#1A1A1A</color>
+    <color name="prediction_key_bg">#D8E4FF</color>
+    <color name="special_key_bg">#C9CDD3</color>
+    <color name="keyboard_bg">#ECEFF1</color>
+    <color name="space_normal">#FFFFFF</color>
+    <color name="space_ready">#4CAF50</color>
+    <color name="space_text_ready">#FFFFFF</color>
+</resources>
