@@ -4,41 +4,39 @@ import java.io.BufferedReader
 import java.io.InputStream
 
 /**
- * Trie-based prefix predictor.
+ * Frequency-ranked word predictor.
  *
- * Loaded once from a plain word list (one word per line). For any typed
- * prefix it can answer two questions cheaply:
+ * Loaded once from a word list ordered most-to-least frequent (line 1 =
+ * most common word). Every key on the keyboard's top row is a full-word
+ * completion shortcut, so this class answers two questions:
  *
- *   1. What are the 6 most likely NEXT letters? -> [topNextLetters]
- *   2. Does exactly one word in the dictionary still match this prefix,
- *      and if so, what is it? -> [soleCompletion]
+ *   1. What are the top N most frequent words starting with [prefix]? ->
+ *      [topCompletions] — these are what get shown as tappable keys.
+ *   2. Does exactly one dictionary word still match [prefix]? -> if so,
+ *      that's the word the space bar completes when it turns green ->
+ *      [soleCompletion].
  *
- * Ranking is deliberately simple: for a given prefix, each candidate next
- * letter is ranked purely by how many dictionary words share that
- * prefix+letter combination. It does NOT weight by how common the word
- * itself is overall — the prefix the user has already typed is the only
- * input to the ranking, which is exactly what "next letter frequency given
- * what's typed so far" means. This also means the word list no longer
- * needs to be frequency-ordered; a plain, unordered word list works fine.
+ * The word list's order IS the ranking signal here — that's intentional.
+ * Unlike the earlier next-letter design (which deliberately ignored overall
+ * word frequency), ranking whole-word suggestions by real-world frequency
+ * is the only sensible way to pick e.g. "the" over an obscure word sharing
+ * the same prefix.
  *
- * This class has no Android dependencies so it can be unit tested on its
- * own (e.g. with a plain JVM test using kotlin.test / JUnit).
+ * Dictionary sizes here are small (thousands, not millions of words), so a
+ * plain linear scan per keystroke is simple and fast enough — no trie
+ * needed. This class has no Android dependencies so it can be unit tested
+ * on its own.
  */
 class PredictionEngine {
 
-    private class Node {
-        val children = HashMap<Char, Node>()
-        var isWord: Boolean = false
-        /** Number of distinct dictionary words that pass through this node. */
-        var subtreeCount: Int = 0
-    }
-
-    private val root = Node()
+    /** Frequency-ordered, most common first. */
+    private var words: List<String> = emptyList()
     private var loaded = false
 
     /**
      * Loads the dictionary from an [InputStream] of a UTF-8 text file, one
-     * word per line. Blank lines and lines starting with '#' are ignored.
+     * word per line, ordered most-to-least frequent. Blank lines and lines
+     * starting with '#' are ignored.
      */
     fun load(stream: InputStream) {
         val lines = stream.bufferedReader(Charsets.UTF_8).use(BufferedReader::readLines)
@@ -46,69 +44,62 @@ class PredictionEngine {
             .filter { it.isNotEmpty() && !it.startsWith("#") }
 
         val seen = HashSet<String>()
+        val result = ArrayList<String>(lines.size)
         for (line in lines) {
             val word = line.lowercase()
             if (word.isNotEmpty() && word.all { it.isLetter() } && seen.add(word)) {
-                insert(word)
+                result.add(word)
             }
         }
+        words = result
         loaded = true
     }
 
     fun isLoaded(): Boolean = loaded
 
-    private fun insert(word: String) {
-        var node = root
-        root.subtreeCount += 1
-        for (ch in word) {
-            node = node.children.getOrPut(ch) { Node() }
-            node.subtreeCount += 1
-        }
-        node.isWord = true
-    }
-
-    private fun nodeFor(prefix: String): Node? {
-        var node = root
-        for (ch in prefix.lowercase()) {
-            node = node.children[ch] ?: return null
-        }
-        return node
-    }
-
     /**
-     * Returns up to [max] letters, ranked most- to least-likely, that could
-     * follow [prefix] according to the loaded dictionary. The ranking is a
-     * simple count of how many words share each prefix+letter continuation
-     * — no overall word-frequency weighting involved. Empty prefix returns
-     * the most common starting letters. Returns an empty list if the prefix
-     * doesn't match anything in the dictionary.
+     * Returns up to [max] whole words, ranked most- to least-frequent, that
+     * start with [prefix] and are STRICTLY LONGER than it — so once the
+     * user has typed a full word ("the"), that word itself drops out and
+     * only genuine continuations ("them", "then", "there"...) remain. An
+     * empty prefix returns the most frequent words overall, useful as
+     * sentence-starter shortcuts before anything's been typed.
      */
-    fun topNextLetters(prefix: String, max: Int = 6): List<Char> {
-        val node = nodeFor(prefix) ?: return emptyList()
-        return node.children.entries
-            .sortedWith(compareByDescending { it.value.subtreeCount })
-            .take(max)
-            .map { it.key }
+    fun topCompletions(prefix: String, max: Int = 6): List<String> {
+        val lower = prefix.lowercase()
+        val result = ArrayList<String>(max)
+        for (w in words) {
+            if (w.length > lower.length && w.startsWith(lower)) {
+                result.add(w)
+                if (result.size >= max) break
+            }
+        }
+        return result
     }
 
     /**
-     * If exactly one word in the dictionary matches [prefix] (as a prefix
-     * of that word, or the word itself), returns that word. Otherwise null.
+     * If exactly one dictionary word matches [prefix] — either equal to it
+     * or extending it — returns that word. Otherwise null. Unlike
+     * [topCompletions], this intentionally DOES count an exact match (the
+     * prefix being a complete word with no other word sharing it).
      */
     fun soleCompletion(prefix: String): String? {
         val lower = prefix.lowercase()
-        val node = nodeFor(lower) ?: return null
-        if (node.subtreeCount != 1) return null
-        val sb = StringBuilder(lower)
-        var cur = node
-        while (!(cur.isWord && cur.children.isEmpty())) {
-            val next = cur.children.entries.firstOrNull { it.value.subtreeCount > 0 } ?: break
-            sb.append(next.key)
-            cur = next.value
+        var found: String? = null
+        var count = 0
+        for (w in words) {
+            if (w == lower || (w.length > lower.length && w.startsWith(lower))) {
+                found = w
+                count++
+                if (count > 1) return null
+            }
         }
-        return sb.toString()
+        return if (count == 1) found else null
     }
 
     /** True if any word in the dictionary starts with [prefix]. */
-    fun hasPrefix(prefix: String): Boolean = nodeFor(prefix) != null
+    fun hasPrefix(prefix: String): Boolean {
+        val lower = prefix.lowercase()
+        return words.any { it.startsWith(lower) }
+    }
 }
