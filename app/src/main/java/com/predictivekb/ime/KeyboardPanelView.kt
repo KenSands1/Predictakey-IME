@@ -2,6 +2,7 @@ package com.predictivekb.ime
 
 import android.content.Context
 import android.graphics.Typeface
+import android.text.TextUtils
 import android.util.TypedValue
 import android.view.Gravity
 import android.view.View
@@ -9,11 +10,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
+import androidx.core.widget.TextViewCompat
 
 /**
  * The main letters keyboard. Built entirely in code (no Keyboard/KeyboardView
  * legacy classes) so every key's label and background can be swapped
- * instantly as the user types — that's what the prediction row and the
+ * instantly as the user types — that's what the word-completion row and the
  * green space bar need.
  */
 class KeyboardPanelView(context: Context) : LinearLayout(context) {
@@ -22,7 +24,7 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     private val ROW_QWERTY_2 = "asdfghjkl"
     private val ROW_QWERTY_3 = "zxcvbnm"
 
-    private val predictionButtons = mutableListOf<Button>()
+    private val wordButtons = mutableListOf<Button>()
     private val letterButtons = mutableListOf<Button>()
     private lateinit var shiftButton: Button
     private lateinit var backspaceButton: Button
@@ -34,12 +36,15 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     private var shiftActive = false
     private var currentSoleWord: String? = null
 
+    /** Raw (lowercase) words currently backing each word-completion button, index-aligned. */
+    private var currentWords: List<String> = emptyList()
+
     init {
         orientation = VERTICAL
         setBackgroundColor(ContextCompat.getColor(context, R.color.keyboard_bg))
         setPadding(dp(4), dp(6), dp(4), dp(6))
 
-        addView(buildPredictionRow())
+        addView(buildWordRow())
         addView(buildLetterRow(ROW_QWERTY_1.toList(), 0))
         addView(buildLetterRow(ROW_QWERTY_2.toList(), dp(18)))
         addView(buildBottomLetterRow())
@@ -48,20 +53,31 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
 
     // ---- row builders -----------------------------------------------------
 
-    private fun buildPredictionRow(): LinearLayout {
+    /**
+     * The top row: 6 whole-word completion shortcuts, ranked most- to
+     * least-frequent for whatever prefix has been typed so far. Tapping one
+     * inserts the rest of that word (see [KeyboardActionListener.onWordSelected]).
+     */
+    private fun buildWordRow(): LinearLayout {
         val row = LinearLayout(context).apply {
             orientation = HORIZONTAL
             layoutParams = LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dp(46)).also {
                 it.bottomMargin = dp(4)
             }
         }
-        repeat(6) {
+        for (i in 0 until 6) {
             val btn = makeKey("", R.drawable.key_bg_prediction, weight = 1f)
+            btn.maxLines = 1
+            btn.ellipsize = TextUtils.TruncateAt.END
+            // Full words vary a lot in length ("we" vs "products"), so let the
+            // text shrink to fit rather than truncating whenever possible.
+            TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(
+                btn, 8, 15, 1, TypedValue.COMPLEX_UNIT_SP
+            )
             btn.setOnClickListener {
-                val label = btn.text.toString()
-                if (label.isNotEmpty()) listener?.onPredictionKey(label[0].lowercaseChar())
+                currentWords.getOrNull(i)?.let { word -> listener?.onWordSelected(word) }
             }
-            predictionButtons.add(btn)
+            wordButtons.add(btn)
             row.addView(btn)
         }
         return row
@@ -162,7 +178,7 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 16f)
             setTextColor(ContextCompat.getColor(context, R.color.key_text))
             setBackgroundResource(bg)
-            setPadding(0, 0, 0, 0)
+            setPadding(dp(2), 0, dp(2), 0)
             minWidth = 0
             minHeight = 0
             stateListAnimator = null
@@ -179,13 +195,18 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
 
     // ---- external updates ----------------------------------------------
 
-    /** Updates the 6 prediction keys. [letters] should already be ranked most- to least-likely. */
-    fun updatePredictions(letters: List<Char>, rtl: Boolean) {
-        val display = if (rtl) letters.reversed() else letters
-        for (i in predictionButtons.indices) {
-            val btn = predictionButtons[i]
-            if (i < display.size) {
-                btn.text = applyCase(display[i].toString())
+    /**
+     * Updates the 6 word-completion keys. [words] should already be ranked
+     * most- to least-frequent (see [PredictionEngine.topCompletions]). Any
+     * unused keys (fewer than 6 candidates — normal for rare prefixes) are
+     * simply hidden rather than left showing stale words.
+     */
+    fun updateWordCompletions(words: List<String>, rtl: Boolean) {
+        currentWords = if (rtl) words.reversed() else words
+        for (i in wordButtons.indices) {
+            val btn = wordButtons[i]
+            if (i < currentWords.size) {
+                btn.text = applyWordCase(currentWords[i])
                 btn.visibility = View.VISIBLE
             } else {
                 btn.text = ""
@@ -226,11 +247,16 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         for (btn in letterButtons) {
             btn.text = applyCase(btn.text.toString().lowercase())
         }
-        for (btn in predictionButtons) {
-            val text = btn.text.toString()
-            if (text.isNotEmpty()) btn.text = applyCase(text.lowercase())
+        for (i in wordButtons.indices) {
+            if (i < currentWords.size) {
+                wordButtons[i].text = applyWordCase(currentWords[i])
+            }
         }
     }
 
     private fun applyCase(s: String): String = if (shiftActive) s.uppercase() else s.lowercase()
+
+    /** Whole-word buttons get sentence-style capitalization (first letter only), not ALL CAPS. */
+    private fun applyWordCase(word: String): String =
+        if (shiftActive) word.replaceFirstChar { it.uppercaseChar() } else word
 }
