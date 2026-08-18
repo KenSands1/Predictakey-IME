@@ -1,25 +1,29 @@
 # Predictive Keyboard (Android IME)
 
-A custom Android keyboard (Input Method Editor) that shows the six most likely
-*next* letters — based on what you've typed so far — on the number-row keys.
-When only one word in the dictionary still matches what you've typed, the
-space bar turns green; tapping it completes the word.
+A custom Android keyboard (Input Method Editor) whose top row shows the six
+most frequent whole words that start with whatever you've typed so far —
+tap one to insert the rest of that word plus a space. When only one word in
+the dictionary still matches what you've typed, the space bar itself also
+turns green and completes it the same way.
 
 ## How the prediction works
 
-- Words are loaded from `app/src/main/assets/wordlist.txt` (one word per
-  line, order doesn't matter) into a trie at keyboard startup.
-- Each trie node tracks how many dictionary words pass through it. For the
-  current prefix, the six child letters shared by the most words are shown
-  on the top row, ranked left-to-right (or right-to-left, per the setting
-  in the keyboard's Settings screen). This is purely a function of the
-  prefix already typed — no overall word-frequency weighting is involved,
-  so an unordered word list works exactly as well as a frequency-sorted one.
-- Tapping one of those six letters types it directly, letting you skip
-  hunting for the key.
-- When the current prefix's node has **exactly one** word left in its
-  subtree, the space bar turns green and shows the full word; tapping it
-  commits the rest of the word plus a space.
+- Words are loaded from `app/src/main/assets/wordlist.txt`, one per line,
+  **ordered most-to-least frequent** — that order IS the ranking signal, so
+  keep it frequency-sorted if you swap in a different list.
+- For the current prefix, `PredictionEngine.topCompletions()` scans the list
+  and returns the first 6 words that (a) start with the prefix and (b) are
+  strictly longer than it — so once you've typed a complete word ("the"),
+  that word drops off the row and only genuine continuations ("them",
+  "then", "there"...) remain. Ranked left-to-right, or right-to-left per
+  the Settings screen.
+- Rare prefixes may have fewer than 6 (or zero) matching words — those keys
+  are simply left blank rather than filled with irrelevant words. The
+  regular QWERTY keys underneath are unaffected either way.
+- Separately, `PredictionEngine.soleCompletion()` checks whether **exactly
+  one** dictionary word matches the prefix at all (whether or not it's
+  shown on the row above); if so, the space bar turns green and completes
+  it on tap.
 
 ## About the word list
 
@@ -46,10 +50,10 @@ Format: one word per line. No frequency column needed.
 
 - `PredictiveKeyboardService.kt` — the `InputMethodService`; owns the typed
   buffer, drives the prediction engine, and reacts to key taps.
-- `PredictionEngine.kt` — trie + frequency ranking logic (pure Kotlin, no
-  Android dependencies — easy to unit test on its own).
-- `KeyboardPanelView.kt` — the letters keyboard: 6 dynamic prediction keys
-  on top, QWERTY rows below, and the space bar.
+- `PredictionEngine.kt` — frequency-ranked word-completion logic (pure
+  Kotlin, no Android dependencies — easy to unit test on its own).
+- `KeyboardPanelView.kt` — the letters keyboard: 6 word-completion keys on
+  top, QWERTY rows below, and the space bar.
 - `SymbolKeyboardView.kt` — the secondary keyboard: digits on top,
   punctuation/symbols below.
 - `Prefs.kt` — persisted settings (prediction-row direction, etc).
