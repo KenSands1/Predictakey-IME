@@ -63,8 +63,8 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     private fun refreshPredictions() {
         val rtl = Prefs.isPredictionRowRtl(this)
         val prefix = currentWord.toString()
-        val nextLetters = engine.topNextLetters(prefix)
-        lettersPanel.updatePredictions(nextLetters, rtl)
+        val completions = engine.topCompletions(prefix)
+        lettersPanel.updateWordCompletions(completions, rtl)
         lettersPanel.setSoleCompletion(engine.soleCompletion(prefix).takeIf { prefix.isNotEmpty() })
     }
 
@@ -85,7 +85,23 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         }
     }
 
-    override fun onPredictionKey(ch: Char) = onCharKey(ch)
+    /**
+     * A top-row word-completion key was tapped. Commits whatever's left of
+     * [word] beyond what's already been typed, plus a trailing space — the
+     * same "finish the word and move on" behavior as tapping the green
+     * space bar, just reachable one keystroke earlier.
+     */
+    override fun onWordSelected(word: String) {
+        val ic = currentInputConnection ?: return
+        val prefix = currentWord.toString()
+        if (word.length > prefix.length) {
+            val remainder = word.substring(prefix.length)
+            ic.commitText(remainder, 1)
+        }
+        ic.commitText(" ", 1)
+        currentWord.clear()
+        refreshPredictions()
+    }
 
     override fun onBackspace() {
         val ic = currentInputConnection ?: return
@@ -100,8 +116,6 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val ic = currentInputConnection ?: return
         val sole = lettersPanel.getSoleCompletion()
         if (sole != null && sole.length > currentWord.length) {
-            // Complete the word: type the remaining letters, respecting shift/caps
-            // only for the very first character the user already committed.
             val remainder = sole.substring(currentWord.length)
             ic.commitText(remainder, 1)
         }
@@ -119,7 +133,6 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onShiftToggled() {
         // Visual state is already flipped inside KeyboardPanelView; nothing
-        // else to do unless you want shift to auto-release after one letter,
-        // which you can implement here by tracking a "single shift" mode.
+        // else to do unless you want shift to auto-release after one letter.
     }
 }
