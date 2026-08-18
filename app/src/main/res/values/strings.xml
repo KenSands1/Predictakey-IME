@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Predictive Keyboard</string>
+    <string name="settings_title">Predictive Keyboard Settings</string>
+    <string name="pref_direction_title">Prediction key order</string>
+    <string name="pref_direction_ltr">Left to right (most likely on the left)</string>
+    <string name="pref_direction_rtl">Right to left (most likely on the right)</string>
+</resources>
