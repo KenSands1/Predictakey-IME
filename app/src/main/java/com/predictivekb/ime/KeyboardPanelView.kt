@@ -2,6 +2,7 @@ package com.predictivekb.ime
 
 import android.content.Context
 import android.graphics.Typeface
+import android.os.SystemClock
 import android.text.TextUtils
 import android.util.TypedValue
 import android.view.Gravity
@@ -33,7 +34,10 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     private lateinit var enterButton: Button
 
     var listener: KeyboardActionListener? = null
-    private var shiftActive = false
+    private var shiftState = ShiftState.OFF
+    private var lastShiftTapTime = 0L
+    private val DOUBLE_TAP_WINDOW_MS = 350L
+
     private var currentSoleWord: String? = null
 
     /** Raw (lowercase) words currently backing each word-completion button, index-aligned. */
@@ -114,11 +118,7 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
             }
         }
         shiftButton = makeKey("⇧", R.drawable.key_bg_special, weight = 1.5f)
-        shiftButton.setOnClickListener {
-            shiftActive = !shiftActive
-            applyShiftVisuals()
-            listener?.onShiftToggled()
-        }
+        shiftButton.setOnClickListener { onShiftTapped() }
         row.addView(shiftButton)
 
         for (ch in ROW_QWERTY_3) {
@@ -193,6 +193,47 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     private fun dp(value: Int): Int =
         TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value.toFloat(), resources.displayMetrics).toInt()
 
+    // ---- shift key state machine ---------------------------------------
+
+    /**
+     * OFF --tap--> SHIFT_ONCE --tap--> OFF
+     * A second tap arriving within [DOUBLE_TAP_WINDOW_MS] of the previous
+     * one (from either OFF or SHIFT_ONCE) jumps straight to CAPS_LOCK.
+     * CAPS_LOCK --tap--> OFF.
+     */
+    private fun onShiftTapped() {
+        val now = SystemClock.uptimeMillis()
+        val isDoubleTap = (now - lastShiftTapTime) <= DOUBLE_TAP_WINDOW_MS
+        lastShiftTapTime = now
+
+        shiftState = when {
+            isDoubleTap -> ShiftState.CAPS_LOCK
+            shiftState == ShiftState.OFF -> ShiftState.SHIFT_ONCE
+            else -> ShiftState.OFF // was SHIFT_ONCE or CAPS_LOCK, single tap cancels it
+        }
+        applyShiftVisuals()
+        listener?.onShiftToggled()
+    }
+
+    fun getShiftState(): ShiftState = shiftState
+
+    /** Service calls this after committing text so external (auto-cap) logic can arm SHIFT_ONCE. */
+    fun setShiftState(state: ShiftState) {
+        shiftState = state
+        applyShiftVisuals()
+    }
+
+    /** Called after a single letter is typed: SHIFT_ONCE spends itself, CAPS_LOCK persists. */
+    fun consumeShiftOnce() {
+        if (shiftState == ShiftState.SHIFT_ONCE) {
+            shiftState = ShiftState.OFF
+            applyShiftVisuals()
+        }
+    }
+
+    /** True if the next typed letter should be uppercase (either SHIFT_ONCE or CAPS_LOCK). */
+    fun isShiftActive(): Boolean = shiftState != ShiftState.OFF
+
     // ---- external updates ----------------------------------------------
 
     /**
@@ -206,7 +247,7 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         for (i in wordButtons.indices) {
             val btn = wordButtons[i]
             if (i < currentWords.size) {
-                btn.text = applyWordCase(currentWords[i])
+                btn.text = WordCasing.apply(currentWords[i], shiftState)
                 btn.visibility = View.VISIBLE
             } else {
                 btn.text = ""
@@ -219,7 +260,7 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     fun setSoleCompletion(word: String?) {
         currentSoleWord = word
         if (word != null) {
-            spaceButton.text = word
+            spaceButton.text = WordCasing.apply(word, shiftState)
             spaceButton.setBackgroundResource(R.drawable.key_bg_space_ready)
             spaceButton.setTextColor(ContextCompat.getColor(context, R.color.space_text_ready))
             spaceButton.setTypeface(spaceButton.typeface, Typeface.BOLD)
@@ -233,30 +274,25 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
 
     fun getSoleCompletion(): String? = currentSoleWord
 
-    fun setShiftActive(active: Boolean) {
-        shiftActive = active
-        applyShiftVisuals()
-    }
-
-    fun isShiftActive(): Boolean = shiftActive
-
     private fun applyShiftVisuals() {
+        shiftButton.text = if (shiftState == ShiftState.CAPS_LOCK) "⇪" else "⇧"
         shiftButton.setBackgroundResource(
-            if (shiftActive) R.drawable.key_bg_prediction else R.drawable.key_bg_special
+            when (shiftState) {
+                ShiftState.OFF -> R.drawable.key_bg_special
+                ShiftState.SHIFT_ONCE -> R.drawable.key_bg_prediction
+                ShiftState.CAPS_LOCK -> R.drawable.key_bg_space_ready
+            }
         )
+        val letterCase = shiftState != ShiftState.OFF
         for (btn in letterButtons) {
-            btn.text = applyCase(btn.text.toString().lowercase())
+            val lower = btn.text.toString().lowercase()
+            btn.text = if (letterCase) lower.uppercase() else lower
         }
         for (i in wordButtons.indices) {
             if (i < currentWords.size) {
-                wordButtons[i].text = applyWordCase(currentWords[i])
+                wordButtons[i].text = WordCasing.apply(currentWords[i], shiftState)
             }
         }
+        currentSoleWord?.let { spaceButton.text = WordCasing.apply(it, shiftState) }
     }
-
-    private fun applyCase(s: String): String = if (shiftActive) s.uppercase() else s.lowercase()
-
-    /** Whole-word buttons get sentence-style capitalization (first letter only), not ALL CAPS. */
-    private fun applyWordCase(word: String): String =
-        if (shiftActive) word.replaceFirstChar { it.uppercaseChar() } else word
 }
