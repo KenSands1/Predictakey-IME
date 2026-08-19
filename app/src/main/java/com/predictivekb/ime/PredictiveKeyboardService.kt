@@ -15,17 +15,8 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     private val currentWord = StringBuilder()
     private var showingSymbols = false
 
-    /**
-     * Remembers that the CURRENT word started under SHIFT_ONCE capitalize
-     * intent, even after the shift key itself has already reverted to OFF
-     * (which happens right after the first letter is typed - see
-     * onCharKey). Needed because word-completion taps replace the whole
-     * word rather than just appending, so by the time a completion is
-     * selected, the shift key's own live state has usually already been
-     * spent on that first letter. Reset whenever a word boundary is
-     * crossed (space, punctuation, enter, completion selected).
-     */
     private var wordStartCapitalized = false
+    private var activeRootFamily: String? = null
 
     override fun onCreate() {
         super.onCreate()
@@ -50,11 +41,10 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         super.onStartInputView(info, restarting)
         currentWord.clear()
         wordStartCapitalized = false
+        activeRootFamily = null
         showLetters()
         refreshPredictions()
     }
-
-    // ---- panel switching --------------------------------------------------
 
     private fun showLetters() {
         showingSymbols = false
@@ -71,28 +61,20 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     override fun onSwitchToSymbols() = showSymbols()
     override fun onSwitchToLetters() = showLetters()
 
-    // ---- prediction refresh -------------------------------------------
-
     private fun refreshPredictions() {
         maybeAutoCapitalize()
         val rtl = Prefs.isPredictionRowRtl(this)
         val prefix = currentWord.toString()
-        // Selection stays frequency-based (topCompletions already ranks by
-        // real-world frequency); this only reorders those same 6 words for
-        // display, shortest first, so they're easier to visually scan.
-        val completions = engine.topCompletions(prefix).sortedBy { it.length }
+        val family = activeRootFamily
+        val completions = if (family != null) {
+            engine.familyMembers(family)
+        } else {
+            engine.topCompletions(prefix)
+        }.sortedBy { it.length }
         lettersPanel.updateWordCompletions(completions, rtl)
         lettersPanel.setSoleCompletion(engine.soleCompletion(prefix).takeIf { prefix.isNotEmpty() })
     }
 
-    /**
-     * Arms SHIFT_ONCE whenever the cursor sits at the start of a sentence -
-     * an empty field, or after ". "/"! "/"? "/a newline (ignoring trailing
-     * spaces). Only acts when shift is currently OFF, so it never overrides
-     * a state the user (or this same check, earlier) already set - e.g. if
-     * the user manually cancels an auto-armed shift, this won't immediately
-     * re-arm it, since nothing new gets committed until they type.
-     */
     private fun maybeAutoCapitalize() {
         if (lettersPanel.getShiftState() != ShiftState.OFF) return
         val ic = currentInputConnection ?: return
@@ -104,13 +86,6 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         }
     }
 
-    /**
-     * What casing a word-completion (button tap or space-bar sole
-     * completion) should use. Live CAPS_LOCK always wins (it's never
-     * "consumed", so it's always accurate). Otherwise, if this word started
-     * under SHIFT_ONCE - even if that's since been consumed by a manually
-     * typed first letter - treat it as SHIFT_ONCE for casing purposes.
-     */
     private fun effectiveShiftStateForCompletion(): ShiftState {
         val live = lettersPanel.getShiftState()
         return when {
@@ -120,23 +95,23 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         }
     }
 
-    // ---- KeyboardActionListener -----------------------------------------
+    private fun markWordStartIfNeeded() {
+        if (currentWord.isEmpty() && lettersPanel.getShiftState() == ShiftState.SHIFT_ONCE) {
+            wordStartCapitalized = true
+        }
+    }
 
     override fun onCharKey(ch: Char) {
         val ic = currentInputConnection ?: return
+        activeRootFamily = null
         if (ch.isLetter()) {
-            if (currentWord.isEmpty() && lettersPanel.getShiftState() == ShiftState.SHIFT_ONCE) {
-                wordStartCapitalized = true
-            }
+            markWordStartIfNeeded()
             val output = if (lettersPanel.isShiftActive()) ch.uppercaseChar() else ch
             ic.commitText(output.toString(), 1)
             currentWord.append(ch.lowercaseChar())
             lettersPanel.consumeShiftOnce()
             refreshPredictions()
         } else {
-            // Punctuation: if a trailing space precedes the cursor (typical
-            // right after finishing a word with the space bar), remove it
-            // first so punctuation attaches directly ("word." not "word .").
             if (ic.getTextBeforeCursor(1, 0)?.toString() == " ") {
                 ic.deleteSurroundingText(1, 0)
             }
@@ -147,29 +122,38 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         }
     }
 
-    /**
-     * A top-row word-completion key was tapped. Deletes whatever's already
-     * been typed of the word and re-commits the whole thing correctly
-     * cased (via [WordCasing]) plus a trailing space - replacing rather
-     * than just appending, so proper-noun/shift capitalization is correct
-     * even if the already-typed prefix was lowercase.
-     */
     override fun onWordSelected(word: String) {
         val ic = currentInputConnection ?: return
         val prefix = currentWord.toString()
-        if (prefix.isNotEmpty()) {
-            ic.deleteSurroundingText(prefix.length, 0)
+
+        if (activeRootFamily == null) {
+            markWordStartIfNeeded()
+            if (prefix.isNotEmpty()) {
+                ic.deleteSurroundingText(prefix.length, 0)
+            }
+            ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
+            currentWord.clear()
+            currentWord.append(word.lowercase())
+            activeRootFamily = word.lowercase()
+            lettersPanel.consumeShiftOnce()
+            refreshPredictions()
+        } else {
+            if (prefix.isNotEmpty()) {
+                ic.deleteSurroundingText(prefix.length, 0)
+            }
+            ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
+            ic.commitText(" ", 1)
+            currentWord.clear()
+            wordStartCapitalized = false
+            activeRootFamily = null
+            lettersPanel.consumeShiftOnce()
+            refreshPredictions()
         }
-        ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
-        ic.commitText(" ", 1)
-        currentWord.clear()
-        wordStartCapitalized = false
-        lettersPanel.consumeShiftOnce()
-        refreshPredictions()
     }
 
     override fun onBackspace() {
         val ic = currentInputConnection ?: return
+        activeRootFamily = null
         ic.deleteSurroundingText(1, 0)
         if (currentWord.isNotEmpty()) {
             currentWord.deleteCharAt(currentWord.length - 1)
@@ -179,6 +163,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onSpace() {
         val ic = currentInputConnection ?: return
+        activeRootFamily = null
         val sole = lettersPanel.getSoleCompletion()
         if (sole != null) {
             val prefix = currentWord.toString()
@@ -196,6 +181,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onEnter() {
         val ic = currentInputConnection ?: return
+        activeRootFamily = null
         ic.commitText("\n", 1)
         currentWord.clear()
         wordStartCapitalized = false
@@ -203,9 +189,5 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     }
 
     override fun onShiftToggled() {
-        // Visual state is already flipped inside KeyboardPanelView; nothing
-        // else to do. Deliberately NOT calling refreshPredictions() here -
-        // doing so would let maybeAutoCapitalize() immediately re-arm
-        // SHIFT_ONCE right after the user manually cancels it.
     }
 }
