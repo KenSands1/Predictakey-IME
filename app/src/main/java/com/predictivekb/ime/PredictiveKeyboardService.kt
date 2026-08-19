@@ -15,6 +15,18 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     private val currentWord = StringBuilder()
     private var showingSymbols = false
 
+    /**
+     * Remembers that the CURRENT word started under SHIFT_ONCE capitalize
+     * intent, even after the shift key itself has already reverted to OFF
+     * (which happens right after the first letter is typed - see
+     * onCharKey). Needed because word-completion taps replace the whole
+     * word rather than just appending, so by the time a completion is
+     * selected, the shift key's own live state has usually already been
+     * spent on that first letter. Reset whenever a word boundary is
+     * crossed (space, punctuation, enter, completion selected).
+     */
+    private var wordStartCapitalized = false
+
     override fun onCreate() {
         super.onCreate()
         if (!engine.isLoaded()) {
@@ -37,6 +49,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     override fun onStartInputView(info: EditorInfo?, restarting: Boolean) {
         super.onStartInputView(info, restarting)
         currentWord.clear()
+        wordStartCapitalized = false
         showLetters()
         refreshPredictions()
     }
@@ -91,11 +104,30 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         }
     }
 
+    /**
+     * What casing a word-completion (button tap or space-bar sole
+     * completion) should use. Live CAPS_LOCK always wins (it's never
+     * "consumed", so it's always accurate). Otherwise, if this word started
+     * under SHIFT_ONCE - even if that's since been consumed by a manually
+     * typed first letter - treat it as SHIFT_ONCE for casing purposes.
+     */
+    private fun effectiveShiftStateForCompletion(): ShiftState {
+        val live = lettersPanel.getShiftState()
+        return when {
+            live == ShiftState.CAPS_LOCK -> ShiftState.CAPS_LOCK
+            wordStartCapitalized -> ShiftState.SHIFT_ONCE
+            else -> live
+        }
+    }
+
     // ---- KeyboardActionListener -----------------------------------------
 
     override fun onCharKey(ch: Char) {
         val ic = currentInputConnection ?: return
         if (ch.isLetter()) {
+            if (currentWord.isEmpty() && lettersPanel.getShiftState() == ShiftState.SHIFT_ONCE) {
+                wordStartCapitalized = true
+            }
             val output = if (lettersPanel.isShiftActive()) ch.uppercaseChar() else ch
             ic.commitText(output.toString(), 1)
             currentWord.append(ch.lowercaseChar())
@@ -105,6 +137,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             // Punctuation resets the word buffer.
             ic.commitText(ch.toString(), 1)
             currentWord.clear()
+            wordStartCapitalized = false
             refreshPredictions()
         }
     }
@@ -122,9 +155,10 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         if (prefix.isNotEmpty()) {
             ic.deleteSurroundingText(prefix.length, 0)
         }
-        ic.commitText(WordCasing.apply(word, lettersPanel.getShiftState()), 1)
+        ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
         ic.commitText(" ", 1)
         currentWord.clear()
+        wordStartCapitalized = false
         lettersPanel.consumeShiftOnce()
         refreshPredictions()
     }
@@ -146,11 +180,12 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             if (prefix.isNotEmpty()) {
                 ic.deleteSurroundingText(prefix.length, 0)
             }
-            ic.commitText(WordCasing.apply(sole, lettersPanel.getShiftState()), 1)
+            ic.commitText(WordCasing.apply(sole, effectiveShiftStateForCompletion()), 1)
             lettersPanel.consumeShiftOnce()
         }
         ic.commitText(" ", 1)
         currentWord.clear()
+        wordStartCapitalized = false
         refreshPredictions()
     }
 
@@ -158,6 +193,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val ic = currentInputConnection ?: return
         ic.commitText("\n", 1)
         currentWord.clear()
+        wordStartCapitalized = false
         refreshPredictions()
     }
 
