@@ -112,6 +112,7 @@ class SymbolKeyboardView(context: Context) : LinearLayout(context) {
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 16f)
             setTextColor(ContextCompat.getColor(context, R.color.key_text))
             setBackgroundResource(bg)
+            setPadding(dp(2), 0, dp(2), 0)
             minWidth = 0
             minHeight = 0
             stateListAnimator = null
