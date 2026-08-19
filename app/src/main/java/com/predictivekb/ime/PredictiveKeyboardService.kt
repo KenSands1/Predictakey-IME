@@ -134,7 +134,12 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             lettersPanel.consumeShiftOnce()
             refreshPredictions()
         } else {
-            // Punctuation resets the word buffer.
+            // Punctuation: if a trailing space precedes the cursor (typical
+            // right after finishing a word with the space bar), remove it
+            // first so punctuation attaches directly ("word." not "word .").
+            if (ic.getTextBeforeCursor(1, 0)?.toString() == " ") {
+                ic.deleteSurroundingText(1, 0)
+            }
             ic.commitText(ch.toString(), 1)
             currentWord.clear()
             wordStartCapitalized = false
