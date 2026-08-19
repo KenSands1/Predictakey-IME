@@ -67,7 +67,10 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val prefix = currentWord.toString()
         val family = activeRootFamily
         val completions = if (family != null) {
-            engine.familyMembers(family)
+            // Only the variations, not the root itself - you already picked
+            // it by tapping it, so re-showing it would just take an extra
+            // tap to finish with no ending.
+            engine.familyMembers(family).filterNot { it == family }
         } else {
             engine.topCompletions(prefix)
         }.sortedBy { it.length }
@@ -103,8 +106,17 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onCharKey(ch: Char) {
         val ic = currentInputConnection ?: return
-        activeRootFamily = null
+        val wasInFamilyMode = activeRootFamily != null
+        activeRootFamily = null // typing always exits family mode
         if (ch.isLetter()) {
+            if (wasInFamilyMode) {
+                // The previous root word is considered "finished" - a space
+                // goes in before starting this new word, so you never have
+                // to manually hit space after browsing a family's endings.
+                ic.commitText(" ", 1)
+                currentWord.clear()
+                wordStartCapitalized = false
+            }
             markWordStartIfNeeded()
             val output = if (lettersPanel.isShiftActive()) ch.uppercaseChar() else ch
             ic.commitText(output.toString(), 1)
@@ -126,7 +138,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val ic = currentInputConnection ?: return
         val prefix = currentWord.toString()
 
-        if (activeRootFamily == null) {
+        if (activeRootFamily == null && engine.hasFamilyVariants(word)) {
             markWordStartIfNeeded()
             if (prefix.isNotEmpty()) {
                 ic.deleteSurroundingText(prefix.length, 0)
