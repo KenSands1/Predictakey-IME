@@ -61,11 +61,34 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     // ---- prediction refresh -------------------------------------------
 
     private fun refreshPredictions() {
+        maybeAutoCapitalize()
         val rtl = Prefs.isPredictionRowRtl(this)
         val prefix = currentWord.toString()
-        val completions = engine.topCompletions(prefix)
+        // Selection stays frequency-based (topCompletions already ranks by
+        // real-world frequency); this only reorders those same 6 words for
+        // display, shortest first, so they're easier to visually scan.
+        val completions = engine.topCompletions(prefix).sortedBy { it.length }
         lettersPanel.updateWordCompletions(completions, rtl)
         lettersPanel.setSoleCompletion(engine.soleCompletion(prefix).takeIf { prefix.isNotEmpty() })
+    }
+
+    /**
+     * Arms SHIFT_ONCE whenever the cursor sits at the start of a sentence -
+     * an empty field, or after ". "/"! "/"? "/a newline (ignoring trailing
+     * spaces). Only acts when shift is currently OFF, so it never overrides
+     * a state the user (or this same check, earlier) already set - e.g. if
+     * the user manually cancels an auto-armed shift, this won't immediately
+     * re-arm it, since nothing new gets committed until they type.
+     */
+    private fun maybeAutoCapitalize() {
+        if (lettersPanel.getShiftState() != ShiftState.OFF) return
+        val ic = currentInputConnection ?: return
+        val before = ic.getTextBeforeCursor(40, 0)?.toString() ?: ""
+        val trimmed = before.trimEnd(' ', '\t')
+        val shouldCap = trimmed.isEmpty() || trimmed.last() in charArrayOf('.', '!', '?', '\n')
+        if (shouldCap) {
+            lettersPanel.setShiftState(ShiftState.SHIFT_ONCE)
+        }
     }
 
     // ---- KeyboardActionListener -----------------------------------------
@@ -76,6 +99,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             val output = if (lettersPanel.isShiftActive()) ch.uppercaseChar() else ch
             ic.commitText(output.toString(), 1)
             currentWord.append(ch.lowercaseChar())
+            lettersPanel.consumeShiftOnce()
             refreshPredictions()
         } else {
             // Punctuation resets the word buffer.
@@ -86,20 +110,22 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     }
 
     /**
-     * A top-row word-completion key was tapped. Commits whatever's left of
-     * [word] beyond what's already been typed, plus a trailing space — the
-     * same "finish the word and move on" behavior as tapping the green
-     * space bar, just reachable one keystroke earlier.
+     * A top-row word-completion key was tapped. Deletes whatever's already
+     * been typed of the word and re-commits the whole thing correctly
+     * cased (via [WordCasing]) plus a trailing space - replacing rather
+     * than just appending, so proper-noun/shift capitalization is correct
+     * even if the already-typed prefix was lowercase.
      */
     override fun onWordSelected(word: String) {
         val ic = currentInputConnection ?: return
         val prefix = currentWord.toString()
-        if (word.length > prefix.length) {
-            val remainder = word.substring(prefix.length)
-            ic.commitText(remainder, 1)
+        if (prefix.isNotEmpty()) {
+            ic.deleteSurroundingText(prefix.length, 0)
         }
+        ic.commitText(WordCasing.apply(word, lettersPanel.getShiftState()), 1)
         ic.commitText(" ", 1)
         currentWord.clear()
+        lettersPanel.consumeShiftOnce()
         refreshPredictions()
     }
 
@@ -115,9 +141,13 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     override fun onSpace() {
         val ic = currentInputConnection ?: return
         val sole = lettersPanel.getSoleCompletion()
-        if (sole != null && sole.length > currentWord.length) {
-            val remainder = sole.substring(currentWord.length)
-            ic.commitText(remainder, 1)
+        if (sole != null) {
+            val prefix = currentWord.toString()
+            if (prefix.isNotEmpty()) {
+                ic.deleteSurroundingText(prefix.length, 0)
+            }
+            ic.commitText(WordCasing.apply(sole, lettersPanel.getShiftState()), 1)
+            lettersPanel.consumeShiftOnce()
         }
         ic.commitText(" ", 1)
         currentWord.clear()
@@ -133,6 +163,8 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onShiftToggled() {
         // Visual state is already flipped inside KeyboardPanelView; nothing
-        // else to do unless you want shift to auto-release after one letter.
+        // else to do. Deliberately NOT calling refreshPredictions() here -
+        // doing so would let maybeAutoCapitalize() immediately re-arm
+        // SHIFT_ONCE right after the user manually cancels it.
     }
 }
