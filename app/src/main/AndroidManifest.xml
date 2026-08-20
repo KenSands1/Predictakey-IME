@@ -16,6 +16,22 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".MacroEditActivity"
+            android:label="Edit Macro"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <service
             android:name=".PredictiveKeyboardService"
             android:label="Predictive Keyboard"
@@ -32,3 +48,4 @@
     </application>
 
 </manifest>
+
