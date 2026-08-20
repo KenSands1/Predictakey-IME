@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Exposes files under /data/data/<package>/files/macro_images/ as
+         content:// URIs, for handing images to other apps (commitContent)
+         or the clipboard, without exposing the rest of app-private storage. -->
+    <files-path name="macro_images" path="macro_images/" />
+</paths>
