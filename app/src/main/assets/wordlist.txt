@@ -5,7 +5,7 @@ of
 in
 is
 for
-that, [s]thats
+that
 you
 it
 on
@@ -26,7 +26,7 @@ my
 or
 we
 an
-your
+your, [s]yours
 so
 all
 his
@@ -55,7 +55,7 @@ it's
 there
 her
 which
-time, [s]times
+time, [s]times, [ing]timing
 get, [ting]getting, [s]gets
 been
 would
@@ -69,22 +69,22 @@ also
 them
 now
 other, [s]others
-i'm
+I'm
 our
 its
 than
-good, [s]goods
+good, [s]goods,[ly]goodly
 only
 after
 first
 him
 into
-see, [ing]seeing, [s]sees
+see, [ing]seeing, [s]sees, [n]seen
 two
-know, [s]knows, [ing]knowing
-think, [ing]thinking, [s]thinks
+know, [s]knows, [ing]knowing, [ew]knew, [n]known
+think, [ing]thinking, [s]thinks, [ought]thought
 over
-make, [ing]making, [s]makes
+make, [ing]making, [s]makes, [de]made
 then
 any
 could
@@ -117,9 +117,8 @@ going
 off
 before
 why
-made
 still
-take, [ing]taking, [s]takes
+take, [ing]taking, [s]takes, [n]taken
 got
 many
 never
@@ -150,7 +149,7 @@ both
 part, [s]parts
 state, [s]states, [d]stated
 three
-come, [ing]coming
+come, [ing]coming, [s]comes
 am
 between
 around
@@ -173,7 +172,7 @@ i've
 house, [ing]housing, [s]houses
 place, [s]places, [d]placed
 school, [s]schools
-give, [ing]giving, [s]gives
+give, [ing]giving, [s]gives, [n]given, [ave]gave
 next
 again
 without
@@ -182,16 +181,16 @@ each
 end, [ed]ended, [s]ends, [ing]ending
 didn't
 against
-found, [ed]founded
+found, [ed]founded, [er]founder, [ers]founders
 must
-show, [s]shows, [ing]showing, [ed]showed
+show, [s]shows, [ing]showing, [ed]showed, [n]shown
 team, [s]teams
-feel, [ing]feeling, [s]feels, [ings]feelings
-big
+feel, [ing]feeling, [s]feels, [ings]feelings, [lt]felt
+big, [ger]bigger, [gest]biggest
 sure, [ly]surely
 might
 put, [ting]putting, [s]puts
-keep, [ing]keeping, [s]keeps
+keep, [ing]keeping, [s]keeps, [pt]kept
 ever
 please
 family, [ies]families
@@ -200,7 +199,6 @@ second, [s]seconds
 someone
 free
 away
-left
 number, [s]numbers
 city, [ies]cities
 play, [ing]playing, [ers]players, [ed]played, [er]player, [s]plays
@@ -214,7 +212,6 @@ company, [ies]companies
 few
 doing
 let, [ting]letting, [s]lets
-thought, [s]thoughts
 set, [ting]setting, [s]sets
 different
 however
@@ -222,7 +219,6 @@ done
 public
 top
 group, [s]groups
-women
 government
 care
 system, [s]systems
@@ -247,7 +243,7 @@ there's
 told
 support, [ing]supporting, [ed]supported
 doesn't
-mean, [ing]meaning
+mean, [ing]meaning, [s]means, [t]meant
 bad
 hard, [er]harder, [ly]hardly
 four
@@ -256,7 +252,6 @@ tell, [ing]telling, [s]tells
 power, [s]powers
 music
 stop, [ped]stopped
-seen
 water
 white
 small, [er]smaller
@@ -275,11 +270,11 @@ went
 try, [ing]trying, [ied]tried, [ies]tries
 yes
 line, [s]lines
-american, [s]americans
+American, [s]Americans
 service, [s]services
 party, [ies]parties
 run, [ning]running, [s]runs
-less
+less, [ast]least
 order, [ed]ordered, [s]orders
 season, [s]seasons
 thank, [s]thanks
@@ -289,13 +284,12 @@ general, [ly]generally
 they're
 everyone
 united
-children
 black
 together
 area, [s]areas
 law, [s]laws
 war, [s]wars
-whole
+whole, [ly]wholly
 story, [ies]stories
 five
 face, [s]faces, [ing]facing, [d]faced
@@ -305,15 +299,13 @@ kind, [s]kinds
 maybe
 per
 course
-means
-least
 important
 health
 news
 within
 hope, [ing]hoping
 information
-early
+early, [ier]earlier
 i'll
 oh
 book, [s]books
@@ -322,25 +314,24 @@ video, [s]videos
 local
 young, [er]younger
 able
-social
+social, [ly]socially
 ago
 talk, [ing]talking, [ed]talked, [s]talks
-mind
-given
+mind, [s]minds
 half
 single
 hand, [s]hands
 fact, [s]facts
 often
 isn't
-court
+court, [s]courts
 level, [s]levels
-pay, [ing]paying
+pay, [s]pays, [ing]paying, [er]payer
 south
 true
-food
+food, [s]foods
 death, [s]deaths
-become, [s]becomes, [ing]becoming
+become, [s]becomes, [ing]becoming, [ame]became
 guy, [s]guys
 office, [r]officer, [rs]officers
 control, [led]controlled
@@ -351,693 +342,655 @@ room, [s]rooms
 almost
 wrong
 several
-lost
-win, [ning]winning, [s]wins
-university
-research
-known
-large, [r]larger, [ly]largely
+win, [ning]winning, [s]wins, [ner]winner
+university, [ies]universities
+research, [er]researcher, [ers]researchers
+large, [r]larger, [ly]largely, [st]largest
 history
-remember
+remember, [s]remembers, [ing]remembering
 along
-john
 matter, [s]matters
 pretty
 anyone
-girl, [s]girls
+girl, [s]girls, [ly]girly
 else
 probably
-bit
+bit, [en]bitten
 friend, [s]friends, [ly]friendly
-hit, [s]hits
+hit, [s]hits, [ing]hitting
 yeah
 understand, [ing]understanding, [ood]understood
 nice
 air
 york
 possible
-comes
 class, [es]classes
 i'd
 international
 past
 close, [d]closed, [r]closer, [ly]closely
 idea, [s]ideas
-woman
+woman, [en]women
 series
-human, [s]humans
+human, [s]humans, [ly]humanly
 wait, [ing]waiting
-happy
+happy, [er]happier, [est]happiest
 move, [ing]moving, [d]moved, [s]moves
-question, [s]questions
-due
+question, [s]questions, [ed]questioned, [ing]questioning
+due, [s]dues
 cause, [d]caused, [s]causes, [ing]causing
 special
-late, [r]later
+late, [r]later, [st]latest
 ask, [ed]asked, [ing]asking
 community, [ies]communities
 north
 data
 won't
 saw
-leave, [ing]leaving, [s]leaves
+leave, [ing]leaving, [s]leaves, [ft]left
 watch, [ing]watching, [ed]watched
 stay, [ing]staying, [ed]stayed
-light, [s]lights
+light, [s]lights, [it]lit
 police
 future
 million, [s]millions
-taken
 morning
-low, [er]lower
+low, [er]lower, [est]lowest
 either
-short
+short, [er]shorter, [est]shortest, [en]shorten, [ed]shortened
 turn, [ed]turned, [s]turns, [ing]turning
-reason, [s]reasons
-deal, [ing]dealing, [s]deals
-report, [ed]reported, [s]reports, [ing]reporting
+reason, [s]reasons, [ing]reasoning
+deal, [ing]dealing, [s]deals, [lt]dealt
+report, [ed]reported, [s]reports, [ing]reporting, [er]reporter
 red
 third
 whether
-age, [s]ages, [d]aged
+age, [s]ages, [d]aged, [ing]aging
 rather
-buy, [ing]buying
+buy, [ing]buying, [ought]bought
 soon
-form, [s]forms, [ed]formed
+form, [s]forms, [ed]formed, [ing]forming
 yourself
 heart
 further
-development
+development, [s]developments, [al]developmental
 myself
-check, [ed]checked
-among
-fire, [d]fired
-fun
-major
-media
-phone
-child
+check, [ed]checked, [ing]checking
+among, [st]amongst
+fire, [d]fired, [ing]firing, [s]fires
+fun, [y]funny, [er]funnier, [est]funniest
+major, [s]majors
+phone, [s]phones
+child, [ren]children
 act, [ing]acting, [s]acts
 although
-easy
-market, [ing]marketing, [s]markets
+easy, [ier]easier, [est]easiest, [ly]easily
+market, [ing]marketing, [s]markets, [ed]marketed
 plan, [s]plans, [ning]planning, [ned]planned
 gonna
 west
 quite
 behind
-political
-near, [ly]nearly
+near, [ly]nearly, [er]nearer, [est]nearest
 six
 art, [s]arts
-non
 available
-education
-final, [ly]finally
+education, [al]educational, [ly]educationally
+final, [ly]finally, [ist]finalist
 sometimes
-list, [ed]listed
+list, [ed]listed, [ing]listing
 front
 former
 son, [s]sons
-according
-ready
+according, [ly]accordingly
+ready, [er]readier, [est]readiest
 wasn't
 street, [s]streets
-type, [s]types
-program, [s]programs
-meet, [ing]meeting
+type, [s]types, [ing]typing, [ist]typist
+program, [s]programs, [ing]programming, [er]programmer
+meet, [ing]meeting, [ings]meetings, [t]met
 current, [ly]currently
 experience, [d]experienced, [s]experiences
-bring, [ing]bringing, [s]brings
+bring, [ing]bringing, [s]brings, [ought]brought
 heard
 example, [s]examples
-college
-london
+college, [s]colleges
+London
 song, [s]songs
-march
-baby
+march, [ing]marching
+baby, [ies]babies
 chance, [s]chances
-process
-study, [ies]studies, [ied]studied
+process, [ing]processing, [or]processor, [ed]processed
+study, [ies]studies, [ied]studied, [ing]studying
 she's
 word, [s]words
-father
-action, [s]actions
+father, [ly]fatherly
+action, [s]actions, [able]actionable
 across
 month, [s]months, [ly]monthly
 himself
 self
-clear, [ly]clearly
+clear, [ly]clearly, [er]clearer, [est]clearest
 outside
 gave
-town
-board
-dr
+town, [s]towns
+board, [s]boards, [ing]boarding, [er]boarder
+Dr
 moment, [s]moments
-cut, [ting]cutting
-cost, [s]costs
+cut, [ting]cutting, [er]cutter, [ers]cutters
+cost, [s]costs, [ly]costly, [er]costlier, [est]costliest
 instead
-field, [s]fields
+field, [s]fields, [ing]fielding, [ed]fielded
 main, [ly]mainly
-held
 road, [s]roads
-mother
-summer
-space
-fight, [ing]fighting
-force, [s]forces, [d]forced
-wife
+mother, [ly]motherly
+held
+summer, [s]summers
+space, [s]spaces
+fight, [ing]fighting, [er]fighter, [s]fights
+force, [s]forces, [d]forced, [ing]forcing
+wife, [es]wives, [ly]wifely
 price, [s]prices
-issue, [s]issues, [d]issued
-re
-energy
-hear, [ing]hearing
-department
-rest
+issue, [s]issues, [d]issued, [ing]issuing
+energy, [ies]energies
+hear, [ing]hearing, [ings]hearings
+department, [s]departments
+rest, [ing]resting, [ed]rested
 term, [s]terms
 fine
-land
-project, [s]projects
-strong, [er]stronger
+land, [s]lands, [ing]landing, [ed]landed
+project, [s]projects, [ing]projecting, [ed]projected
+strong, [er]stronger, [est]strongest
 america
 goes
 site, [s]sites
-shot, [s]shots
 you'll
-beautiful
-date, [ing]dating, [s]dates
-miss, [ing]missing, [ed]missed
-june
-similar
-record, [s]records, [ed]recorded, [ing]recording
+beautiful, [ly]beautifully
+date, [ing]dating, [s]dates, [ed]dated
+miss, [ing]missing, [ed]missed, [es]misses
+June
+similar, [ly]similarly
+record, [s]records, [ed]recorded, [ing]recording, [er]recorder
 especially
-period
+period, [s]periods
 total, [ly]totally
 include, [ing]including, [d]included, [s]includes
-position, [s]positions
-account, [s]accounts
+position, [s]positions, [ed]positioned
+account, [s]accounts, [ant]accountant, [ants]accountants
 share, [d]shared, [ing]sharing, [s]shares
-tv
-club, [s]clubs
-common
+tv, [s]tv's
+club, [s]clubs, [ing]clubbing, [ed]clubbed
+common, [er]commoner, [ly]commonly
 lead, [ing]leading, [er]leader, [ers]leaders, [s]leads
 above
-perfect, [ly]perfectly
-film, [s]films
-security
+perfect, [ly]perfectly, [tion]perfection, [ed]perfected
+film, [s]films, [ing]filming, [ed]filmed
+security, [ies]securities
 what's
 won
 personal, [ly]personally
-knew
-military
-dead
-star, [s]stars
-industry
-test, [s]tests, [ing]testing
-english
-center
-sense
-county
-hold, [ing]holding, [s]holds
+military, [es]militaries, [ize]militarize
+dead, [ly]deadly
+star, [s]stars, [like]starlike
+industry, [ies]industries, [ial]industrial, [ization]industrialization
+test, [s]tests, [ing]testing, [ed]tested
+English
+center, [ed]centered, [ing]centering
+sense, [ible]sensible, [ive]sensitive, [tion]sensation
+county, [es]counties
+hold, [ing]holding, [s]holds, [eld]held
 return, [ed]returned, [s]returns, [ing]returning
-view, [s]views
+view, [s]views, [ing]viewing, [er]viewer, [ed]viewed
 online
 inside
 happen, [ed]happened, [s]happens, [ing]happening
-couple
-private
-april
+couple, [s]couples
+private, [ly]privately
+April
 middle
 member, [s]members
-wish
-british
-result, [s]results, [ing]resulting
-sorry
+wish, [ing]wishing, [ed]wished, [ful]wishful, [fully]wishfully
+British
+result, [s]results, [ing]resulting, [ed]resulted
+sorry, [er]sorrier, [est]sorriest
 hour, [s]hours
-present, [ed]presented
+present, [ed]presented, [ing]presenting, [er]presenter
 event, [s]events
 wouldn't
-break, [ing]breaking
-july
-gold
-design, [ed]designed
-king
-interest, [ing]interesting, [ed]interested, [s]interests
+break, [ing]breaking, [oke]broke, [oken]broken, [s]breaks
+July
+gold, [en]golden
+design, [ed]designed, [ing]desinging, [er]designer
+king, [ly]kingly, [iest]kingliest
+interest, [ing]interesting, [ed]interested, [s]interests, [ingly]interestingly
 learn, [ing]learning, [ed]learned
 gone
 boy, [s]boys
 policy, [ies]policies
 guess
-society
-answer, [s]answers
+society, [s]societies
+answer, [s]answers, [ed]answered, [ing]answering
 east
-church
-hot
-press
+church, [es]churches
+hot, [er]hotter, [est]hottest
+press, [ing]pressing, [ed]pressed
 original, [ly]originally
 bank, [s]banks
 average
-sent
 certain, [ly]certainly
 let's
-medical
+medical, [ly]medically
 themselves
 alone
-role
-performance
-brought
-park
-movie
-worth
-became
+role, [s]roles
+park, [s]parks, [ing]parking
+movie, [s]movies
+worth, [ly]worthily
 september
-director
-cool
+cool, [er]cooler, [est]coolest
 sound, [s]sounds
 provide, [d]provided, [s]provides, [ing]providing
-bill, [s]bills
-ground
+bill, [s]bills, [ing]billing, [ed]billed
+ground, [ed]grounded
 relationship, [s]relationships
-value, [s]values
-source, [s]sources
+value, [s]values, [able]valuable
+source, [s]sources, [ed]sourced
 evidence
 follow, [ing]following, [ed]followed, [s]follows
-tax, [es]taxes
+tax, [es]taxes, [able]taxable, [ed]taxed
 stuff
 whatever
 save, [d]saved, [ing]saving
-rate, [s]rates
+rate, [s]rates, [ed]rated, [ing]rating
 round
 stand, [ing]standing, [s]stands, [ood]stood
 ok
 production
 official, [s]officials, [ly]officially
 fall, [ing]falling, [s]falls
-step, [s]steps
-model, [s]models
-picture, [s]pictures
-drive, [ing]driving, [r]driver, [rs]drivers
-league
+step, [s]steps, [ing]stepping, [ed]stepped
+model, [s]models, [ing]modeling, [ed]modeled
+picture, [s]pictures, [ing]picturing, [ed]pictured
+drive, [ing]driving, [r]driver, [rs]drivers, [n]driven
+league, [s]leagues
 federal
 management
 eat, [ing]eating
 match, [es]matches
 amount
-david
-trust
+trust, [s]trusts, [ed]trusted, [ing]trusting
 you've
-fast, [er]faster
+fast, [er]faster, [est]fastest
 size
 green
 blue
-felt
-forward
+forward, [ed]forwarded
 england
 page, [s]pages
 science
 upon
 paid
-range
-central
+range, [s]ranges, [er]ranger, [ed]ranged
+central, [ly]centrally
 hey
-various
-review, [s]reviews
-key
-mom
-trade, [ing]trading
-style
+various, [ly]variously
+review, [s]reviews, [ing]reviewing, [ed]reviewed
+key, [s]keys, [ed]keyed, [board]keyboard
+mom, ['s]mom's
+trade, [ing]trading, [ed]traded, [er]trader
+style, [ing]styling, [ed]styled, [s]styles
 october
 attention
-brother, [s]brothers
-james
+brother, [s]brothers, [ly]brotherly
 football
 haven't
 natural
-character, [s]characters
-hate
-cup
-vote, [s]votes, [d]voted, [ing]voting
-quality
+character, [s]characters, [ization]characterization
+hate, [ed]hated, [es]hates, [ful]hateful, [fully]hatefully
+cup, [s]cups, [ed]cupped
+vote, [s]votes, [d]voted, [ing]voting, [er]voter, [ers]voters
+quality, [ies]qualities
 property, [ies]properties
-send, [ing]sending
+send, [ing]sending, [t]sent
 chief
 led
-amazing
+amazing, [ly]amazingly
 november
 itself
 related
-title
-lord
-economic
+title, [s]titles, [ed]titled
+lord, [s]lords
+economic, [s]economics, [ly]economically
 oil
-language
+language, [s]languages
 august
 blood
 involved
 complete, [ly]completely, [d]completed
 china
-dog, [s]dogs
-stage
+dog, [s]dogs, [gy]doggy
+stage, [s]stages, [ed]staged, [ing]staging
 serious, [ly]seriously
 kill, [ed]killed, [ing]killing
-situation
+situation, [s]situations, [al]situational
 poor
-release, [d]released
-enjoy, [ed]enjoyed
+release, [d]released, [ing]releasing, [s]releases
+enjoy, [ed]enjoyed, [ing]enjoying
 decision, [s]decisions
 article, [s]articles
 perhaps
 add, [ed]added, [ing]adding
-met
 french
-website
+website, [s]websites
 attack, [s]attacks, [ed]attacked
-technology
+technology, [s]technologies, [ist]technologist, [al]technological
 january
 couldn't
 born
 entire, [ly]entirely
-written
-staff
-sign, [ed]signed, [s]signs
-foreign
+staff, [ed]staffed
+sign, [ed]signed, [s]signs, [ing]signing
+foreign, [er]foreigner
 super
-union
+union, [s]unions
 pick, [ed]picked
 european
-lose, [ing]losing
-code
+lose, [ing]losing, [t]lost
+code, [s]codes, [ed]coded, [ing]coding
 hair
-cover, [ed]covered, [s]covers
-walk, [ing]walking, [ed]walked
+cover, [ed]covered, [s]covers, [ing]covering
+walk, [ing]walking, [ed]walked, [s]walks
 election, [s]elections
-simply
 washington
 seven
 seem, [s]seems, [ed]seemed
-increase, [d]increased, [ing]increasing
-simple
+increase, [d]increased, [ing]increasing, [ly]increasingly
+simple, [er]simpler, [ly]simply, [est]simplest, [ify]simplify
 continue, [d]continued, [s]continues, [ing]continuing
-council
-choice
-legal
+council, [s]councils
+choice, [s]choices, [est]choicest
+legal, [ly]legally, [ist]legalist, [ize]legalize, [ized]legalized
 door, [s]doors
-michael
-financial
+financial, [ly]financially
 race, [ing]racing
 die, [d]died
 paper, [s]papers
 modern
 published
-figure, [s]figures
-difficult
+figure, [s]figures, [ed]figured, [ing]figuring
+difficult, [ty]difficulty
 whose
-crazy
+crazy, [er]crazier, [est]craziest
 daily
-hospital
-popular
+hospital, [s]hospitals, [ize]hospitalize, [ized]hospitalized, [tion]hospitalization
+popular, [ize]popularize, [ized]popularized, [tion]popularization
 december
-bed
-voice
-loss
-career
-began
-daughter
-built
-version
-safe
-army
-practice, [s]practices
+bed, [ing]bedding, [ed]bedded
+voice, [s]voices
+loss, [es]losses
+career, [s]careers
+daughter, [s]daugthers
+version, [s]verisons
+safe, [ly]safely, [ty]safety, [er]safer, [est]safest
+army, [s]armies
+practice, [s]practices, [ly]practically
 listen, [ing]listening
-success
+success, [ful]successful, [fully]successfully
 sir
 earth
 australia
-sea
-forget
+sea, [s]seas
+forget, [ot]forgot, [ful]forgetful, [ly]forgetfully
 okay
 goal, [s]goals
 internet
 huge
 access
 aren't
-table
+table, [s]tables, [ing]tabling, [ed]tabled
 deep
 pass, [ed]passed, [ing]passing
-risk
-mark, [ed]marked, [s]marks
-base, [d]based
+risk, [ed]risked, [y]risky, [ier]riskier, [est]riskiest
+mark, [ed]marked, [s]marks, [ing]marking
+base, [d]based, [ing]basing
 lol
 ten
-truth
+truth, [ful]truthful, [ly]truthfully
 sleep, [ing]sleeping
 offer, [ed]offered, [s]offers, [ing]offering
-professional
+professional, [ly]professionally
 below
-wall, [s]walls
-district
+wall, [s]walls, [ed]walled
+district, [s]districts
 we've
 europe
 piece, [s]pieces
 india
-ball
-wrote
+ball, [s]balls
 straight
-mine, [ing]mining
-card, [s]cards
-george
+mine, [ing]mining, [s]mines
+card, [s]cards, [ed]carded
 recent, [ly]recently
-build, [ing]building, [ings]buildings
+build, [ing]building, [ings]buildings, [t]built
 wanna
-box
-dark
-visit, [ed]visited
-note, [s]notes, [d]noted
-percent
-minister
-rock
+box, [es]boxes, [ed]boxed, [ing]boxing
+dark, [er]darker
+visit, [ed]visited, [ing]visiting, [or]visitor
+note, [s]notes, [d]noted, [ing]noting
+percent, [age]percentage, [s]percents
+minister, [s]ministers
+rock, [s]rocks, [ed]rocked, [ing]rocking
 married
-speak, [ing]speaking, [er]speaker
+speak, [ing]speaking, [er]speaker, [oke]spoke, [oken]spoken
 february
 growth
-response
-river
-write, [ing]writing, [r]writer, [rs]writers
+response, [s]responses
+river, [s]rivers
+write, [ing]writing, [r]writer, [rs]writers, [ten]written, [ote]wrote
 specific
 pain
-culture
-respect
-paul
-standard, [s]standards
+culture, [s]cultures
+respect, [ful]respectful, [fully]respectfully
+standard, [s]standards, [ize]standardize, [tion]standardization
 tonight
 shall
 except
-store, [s]stores
+store, [s]stores, [ing]storing, [ed]stored
 weight
 create, [d]created, [ing]creating
 track
-funny
-charge, [s]charges, [d]charged
-network
-spent
-effect, [s]effects
-album
+charge, [s]charges, [d]charged, [ing]charging
+network, [s]networks, [ing]networking
+effect, [s]effects, [ed]effected
+album, [s]albums
 cold
 student, [s]students
 eight
-eye, [s]eyes
+eye, [s]eyes, [ful]eyeful
 peace
 tomorrow
 via
-century
-text
-population
-double
-capital
-gas
-association
+century, [es]centuries
+text, [s]texts, [ing]texting
+population, [s]populations
+double, [ing]doubling, [ed]doubled
+capital, [ize]capitalize, [tion]capitalization
+gas, [es]gases
+association, [s]associations
 island, [s]islands
-beat
-addition
-normal, [ly]normally
+beat, [ing]beating
+addition, [al]additional, [ly]additionally
+normal, [ly]normally, [ize]normalize, [tion]normalization
 allow, [ed]allowed, [s]allows, [ing]allowing
-station, [s]stations
+station, [s]stations, [ed]stationed
 western
 chinese
-radio
-pressure
-expect, [ed]expected
-conference
+radio, [s]radios
+pressure, [s]pressures, [ing]pressuring, [ed]pressured
+expect, [ed]expected, [ing]expecting, [tion]expectation
+conference, [s]conferences
 difference, [s]differences
 brown
-treatment
+treatment, [s]treatments
 potential
 russian
-committee
+committee, [s]committees
 ahead
 anti
 particular, [ly]particularly
-campaign
-sort
-section
+campaign, [s]campaigns
+sort, [ed]sorted, [ing]sorting
+section, [s]sections, [ed]sectioned
 california
 hi
-individual, [s]individuals
-credit
-message, [s]messages
-cross
-content
+individual, [s]individuals, [ize]individualize, [tion]individualization
+credit, [ed]credited
+message, [s]messages, [ing]messaging, [ed]messaged
+cross, [es]crosses, [ing]crossing, [ed]crossed
+content, [ed]contented
 despite
-husband
-kept
-join, [ed]joined
-focus, [ed]focused
-female
-travel
-ice
+husband, [ly]husbandly
+join, [ed]joined, [s]joins
+focus, [ed]focused, [ing]focusing, [es]focuses
+female, [s]females
+travel, [ing]traveling, [s]travels, [ed]traveled
+ice, [ed]iced, [ing]icing
 previous, [ly]previously
 region, [s]regions
-speed
+speed, [ing]speeding, [s]speeds, [ed]sped
 consider, [ed]considered, [ing]considering
-fair, [ly]fairly
-welcome
-tour
-positive
-drop, [ped]dropped
-contact
+fair, [ly]fairly, [er]fairer, [est]fairest
+welcome, [ing]welcoming
+tour, [s]tours, [ing]touring, [ist]tourist, [ists]tourists
+positive, [ly]positively
+drop, [ped]dropped, [ing]dropping
+contact, [ed]contacted, [ing]contacting, [s]contacts
 throughout
-jesus
-link, [s]links, [ed]linked
+Jesus
+link, [s]links, [ed]linked, [ing]linking
 feet
 sale, [s]sales
 kid, [s]kids
 sell, [ing]selling
-extra
-nature
-earlier
+extra, [s]extras
+nature, [ly]naturally
 beyond
 significant, [ly]significantly
-additional
-minute, [s]minutes
+minute, [s]minutes, [ly]minutely
 unless
-quick, [ly]quickly
+quick, [ly]quickly, [er]quicker, [est]quickest
 justice
 sold
-movement
+movement, [s]movements
 sun
-photo, [s]photos
+photo, [s]photos, [phy]photography
 scene, [s]scenes
-agree, [d]agreed
+agree, [d]agreed, [ing]agreeing
 income
-episode
-spend, [ing]spending
+episode, [s]episodes
+spend, [ing]spending, [t]spent
 san
-computer
-clean
+computer, [s]computers, [ing]computing, [ed]computed
+clean, [ing]cleaning, [ed]cleaned
 favorite
-safety
 canada
 construction
 statement, [s]statements
 definitely
-coach
-ability
-subject
-heavy
+coach, [es]coaches, [ed]coached, [ing]coaching
+ability, [s]abilities
+subject, [s]subjects, [ed]subjected, [ing]subjecting
+heavy, [er]heavier, [est]heaviest
 train, [ing]training, [ed]trained
 wow
-collection
-search
+collection, [s]collections
+search, [s]searches, [ed]searched, [ing]searching
 wide, [ly]widely
 friday
-knowledge
-gun, [s]guns
-announced
+knowledge, [able]knowledgable
+gun, [s]guns, [ing]gunning, [ed]gunned
 german
 gotta
-letter, [s]letters
+letter, [s]letters, [ing]lettering
 centre
 lady, [ies]ladies
 plus
-material, [s]materials
+material, [s]materials, [ize]materialize, [ized]materialized
 pre
 fear
 fit
-sister
+sister, [s]sisters
 product, [s]products
 nobody
-global
-hotel
+global, [ly]globally
+hotel, [s]hotels
 unit, [s]units
 author, [s]authors
 opportunity, [ies]opportunities
-judge
-secretary
+judge, [s]judges
+secretary, [s]sectretaries
 regular, [ly]regularly
 dad
-claim, [s]claims, [ed]claimed
-bar
-hurt
-successful
-stupid
+claim, [s]claims, [ed]claimed, [ing]claiming
+bar, [s]bars
+hurt, [s]hurts, [ing]hurting, [ful]hurtful
+stupid, [ly]stupidly
 insurance
-reach, [ed]reached
+reach, [ed]reached, [ing]reaching
 degree, [s]degrees
-physical
+physical, [ly]physically
 pro
 france
-majority
-image, [s]images
-meant
-opinion
+majority, [ies]majorities
+image, [s]images, [ing]imaging, [ed]imaged
+opinion, [s]opinions
 anymore
-floor
-brain
-contract
-battle
+floor, [s]floors, [ed]floored, [ing]flooring
+brain, [s]brains
+contract, [s]contracts, [ing]contracting, [or]contractor, [ed]contracted
+battle, [s]battles, [ed]battled, [ing]battling
 annual
-rule, [s]rules
-master
-biggest
+rule, [s]rules, [ing]ruling, [ings]rulings
+none
+master, [s]masters, [ed]mastered, [ing]mastering
 civil
 active
-wonder, [ing]wondering
-ship, [s]ships, [ping]shipping
-none
-independent
-approach
+wonder, [ing]wondering, [ed]wondered, [ful]wonderful, [fully]wonderfully
+ship, [s]ships, [ping]shipping, [ed]shipped
+independent, [ly]independently
+approach, [able]approachable, [ed]approached, [ing]approaching
 australian
 administration
 cancer
-weekend
+weekend, [s]weekends
 worst
-direction
+direction, [s]directions
 russia
-dance, [ing]dancing
-stock
-defense
+dance, [ing]dancing, [s]dances
+stock, [s]stocks
+defense, [s]defenses
 africa
 cash
-latest
 sunday
 wear, [ing]wearing
-organization, [s]organizations
-band
-beach
-commercial
+organization, [s]organizations, [al]organizational
+band, [s]bands
+beach, [s]beaches, [ed]beached
+commercial, [s]commercials, [ize]commercialize, [ized]commercialized
 awesome
 compared
 fan, [s]fans
-operation, [s]operations
-secret
-imagine
-multiple
-protect, [ed]protected
-senior
+operation, [s]operations, [al]operational
+secret, [s]secrets, [ed]secreted
+imagine, [ing]imagining
+multiple, [s]multiples
+protect, [ed]protected, [ing]protecting, [tion]protection
+senior, [s]seniors
 spring
 impact
 effort, [s]efforts
 lack
+direct, [or]director, [ors]directors, [ing]directing, [ed]directed, [ly]directly
 analysis
 commission
 rich
@@ -1051,11 +1004,8 @@ resources
 christmas
 necessary
 finish, [ed]finished
-easily
 color
 here's
-bought
-direct, [ly]directly, [ed]directed
 luck
 yesterday
 indian
@@ -1063,11 +1013,11 @@ touch
 skin
 competition
 address
-choose
+choose, [se]chose, [sen]chosen
 marriage
-largest
+bought
 doctor, [s]doctors
-grow, [ing]growing
+grow, [ing]growing, [ew]grew, [n]grown
 notice, [d]noticed
 gay
 germany
@@ -1075,14 +1025,12 @@ damage
 glad
 overall
 sit, [ting]sitting
-shown
 fish
 machine
 disease
 doubt
 trip
-caught
-drink, [ing]drinking
+drink, [ing]drinking, [unk]drunk
 congress
 established
 professor
@@ -1116,21 +1064,19 @@ eventually
 advice
 award, [s]awards
 agreement
-william, [s]williams
 nation, [s]nations
-broken
 christian
 equipment
 holy
 shop, [ping]shopping
 purpose, [s]purposes
 otherwise
+politics, [al]political, [ly]politically, [ian]politician, [ians]politicians
 truly
 economy
 mission
-catch
+catch, [ught]caught
 executive
-politics
 hall
 coast
 saturday
@@ -1170,7 +1116,6 @@ location
 northern
 fell
 accept, [ed]accepted
-wonderful
 distance
 tree, [s]trees
 royal
@@ -1178,12 +1123,9 @@ serve, [d]served, [ing]serving
 screen
 whom
 attempt, [s]attempts
-broke
 appear, [s]appears, [ed]appeared
 receive, [d]received, [ing]receiving
 species
-robert
-protection
 who's
 actual, [ly]actually
 traffic
@@ -1201,14 +1143,13 @@ powerful
 famous
 engine, [ering]engineering, [er]engineer
 sad
-thomas
 everybody
 demand
 solution, [s]solutions
 bottom
 southern
 wind
-begin, [ning]beginning, [s]begins
+begin, [ning]beginning, [s]begins, [an]began
 traditional
 investment
 structure, [s]structures
@@ -1235,16 +1176,14 @@ smart
 lake
 realize, [d]realized
 bus
-remain, [ing]remaining, [ed]remained
+remain, [ing]remaining, [ed]remained, [s]remains
 wedding
 mouth
-tom
 score, [d]scored
 separate
 budget
 shouldn't
 rose
-louis
 faith
 african
 estate
@@ -1284,8 +1223,7 @@ weird
 memory, [ies]memories
 enter, [ed]entered
 gain, [ed]gained
-chris
-draw, [ing]drawing
+draw, [ing]drawing, [n]drawn
 foundation
 apply, [ied]applied
 apparently
@@ -1294,11 +1232,8 @@ option, [s]options
 monday
 healthy
 window, [s]windows
-remains
 method, [s]methods
 chairman
-mike
-winner
 wild
 institute
 grade
@@ -1321,13 +1256,11 @@ negative
 arrived
 bet
 cast
-movies
 bag
 till
 indeed
 improve, [d]improved
 christ
-richard
 correct
 los
 advantage
@@ -1346,11 +1279,9 @@ influence
 gift
 herself
 impossible
-mary
 wood
 proud
 dinner
-joe
 produce, [d]produced
 require, [d]required, [s]requires
 onto
@@ -1375,12 +1306,10 @@ host
 birth
 neither
 labor
-charles
 patient, [s]patients
 connection
 fellow
 wake
-easier
 request
 vehicle, [s]vehicles
 balance
@@ -1394,7 +1323,7 @@ magic
 boss
 apple
 they've
-stick
+stick, [uck]stuck
 birthday
 net
 surprise, [d]surprised
@@ -1410,7 +1339,6 @@ farm
 beauty
 aid
 technical
-yours
 raise, [d]raised
 youth
 cultural
@@ -1428,17 +1356,14 @@ guide
 violence
 fix, [ed]fixed
 edge
-martin
 religion
 injury
 reference
-henry
 excited
 magazine
 wine
 parliament
 forever
-bigger
 iron
 appreciate
 discovered
@@ -1453,7 +1378,7 @@ reaction
 description
 blog
 honest
-shoot, [ing]shooting
+shoot, [ing]shooting, [t]shot
 medicine
 guard
 tea
@@ -1462,7 +1387,6 @@ jones
 mention, [ed]mentioned
 sport, [s]sports
 bay
-angeles
 taste
 democratic
 nuclear
@@ -1473,7 +1397,6 @@ audience
 spanish
 victory
 presence
-lee
 arm, [s]arms, [ed]armed
 port
 core
@@ -1481,14 +1404,12 @@ mountain, [s]mountains
 solid
 regional
 citizens
-scott
 hello
 classic
 plane
 initial, [ly]initially
 britain
 upper
-johnson
 sky
 clothes
 failure
@@ -1501,7 +1422,6 @@ shape
 useful
 massive
 toward, [s]towards
-harry
 valley
 fuel
 emergency
@@ -1521,7 +1441,6 @@ vice
 hundred, [s]hundreds
 steel
 cheap
-industrial
 rain
 capacity
 proposed
@@ -1575,7 +1494,6 @@ native
 domestic
 tech
 update, [d]updated
-grew
 yellow
 behavior
 launch, [ed]launched
@@ -1587,7 +1505,6 @@ expensive
 supreme
 debt
 appearance
-ben
 survey
 historical
 suddenly
@@ -1608,7 +1525,6 @@ connected
 soft
 express, [ed]expressed
 illegal
-stuck
 download
 flow
 scotland
@@ -1626,7 +1542,6 @@ era
 lawyer
 squad
 boston
-grown
 grant, [ed]granted
 pool
 muslim
@@ -1634,7 +1549,6 @@ ya
 smoke, [ing]smoking
 scientific
 relations
-golden
 drama
 teach, [er]teacher, [ers]teachers, [ing]teaching
 entry
@@ -1650,6 +1564,7 @@ affairs
 ms
 mistake
 feed, [d]fed
+perform, [ance]performance, [ances]performances, [ing]performing, [ed]performed
 sub
 sector
 weak
@@ -1663,7 +1578,6 @@ everywhere
 leg, [s]legs
 storm
 lunch
-perform, [ed]performed, [ing]performing
 pack
 internal
 jersey
@@ -1696,7 +1610,6 @@ revealed
 finance
 journey
 maintain
-taylor
 cook
 confidence
 task
@@ -1727,7 +1640,6 @@ extended
 secure
 lay, [id]laid
 aircraft
-tony
 troops
 requirements
 approximately
@@ -1738,7 +1650,6 @@ approved
 flowers
 fault
 distribution
-sam
 residents
 surgery
 collected
@@ -1758,7 +1669,6 @@ blame
 incredible
 bowl
 display
-forgot
 coverage
 dying
 shirt
@@ -1777,14 +1687,12 @@ virginia
 mayor
 giant
 suicide
-daniel
 struggle
 wave
 minor
 tiny
 thursday
 cream
-jim
 crisis
 unfortunately
 champion, [s]champions
@@ -1795,7 +1703,6 @@ usual, [ly]usually
 kingdom
 stream
 orange
-alex
 ourselves
 literature
 signal
@@ -1803,11 +1710,11 @@ opposite
 estimated
 theme
 selection
+unable
 guilty
 relevant
 desire
 assembly
-unable
 upset
 customer, [s]customers
 conservative
@@ -1816,17 +1723,14 @@ alcohol
 id
 recommend, [ed]recommended
 familiar
-medium
+medium, [a]media
 referred
 solo
 wing
 fail, [ed]failed
 capable
-chosen
-drunk
 combination
 ticket, [s]tickets
-spoke
 jewish
 seek, [ing]seeking
 ohio
@@ -1848,7 +1752,6 @@ territory
 row
 threat
 don
-educational
 reserve
 extreme, [ly]extremely
 switch
@@ -1863,11 +1766,9 @@ typical, [ly]typically
 danger
 gender
 careful
-ryan
 assistance
 reasonable
 pacific
-kim
 empty
 resolution
 appointed
@@ -1904,7 +1805,6 @@ sentence
 rent
 definition
 replace, [d]replaced
-jackson
 random
 kiss
 guest
@@ -1919,9 +1819,9 @@ branch
 senator
 load
 independence
+unlike
 index
 bunch
-unlike
 permanent
 navy
 academy
@@ -1932,7 +1832,6 @@ detail, [s]details, [ed]detailed
 favourite
 tight
 transportation
-adam
 scheme
 bottle
 lane
@@ -1940,7 +1839,6 @@ representative, [s]representatives
 prefer
 diet
 accurate
-clinton
 tend
 opposition
 assume
@@ -1959,7 +1857,6 @@ chemical
 shift
 mess
 occurred
-andrew
 parent, [s]parents
 identify, [ied]identified
 perspective
@@ -1982,7 +1879,6 @@ excuse
 latter
 turkey
 consumer
-kevin
 object, [s]objects
 revolution
 constitution
@@ -2040,13 +1936,11 @@ panel
 joy
 carbon
 declared
-chose
-matt
 brilliant
 electronic
 retail
 legislation
-sing, [ing]singing, [er]singer
+sing, [ing]singing, [er]singer, [ang]sang, [ung]sung
 print
 incident
 baseball
@@ -2063,16 +1957,14 @@ refused
 bible
 exciting
 client
-politicians
 soviet
 cable
 multi
 manage, [r]manager, [d]managed
-driven
 expansion
 sight
 michigan
-hide
+hide, [den]hidden
 championship
 democrats
 irish
@@ -2080,17 +1972,14 @@ worldwide
 bathroom
 empire
 portion
-francisco
 suffering
 anniversary
 protein
 raw
 peak
 loud
-sydney
 princess
 hat
-drawn
 invited
 burn, [ing]burning
 height
@@ -2106,7 +1995,6 @@ motor
 attractive
 contest
 cake
-wilson
 respond
 reform
 retirement
@@ -2114,10 +2002,8 @@ unknown
 secondary
 sample
 solar
-hidden
 marine
 engaged
-carolina
 presidential
 chest
 brief
@@ -2130,10 +2016,8 @@ fantasy
 debut
 immediate, [ly]immediately
 pink
-edward
 theatre
 hollywood
-joseph
 battery
 grab
 destroy, [ed]destroyed
@@ -2154,7 +2038,6 @@ automatically
 organized
 exposed
 comparison
-tim
 childhood
 clinical
 democracy
@@ -2166,7 +2049,6 @@ aim
 jordan
 fee, [s]fees
 comedy
-valuable
 tie
 defeat
 adopted
@@ -2176,7 +2058,6 @@ trend
 techniques
 exact, [ly]exactly
 plastic
-dan
 entitled
 wise
 semi
@@ -2186,7 +2067,6 @@ defence
 quote
 wealth
 lift
-stephen
 employee, [s]employees
 roman
 shoulder
@@ -2223,7 +2103,6 @@ formation
 smell
 monster
 olympic
-davis
 visitors
 sought
 appointment
@@ -2245,7 +2124,6 @@ improvement
 extensive
 santa
 coal
-eric
 kong
 junior
 vast
@@ -2262,16 +2140,22 @@ bush
 universal
 colour
 topic
-lewis
 regardless
 practical
 finger, [s]fingers
 meanwhile
-sarah
 meal
 earn, [ed]earned
 trick
 primarily
+announce, [ed]announced, [ing]announcing
+sang
+sung
+
+
+
+
+
 
 
 
