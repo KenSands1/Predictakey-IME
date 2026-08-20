@@ -16,6 +16,12 @@ import java.io.InputStream
  * editing the file - only the text after ']' is used by the app. A plain
  * line with no commas is just a standalone root with no variants.
  *
+ * A word can also appear BOTH as its own standalone root line AND as a
+ * variant listed under a different root - useful for common irregular
+ * forms (e.g. "held" as its own root, but also listed under "hold"'s
+ * family), which don't share enough spelling with their root to be
+ * discoverable through the family-tap UI alone.
+ *
  * This class answers a few questions:
  *   1. What are the top N most frequent ROOT words starting with [prefix]?
  *      -> [topCompletions] — shown as tappable keys at the top level.
@@ -47,17 +53,22 @@ class PredictionEngine {
             .map { it.trim() }
             .filter { it.isNotEmpty() && !it.startsWith("#") }
 
-        val allWords = ArrayList<String>(lines.size)
+        // LinkedHashSet: preserves frequency order, and naturally de-dupes
+        // the FLAT word list - this matters for soleCompletion, which needs
+        // every word counted exactly once. Family membership below is a
+        // separate structure, so a word can still be listed in a family
+        // even if it already has its own root line elsewhere.
+        val allWords = LinkedHashSet<String>()
         val rootWords = ArrayList<String>(lines.size)
         val families = LinkedHashMap<String, List<String>>()
-        val seen = HashSet<String>()
+        val seenRoots = HashSet<String>()
 
         for (line in lines) {
             val parts = line.split(",").map { it.trim() }
             if (parts.isEmpty()) continue
 
             val root = parts[0].lowercase()
-            if (!isValidWord(root) || !seen.add(root)) continue
+            if (!isValidWord(root) || !seenRoots.add(root)) continue
 
             allWords.add(root)
             rootWords.add(root)
@@ -70,8 +81,8 @@ class PredictionEngine {
                     val closeBracket = part.indexOf("]")
                     val variant = (if (closeBracket >= 0) part.substring(closeBracket + 1) else part)
                         .trim().lowercase()
-                    if (isValidWord(variant) && seen.add(variant)) {
-                        allWords.add(variant)
+                    if (isValidWord(variant)) {
+                        allWords.add(variant) // no-op if already present
                         members.add(variant)
                     }
                 }
@@ -81,7 +92,7 @@ class PredictionEngine {
             }
         }
 
-        words = allWords
+        words = allWords.toList()
         roots = rootWords
         familyOf = families
         loaded = true
