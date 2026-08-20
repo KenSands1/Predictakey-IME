@@ -149,11 +149,15 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         symbolsButton.setOnClickListener { listener?.onSwitchToSymbols() }
         row.addView(symbolsButton)
 
+        val macrosButton = makeKey("⊞", R.drawable.key_bg_special, weight = 1.0f)
+        macrosButton.setOnClickListener { listener?.onSwitchToMacros() }
+        row.addView(macrosButton)
+
         val comma = makeKey(",", R.drawable.key_bg_normal, weight = 0.8f)
         comma.setOnClickListener { listener?.onCharKey(',') }
         row.addView(comma)
 
-        spaceButton = makeKey("space", R.drawable.key_bg_space_normal, weight = 3.4f)
+        spaceButton = makeKey("space", R.drawable.key_bg_space_normal, weight = 2.6f)
         spaceButton.setOnClickListener { listener?.onSpace() }
         row.addView(spaceButton)
 
@@ -296,3 +300,4 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         currentSoleWord?.let { spaceButton.text = WordCasing.apply(it, shiftState) }
     }
 }
+
