@@ -136,7 +136,9 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val prefix = currentWord.toString()
         val family = activeRootFamily
         // Selection stays frequency-based; this only reorders the selected
-        // words for display, shortest first, so they're easier to scan.
+        // words for display - by where each one's next letter sits on the
+        // physical keyboard, so muscle memory can help guide which button
+        // to reach for.
         val completions = if (family != null) {
             // Only the variations, not the root itself - you already picked
             // it by tapping it, so re-showing it would just take an extra
@@ -144,10 +146,21 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             engine.familyMembers(family).filterNot { it == family }
         } else {
             engine.topCompletions(prefix)
-        }.sortedBy { it.length }
+        }.sortedBy { nextLetterColumn(it, prefix) }
         val wordsWithFamily = completions.filter { engine.hasFamilyVariants(it) }.toSet()
         lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily)
         lettersPanel.setSoleCompletion(engine.soleCompletion(prefix).takeIf { prefix.isNotEmpty() })
+    }
+
+    /**
+     * Keyboard column of the letter right after what's already been typed -
+     * the key you'd reach for next if typing this word out by hand. In the
+     * family swap window [prefix] is always empty, so this naturally falls
+     * back to each word's very first letter instead.
+     */
+    private fun nextLetterColumn(word: String, prefix: String): Float {
+        val ch = word.getOrNull(prefix.length) ?: word.lastOrNull() ?: return Float.MAX_VALUE
+        return QwertyLayout.columnOf(ch)
     }
 
     /**
@@ -409,6 +422,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ).show()
     }
 }
+
 
 
 
