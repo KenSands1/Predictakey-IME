@@ -52,6 +52,9 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
      */
     private var activeRootFamily: String? = null
 
+    /** How many characters (word + trailing space) to delete if the swap window's tapped. */
+    private var overwriteLength = 0
+
     override fun onCreate() {
         super.onCreate()
         if (!engine.isLoaded()) {
@@ -142,7 +145,8 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         } else {
             engine.topCompletions(prefix)
         }.sortedBy { it.length }
-        lettersPanel.updateWordCompletions(completions, rtl)
+        val wordsWithFamily = completions.filter { engine.hasFamilyVariants(it) }.toSet()
+        lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily)
         lettersPanel.setSoleCompletion(engine.soleCompletion(prefix).takeIf { prefix.isNotEmpty() })
     }
 
@@ -190,17 +194,13 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onCharKey(ch: Char) {
         val ic = currentInputConnection ?: return
-        val wasInFamilyMode = activeRootFamily != null
-        activeRootFamily = null // typing always exits family mode
+        if (activeRootFamily != null) {
+            // Space is already in place from the root tap - just close the
+            // swap window and let this letter start a fresh word normally.
+            activeRootFamily = null
+            wordStartCapitalized = false
+        }
         if (ch.isLetter()) {
-            if (wasInFamilyMode) {
-                // The previous root word is considered "finished" - a space
-                // goes in before starting this new word, so you never have
-                // to manually hit space after browsing a family's endings.
-                ic.commitText(" ", 1)
-                currentWord.clear()
-                wordStartCapitalized = false
-            }
             markWordStartIfNeeded()
             val output = if (lettersPanel.isShiftActive()) ch.uppercaseChar() else ch
             ic.commitText(output.toString(), 1)
@@ -223,38 +223,21 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     }
 
     /**
-     * A top-row key was tapped. Behavior depends on whether we're at the
-     * root level or already inside a family:
-     *  - Root level, root HAS variants: commit it WITHOUT a trailing space
-     *    and switch the row to show just those variants (not the root
-     *    itself again - see refreshPredictions).
-     *  - Root level, root has NO variants: nothing useful to show in a
-     *    family row, so finish immediately instead of a dead-end tap.
-     *  - Inside a family: [word] is the final choice. Commit it plus a
-     *    trailing space and return to root-level suggestions.
-     * Deletes whatever's already typed of the word first and re-commits
-     * the whole thing correctly cased, so proper-noun/shift capitalization
-     * is right even if the typed prefix was lowercase.
+     * A top-row key was tapped. Every root tap now commits + a trailing
+     * space IMMEDIATELY - the word is always "finished" in one tap. If the
+     * root has a family, the row then shows its OTHER forms as a brief
+     * swap window: tapping one of those deletes what was just committed
+     * and replaces it. Any other input (a letter, space, backspace,
+     * punctuation) just closes that window - the space is already there
+     * either way, so nothing else needs to happen.
      */
     override fun onWordSelected(word: String) {
         val ic = currentInputConnection ?: return
         val prefix = currentWord.toString()
 
-        if (activeRootFamily == null && engine.hasFamilyVariants(word)) {
-            markWordStartIfNeeded()
-            if (prefix.isNotEmpty()) {
-                ic.deleteSurroundingText(prefix.length, 0)
-            }
-            ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
-            currentWord.clear()
-            currentWord.append(word.lowercase())
-            activeRootFamily = word.lowercase()
-            lettersPanel.consumeShiftOnce()
-            refreshPredictions()
-        } else {
-            if (prefix.isNotEmpty()) {
-                ic.deleteSurroundingText(prefix.length, 0)
-            }
+        if (activeRootFamily != null) {
+            // Swap-window tap: undo the previous auto-completion, replace it.
+            ic.deleteSurroundingText(overwriteLength, 0)
             ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
             ic.commitText(" ", 1)
             currentWord.clear()
@@ -262,12 +245,36 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             activeRootFamily = null
             lettersPanel.consumeShiftOnce()
             refreshPredictions()
+            return
         }
+
+        markWordStartIfNeeded()
+        if (prefix.isNotEmpty()) {
+            ic.deleteSurroundingText(prefix.length, 0)
+        }
+        val cased = WordCasing.apply(word, effectiveShiftStateForCompletion())
+        ic.commitText(cased, 1)
+        ic.commitText(" ", 1)
+        currentWord.clear()
+
+        if (engine.hasFamilyVariants(word)) {
+            activeRootFamily = word.lowercase()
+            overwriteLength = cased.length + 1 // the word plus the space just committed
+            // wordStartCapitalized deliberately left as-is here, in case the
+            // user swaps to a different form that needs the same casing.
+        } else {
+            wordStartCapitalized = false
+        }
+        lettersPanel.consumeShiftOnce()
+        refreshPredictions()
     }
 
     override fun onBackspace() {
         val ic = currentInputConnection ?: return
-        activeRootFamily = null
+        if (activeRootFamily != null) {
+            activeRootFamily = null
+            wordStartCapitalized = false
+        }
         ic.deleteSurroundingText(1, 0)
         if (currentWord.isNotEmpty()) {
             currentWord.deleteCharAt(currentWord.length - 1)
@@ -277,7 +284,14 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     override fun onSpace() {
         val ic = currentInputConnection ?: return
-        activeRootFamily = null
+        if (activeRootFamily != null) {
+            // A space is already sitting there from the root tap - just
+            // close the window instead of adding a second one.
+            activeRootFamily = null
+            wordStartCapitalized = false
+            refreshPredictions()
+            return
+        }
         val sole = lettersPanel.getSoleCompletion()
         if (sole != null) {
             val prefix = currentWord.toString()
@@ -395,4 +409,5 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ).show()
     }
 }
+
 
