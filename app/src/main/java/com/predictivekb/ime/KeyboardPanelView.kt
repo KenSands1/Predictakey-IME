@@ -43,6 +43,9 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     /** Raw (lowercase) words currently backing each word-completion button, index-aligned. */
     private var currentWords: List<String> = emptyList()
 
+    /** Which of currentWords have their own family - shown with a trailing "+". */
+    private var wordsWithFamily: Set<String> = emptySet()
+
     init {
         orientation = VERTICAL
         setBackgroundColor(ContextCompat.getColor(context, R.color.keyboard_bg))
@@ -244,20 +247,29 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
      * Updates the 6 word-completion keys. [words] should already be ranked
      * most- to least-frequent (see [PredictionEngine.topCompletions]). Any
      * unused keys (fewer than 6 candidates — normal for rare prefixes) are
-     * simply hidden rather than left showing stale words.
+     * simply hidden rather than left showing stale words. [wordsWithFamily]
+     * marks which of [words] have their own inflected forms - those get a
+     * trailing "+" so it's clear tapping them opens more options rather
+     * than just finishing the word.
      */
-    fun updateWordCompletions(words: List<String>, rtl: Boolean) {
+    fun updateWordCompletions(words: List<String>, rtl: Boolean, wordsWithFamily: Set<String> = emptySet()) {
         currentWords = if (rtl) words.reversed() else words
+        this.wordsWithFamily = wordsWithFamily
         for (i in wordButtons.indices) {
             val btn = wordButtons[i]
             if (i < currentWords.size) {
-                btn.text = WordCasing.apply(currentWords[i], shiftState)
+                btn.text = displayLabel(currentWords[i])
                 btn.visibility = View.VISIBLE
             } else {
                 btn.text = ""
                 btn.visibility = View.INVISIBLE
             }
         }
+    }
+
+    private fun displayLabel(word: String): String {
+        val cased = WordCasing.apply(word, shiftState)
+        return if (word in wordsWithFamily) "$cased+" else cased
     }
 
     /** Pass null when there's no unique completion; pass the full word when there is exactly one. */
@@ -294,10 +306,11 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         }
         for (i in wordButtons.indices) {
             if (i < currentWords.size) {
-                wordButtons[i].text = WordCasing.apply(currentWords[i], shiftState)
+                wordButtons[i].text = displayLabel(currentWords[i])
             }
         }
         currentSoleWord?.let { spaceButton.text = WordCasing.apply(it, shiftState) }
     }
 }
+
 
