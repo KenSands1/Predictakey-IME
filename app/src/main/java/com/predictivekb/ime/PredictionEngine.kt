@@ -16,12 +16,6 @@ import java.io.InputStream
  * editing the file - only the text after ']' is used by the app. A plain
  * line with no commas is just a standalone root with no variants.
  *
- * A word can also appear BOTH as its own standalone root line AND as a
- * variant listed under a different root - useful for common irregular
- * forms (e.g. "held" as its own root, but also listed under "hold"'s
- * family), which don't share enough spelling with their root to be
- * discoverable through the family-tap UI alone.
- *
  * This class answers a few questions:
  *   1. What are the top N most frequent ROOT words starting with [prefix]?
  *      -> [topCompletions] — shown as tappable keys at the top level.
@@ -103,19 +97,57 @@ class PredictionEngine {
 
     fun isLoaded(): Boolean = loaded
 
+    companion object {
+        /** Words at least this long require [MIN_PREFIX_FOR_LONG_WORD]
+         * characters typed before they're offered - otherwise a handful of
+         * long, less-common words can dominate the row before you've typed
+         * enough to have actually narrowed things down much. Doesn't apply
+         * to the reserved exact-match slot, since by definition you've
+         * already typed the whole word by then. */
+        private const val LONG_WORD_LENGTH = 8
+        private const val MIN_PREFIX_FOR_LONG_WORD = 4
+    }
+
     /**
      * Returns up to [max] whole ROOT words, ranked most- to least-frequent,
-     * that start with [prefix] and are STRICTLY LONGER than it. Inflected
-     * forms are excluded here - see [familyMembers] for those.
+     * that start with [prefix]. Normally a candidate must be STRICTLY
+     * LONGER than [prefix] - otherwise tapping it would save no letters.
+     * Long words (see [LONG_WORD_LENGTH]) additionally require at least
+     * [MIN_PREFIX_FOR_LONG_WORD] characters typed before they're offered.
+     *
+     * The one exception: if the prefix EXACTLY matches a root that has a
+     * family, that root always gets a RESERVED slot - not just permission
+     * to compete for one. Short words with a family (e.g. "ha", "pro") are
+     * often also a literal prefix of several longer, more frequent words
+     * ("half", "happy", "hand"...), so merely making them eligible still
+     * let them get crowded out of all 6 slots. Reserving a slot guarantees
+     * that typing a word out fully never cuts off access to its family,
+     * regardless of how much competition exists at that exact prefix.
+     * Inflected forms themselves are excluded here either way - see
+     * [familyMembers] for those.
      */
     fun topCompletions(prefix: String, max: Int = 6): List<String> {
         val lower = prefix.lowercase()
-        val result = ArrayList<String>(max)
+        var exactMatchWithFamily: String? = null
+        val longerMatches = ArrayList<String>()
         for (w in roots) {
-            if (w.length > lower.length && w.startsWith(lower)) {
-                result.add(w)
-                if (result.size >= max) break
+            if (!w.startsWith(lower)) continue
+            if (w.length == lower.length) {
+                if (exactMatchWithFamily == null && hasFamilyVariants(w)) {
+                    exactMatchWithFamily = w
+                }
+            } else if (w.length > lower.length) {
+                if (w.length >= LONG_WORD_LENGTH && lower.length < MIN_PREFIX_FOR_LONG_WORD) {
+                    continue
+                }
+                longerMatches.add(w)
             }
+        }
+        val result = ArrayList<String>(max)
+        exactMatchWithFamily?.let { result.add(it) }
+        for (w in longerMatches) {
+            if (result.size >= max) break
+            result.add(w)
         }
         return result
     }
