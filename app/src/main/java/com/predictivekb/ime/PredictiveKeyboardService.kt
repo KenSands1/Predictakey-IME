@@ -29,6 +29,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     private lateinit var symbolsPanel: SymbolKeyboardView
     private lateinit var macroPanel: MacroKeyboardView
     private lateinit var macroStore: MacroStore
+    private lateinit var statsStore: StatsStore
 
     private val engine = PredictionEngine()
     private val currentWord = StringBuilder()
@@ -61,6 +62,15 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             assets.open("wordlist.txt").use { engine.load(it) }
         }
         macroStore = MacroStore(this)
+        statsStore = StatsStore(this)
+    }
+
+    override fun onFinishInputView(finishingInput: Boolean) {
+        super.onFinishInputView(finishingInput)
+        // Make sure a session isn't left dangling un-recorded once the
+        // keyboard's dismissed - otherwise stats viewed right after typing
+        // wouldn't reflect the session that just happened.
+        statsStore.flushSession()
     }
 
     override fun onCreateInputView(): View {
@@ -202,6 +212,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             val output = if (lettersPanel.isShiftActive()) ch.uppercaseChar() else ch
             ic.commitText(output.toString(), 1)
             currentWord.append(ch.lowercaseChar())
+            statsStore.recordCharactersTyped(1)
             lettersPanel.consumeShiftOnce()
             refreshPredictions()
         } else {
@@ -215,6 +226,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             ic.commitText(ch.toString(), 1)
             currentWord.clear()
             wordStartCapitalized = false
+            statsStore.recordCharactersTyped(1)
             refreshPredictions()
         }
     }
@@ -234,6 +246,9 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
         if (activeRootFamily != null) {
             // Swap-window tap: undo the previous auto-completion, replace it.
+            // No manually-typed prefix was involved for this word (it was
+            // empty when the swap window opened), so the whole word counts
+            // as saved.
             ic.deleteSurroundingText(overwriteLength, 0)
             ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
             ic.commitText(" ", 1)
@@ -241,6 +256,8 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             wordStartCapitalized = false
             activeRootFamily = null
             lettersPanel.consumeShiftOnce()
+            statsStore.recordCharactersSaved(word.length)
+            statsStore.recordCharactersTyped(word.length + 1)
             refreshPredictions()
             return
         }
@@ -253,6 +270,9 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ic.commitText(cased, 1)
         ic.commitText(" ", 1)
         currentWord.clear()
+        statsStore.recordCharactersSaved(maxOf(0, word.length - prefix.length))
+        statsStore.recordCharactersTyped(word.length + 1)
+        statsStore.recordWordCompleted()
 
         if (engine.hasFamilyVariants(word)) {
             activeRootFamily = word.lowercase()
@@ -276,6 +296,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         if (currentWord.isNotEmpty()) {
             currentWord.deleteCharAt(currentWord.length - 1)
         }
+        statsStore.recordBackspace()
         refreshPredictions()
     }
 
@@ -290,17 +311,22 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             return
         }
         val sole = lettersPanel.getSoleCompletion()
+        val prefix = currentWord.toString()
         if (sole != null) {
-            val prefix = currentWord.toString()
             if (prefix.isNotEmpty()) {
                 ic.deleteSurroundingText(prefix.length, 0)
             }
             ic.commitText(WordCasing.apply(sole, effectiveShiftStateForCompletion()), 1)
             lettersPanel.consumeShiftOnce()
+            val remainder = maxOf(0, sole.length - prefix.length)
+            statsStore.recordCharactersSaved(remainder)
+            statsStore.recordCharactersTyped(remainder)
         }
         ic.commitText(" ", 1)
         currentWord.clear()
         wordStartCapitalized = false
+        statsStore.recordCharactersTyped(1) // the space itself
+        statsStore.recordWordCompleted()
         refreshPredictions()
     }
 
@@ -310,6 +336,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ic.commitText("\n", 1)
         currentWord.clear()
         wordStartCapitalized = false
+        statsStore.recordCharactersTyped(1)
         refreshPredictions()
     }
 
@@ -328,8 +355,14 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             Toast.makeText(this, "Empty - long-press to set up", Toast.LENGTH_SHORT).show()
             return
         }
+        statsStore.recordMacroUsed()
         when (macro.type) {
-            MacroType.TEXT -> currentInputConnection?.commitText(macro.content ?: "", 1)
+            MacroType.TEXT -> {
+                val text = macro.content ?: ""
+                currentInputConnection?.commitText(text, 1)
+                statsStore.recordCharactersSaved(text.length)
+                statsStore.recordCharactersTyped(text.length)
+            }
             MacroType.QR -> {
                 val file = writeQrToFile(macro.content ?: "")
                 if (file != null) {
@@ -406,6 +439,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ).show()
     }
 }
+
 
 
 
