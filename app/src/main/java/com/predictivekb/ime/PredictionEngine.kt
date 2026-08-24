@@ -16,14 +16,12 @@ import java.io.InputStream
  * editing the file - only the text after ']' is used by the app. A plain
  * line with no commas is just a standalone root with no variants.
  *
- * This class answers a few questions:
+ * This class answers a couple of questions:
  *   1. What are the top N most frequent ROOT words starting with [prefix]?
  *      -> [topCompletions] — shown as tappable keys at the top level.
  *   2. Once a specific root has been picked, what are its own family
  *      members? -> [familyMembers] — the second-tier row shown after
  *      tapping a root.
- *   3. Does exactly one dictionary word (root or variant) match [prefix]?
- *      -> [soleCompletion] — what the green space bar completes.
  *
  * Dictionary sizes here are small (thousands of words), so plain linear
  * scans per keystroke are simple and fast enough - no trie needed. This
@@ -48,10 +46,9 @@ class PredictionEngine {
             .filter { it.isNotEmpty() && !it.startsWith("#") }
 
         // LinkedHashSet: preserves frequency order, and naturally de-dupes
-        // the FLAT word list - this matters for soleCompletion, which needs
-        // every word counted exactly once. Family membership below is a
-        // separate structure, so a word can still be listed in a family
-        // even if it already has its own root line elsewhere.
+        // the flat word list. Family membership below is a separate
+        // structure, so a word can still be listed in a family even if it
+        // already has its own root line elsewhere.
         val allWords = LinkedHashSet<String>()
         val rootWords = ArrayList<String>(lines.size)
         val families = LinkedHashMap<String, List<String>>()
@@ -166,29 +163,10 @@ class PredictionEngine {
     /** True if [root] has at least one listed inflected form. */
     fun hasFamilyVariants(root: String): Boolean = familyOf.containsKey(root.lowercase())
 
-    /**
-     * If exactly one dictionary word matches [prefix] - either equal to it
-     * or extending it - returns that word. Otherwise null. Searches the
-     * WHOLE dictionary (not just roots) - an inflected word can absolutely
-     * be the sole completion.
-     */
-    fun soleCompletion(prefix: String): String? {
-        val lower = prefix.lowercase()
-        var found: String? = null
-        var count = 0
-        for (w in words) {
-            if (w == lower || (w.length > lower.length && w.startsWith(lower))) {
-                found = w
-                count++
-                if (count > 1) return null
-            }
-        }
-        return if (count == 1) found else null
-    }
-
     /** True if any word in the dictionary starts with [prefix]. */
     fun hasPrefix(prefix: String): Boolean {
         val lower = prefix.lowercase()
         return words.any { it.startsWith(lower) }
     }
 }
+
