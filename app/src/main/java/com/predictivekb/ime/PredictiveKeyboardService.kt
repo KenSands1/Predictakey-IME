@@ -145,16 +145,14 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val rtl = Prefs.isPredictionRowRtl(this)
         val prefix = currentWord.toString()
         val family = activeRootFamily
-        // Selection stays frequency-based; this only reorders the selected
-        // words for display, shortest first, so they're easier to scan.
+        // Frequency order, most to least common - no re-sorting for display.
         val completions = if (family != null) {
             engine.familyMembers(family).filterNot { it == family }
         } else {
             engine.topCompletions(prefix)
-        }.sortedBy { it.length }
+        }
         val wordsWithFamily = completions.filter { engine.hasFamilyVariants(it) }.toSet()
         lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily)
-        lettersPanel.setSoleCompletion(engine.soleCompletion(prefix).takeIf { prefix.isNotEmpty() })
     }
 
     /**
@@ -310,18 +308,6 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             refreshPredictions()
             return
         }
-        val sole = lettersPanel.getSoleCompletion()
-        val prefix = currentWord.toString()
-        if (sole != null) {
-            if (prefix.isNotEmpty()) {
-                ic.deleteSurroundingText(prefix.length, 0)
-            }
-            ic.commitText(WordCasing.apply(sole, effectiveShiftStateForCompletion()), 1)
-            lettersPanel.consumeShiftOnce()
-            val remainder = maxOf(0, sole.length - prefix.length)
-            statsStore.recordCharactersSaved(remainder)
-            statsStore.recordCharactersTyped(remainder)
-        }
         ic.commitText(" ", 1)
         currentWord.clear()
         wordStartCapitalized = false
@@ -439,6 +425,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ).show()
     }
 }
+
 
 
 
