@@ -1,7 +1,6 @@
 package com.predictivekb.ime
 
 import android.content.Context
-import android.graphics.Typeface
 import android.os.SystemClock
 import android.text.TextUtils
 import android.util.TypedValue
@@ -37,8 +36,6 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     private var shiftState = ShiftState.OFF
     private var lastShiftTapTime = 0L
     private val DOUBLE_TAP_WINDOW_MS = 350L
-
-    private var currentSoleWord: String? = null
 
     /** Raw (lowercase) words currently backing each word-completion button, index-aligned. */
     private var currentWords: List<String> = emptyList()
@@ -272,24 +269,6 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         return if (word in wordsWithFamily) "$cased+" else cased
     }
 
-    /** Pass null when there's no unique completion; pass the full word when there is exactly one. */
-    fun setSoleCompletion(word: String?) {
-        currentSoleWord = word
-        if (word != null) {
-            spaceButton.text = WordCasing.apply(word, shiftState)
-            spaceButton.setBackgroundResource(R.drawable.key_bg_space_ready)
-            spaceButton.setTextColor(ContextCompat.getColor(context, R.color.space_text_ready))
-            spaceButton.setTypeface(spaceButton.typeface, Typeface.BOLD)
-        } else {
-            spaceButton.text = "space"
-            spaceButton.setBackgroundResource(R.drawable.key_bg_space_normal)
-            spaceButton.setTextColor(ContextCompat.getColor(context, R.color.key_text))
-            spaceButton.setTypeface(spaceButton.typeface, Typeface.NORMAL)
-        }
-    }
-
-    fun getSoleCompletion(): String? = currentSoleWord
-
     private fun applyShiftVisuals() {
         shiftButton.text = if (shiftState == ShiftState.CAPS_LOCK) "⇪" else "⇧"
         shiftButton.setBackgroundResource(
@@ -309,8 +288,8 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
                 wordButtons[i].text = displayLabel(currentWords[i])
             }
         }
-        currentSoleWord?.let { spaceButton.text = WordCasing.apply(it, shiftState) }
     }
 }
+
 
 
