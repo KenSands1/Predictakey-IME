@@ -1,87 +1,87 @@
 i, ['m]i'm, ['ll]i'll, ['ve]i've, ['d]i'd
-you
+you, ['d]you'd, ['ll]you'll, ['re]you're, ['ve]you've
 the
 a, [n]an
 to
-it
+it, ['d]it'd, ['ll]it'll, ['s]it's
 not
-is
-that, [ose]those
+is, [n't]isn't
+that, [ose]those, ['ll]that'll, ['s]that's
 and
-be, [am]am, [are]are, [is]is, [was]was, [were]were, [en]been, [ing]being
+be, [is]is, [was]was, [ing]being, [am]am, [are]are, [were]were, [en]been
 of
-have, [d]had, [s]has, [ing]having
-what
-we
-was
+have, [s]has, [ing]having, [d]had, [n't]haven't
+what, ['s]what's
+we, ['d]we'd, ['ll]we'll, ['re]we're, ['ve]we've
+was, [n't]wasn't
 in
-this, [ese]these
-do, [id]did, [es]does, [ing]doing, [ne]done
+this, [ese]these, ['s]this's
+do, [es]does, [ing]doing, [id]did, [ne]done, [esn't]doesn't, [n't]don't
 me
 my, [ine]mine
-are
+are, [n't]aren't
 oh
-go, [went]went, [es]goes, [ing]going, [ne]gone
+go, [es]goes, [ing]going, [went]went, [ne]gone
 no
 on
-for
+for, [ the]for the, [ a]for a
 get, [s]gets, [ting]getting, [ot]got, [otten]gotten
-know, [ew]knew, [ing]knowing, [n]known, [s]knows
+know, [s]knows, [ing]knowing, [ew]knew, [n]known
 just
 your
 all
 so
-can, [ould]could, [not]cannot, [s]cans
+can, [s]cans, [ould]could, [not]cannot, ['t]can't
 with
-he
-like, [d]liked, [s]likes, [ing]liking
+he, ['d]he'd, ['ll]he'll, ['s]he's
+like, [s]likes, [d]liked, [ing]liking, [ly]likely
 but
 an
 yeah
 well, [s]wells
 right, [s]rights
-think, [ing]thinking, [s]thinks, [ought]thought
-here
-there
-want, [ed]wanted, [ing]wanting, [s]wants
+think, [s]thinks, [ing]thinking, [ought]thought
+here, ['s]here's
+there, ['ll]there'll, ['s]there's
+want, [s]wants, [ed]wanted, [ing]wanting
 out
 okay, []ok
 about
 up
-say, [id]said, [ing]saying, [s]says
+say, [s]says, [ing]saying, [id]said
 now
 at
 one, [s]ones
 hey
-they
+they, ['d]they'd, ['ll]they'll, ['re]they're, ['ve]they've
 if
-has
-were
-had
+has, [n't]hasn't
+were, [n't]weren't
+had, [n't]hadn't
 been
-how
-look, [ed]looked, [ing]looking, [s]looks
-she
-see, [aw]saw, [ing]seeing, [n]seen, [s]sees
-come, [ame]came, [s]comes, [ing]coming
-make, [de]made, [s]makes, [ing]making
+how, ['s]how's
+look, [s]looks, [ed]looked, [ing]looking
+she, ['d]she'd, ['ll]she'll, ['s]she's
+see, [s]sees, [ing]seeing, [aw]saw, [n]seen
+come, [s]comes, [ing]coming, [ame]came
+make, [s]makes, [ing]making, [de]made
 guy, [s]guys
-let, [s]lets, [ting]letting
+let, [s]lets, [ting]letting, ['s]let's
 really
 her
 him
-why
+why, ['s]why's
 got
-who
+who, ['d]who'd, ['ll]who'll, ['s]who's, ['ve]who've
 time, [s]times
 i'm
-did
-could
-take, [n]taken, [s]takes, [ing]taking, [ook]took
+did, [n't]didn't
+could, ['ve]could've, [n't]couldn't
+take, [s]takes, [ing]taking, [n]taken, [ook]took
 thing, [s]things
-from
+from, [ the]from the, [ a]from a
 back, [s]backs, [ed]backed, [ing]backing
-when
+when, ['s]when's
 good, [better]better, [best]best
 as
 little
@@ -89,50 +89,50 @@ because
 some
 our
 yes
-mean, [ing]meaning, [s]means, [t]meant, [er]meaner, [est]meanest
-need, [ed]needed, [s]needs, [ing]needing
+mean, [s]means, [ing]meaning, [t]meant, [er]meaner, [est]meanest
+need, [s]needs, [ed]needed, [ing]needing, [n't]needn't
 god, [s]gods
 his
 us
 them
 then
 shall, [ould]should
-love, [d]loved, [s]loves, [ing]loving
-talk, [ed]talked, [ing]talking, [s]talks
+love, [s]loves, [d]loved, [ing]loving, [ly]lovely
+talk, [s]talks, [ed]talked, [ing]talking
 or
 sorry
-something
-where
-call, [ed]called, [ing]calling, [s]calls
+something, ['s]something's
+where, ['ll]where'll, ['s]where's
+call, [s]calls, [ed]called, [ing]calling
 way, [s]ways
 great, [er]greater, [est]greatest
-give, [ave]gave, [n]given, [s]gives, [ing]giving
+give, [s]gives, [ing]giving, [ave]gave, [n]given
 never
-tell, [ing]telling, [s]tells, [old]told
+tell, [s]tells, [ing]telling, [old]told
 uh, [m]um
 too
 over
-work, [ed]worked, [ing]working, [s]works
+work, [s]works, [ed]worked, [ing]working
 by
-wait, [ed]waited, [ing]waiting, [s]waits
+wait, [s]waits, [ed]waited, [ing]waiting
 more
 down
-day, [s]days
-kid, [s]kids, [ding]kidding, [ded]kidded
-will, [ing]willing, [ould]would, [s]wills
+day, [s]days, [ily]daily
+kid, [s]kids, [ded]kidded, [ding]kidding
+will, [s]wills, [ing]willing, [ould]would, [on't]won't
 two, [s]twos
 people
 very
 off
-sure, [r]surer, [st]surest
-man, [en]men
-thank, [ed]thanked, [ing]thanking, [s]thanks
-try, [ied]tried, [ies]tries, [ing]trying
+sure, [ly]surely, [r]surer, [st]surest
+man, [ly]manly, [en]men
+thank, [s]thanks, [ed]thanked, [ing]thanking
+try, [ies]tries, [ied]tried, [ing]trying
 big, [ger]bigger, [gest]biggest
 dad, [s]dads
 maybe
-feel, [ing]feeling, [s]feels, [lt]felt
-friend, [s]friends
+feel, [s]feels, [ing]feeling, [lt]felt
+friend, [s]friends, [ly]friendly
 went
 even
 um
@@ -142,10 +142,10 @@ best
 these
 said
 boy, [s]boys
-stop, [ped]stopped, [ping]stopping, [s]stops
+stop, [s]stops, [ped]stopped, [ping]stopping
 put, [s]puts, [ting]putting
 please
-happen, [ed]happened, [ing]happening, [s]happens
+happen, [s]happens, [ed]happened, [ing]happening
 much
 night, [s]nights
 into
@@ -154,132 +154,132 @@ any
 first
 leave, [ing]leaving, [ft]left
 year, [s]years
-hear, [d]heard, [ing]hearing, [s]hears
+hear, [s]hears, [ing]hearing, [d]heard
 am
-help, [ed]helped, [ing]helping, [s]helps
-use, [d]used, [s]uses, [ing]using
+help, [s]helps, [ed]helped, [ing]helping
+use, [s]uses, [d]used, [ing]using
 ever
 mr
 again
 mom, [s]moms
 hi
 life, [ves]lives
-show, [ed]showed, [ing]showing, [n]shown, [s]shows
+show, [s]shows, [ed]showed, [ing]showing, [n]shown
 better
 came
-nice, [r]nicer, [st]nicest
+nice, [ly]nicely, [r]nicer, [st]nicest
 new, [er]newer, [est]newest
-kind, [s]kinds, [er]kinder, [est]kindest
+kind, [s]kinds, [ly]kindly, [er]kinder, [est]kindest
 still
 other, [s]others
-would
+would, ['ve]would've, [n't]wouldn't
 anything
 baby, [ies]babies
 than
-should
+should, ['ve]should've, [n't]shouldn't
 made
-last, [ed]lasted, [ing]lasting, [s]lasts
-play, [ed]played, [ing]playing, [s]plays
+last, [s]lasts, [ed]lasted, [ing]lasting
+play, [s]plays, [ed]played, [ing]playing
 fine, [r]finer, [st]finest
 hello
-keep, [ing]keeping, [s]keeps, [pt]kept
+keep, [s]keeps, [ing]keeping, [pt]kept
 girl, [s]girls
 name, [s]names, [d]named, [ing]naming
-believe, [d]believed, [s]believes, [ing]believing
+believe, [s]believes, [d]believed, [ing]believing
 woman, [en]women
-start, [ed]started, [ing]starting, [s]starts
+start, [s]starts, [ed]started, [ing]starting
 lot, [s]lots
-ask, [ed]asked, [ing]asking, [s]asks
+ask, [s]asks, [ed]asked, [ing]asking
 home, [s]homes
-nothing
+nothing, ['s]nothing's
 hmm, []hm
 their, [s]theirs
-meet, [ing]meeting, [s]meets, [t]met
+meet, [s]meets, [ing]meeting, [t]met
 huh
 thanks
 long, [er]longer, [est]longest
-guess, [ed]guessed, [es]guesses, [ing]guessing
+guess, [es]guesses, [ed]guessed, [ing]guessing
 around
 old, [er]older, [est]oldest
 before
 always
 i've
-bad, [worse]worse, [worst]worst
+bad, [ly]badly, [worse]worse, [worst]worst
 three, [s]threes
 wow
-listen, [ed]listened, [ing]listening, [s]listens
+listen, [s]listens, [ed]listened, [ing]listening
 place, [s]places, [d]placed, [ing]placing
 minute, [s]minutes
 actually
-find, [ing]finding, [s]finds, [ound]found
+find, [s]finds, [ing]finding, [ound]found
 live, [d]lived, [ing]living
 next
-may, [ight]might, [s]mays
-watch, [ed]watched, [es]watches, [ing]watching
+may, [s]mays, [ight]might
+watch, [es]watches, [ed]watched, [ing]watching
 away
 after
-bring, [ing]bringing, [s]brings, [ought]brought
+bring, [s]brings, [ing]bringing, [ought]brought
 every
-move, [d]moved, [s]moves, [ing]moving
+move, [s]moves, [d]moved, [ing]moving
 men
-turn, [ed]turned, [ing]turning, [s]turns
-eat, [ate]ate, [s]eats, [en]eaten, [ing]eating
-everything
+turn, [s]turns, [ed]turned, [ing]turning
+eat, [s]eats, [ing]eating, [ate]ate, [en]eaten
+everything, ['s]everything's
 money
-person, [ople]people, [s]persons
-remember, [ed]remembered, [ing]remembering, [s]remembers
+person, [s]persons, [ople]people
+remember, [s]remembers, [ed]remembered, [ing]remembering
 house, [s]houses
-late, [r]later, [st]latest
+late, [ly]lately, [r]later, [st]latest
 wrong
 today
-kill, [ed]killed, [ing]killing, [s]kills
+kill, [s]kills, [ed]killed, [ing]killing
 school, [s]schools
-everyone
-break, [ing]breaking, [s]breaks, [oke]broke, [oken]broken
-care, [d]cared, [s]cares, [ing]caring
+everyone, ['s]everyone's
+break, [s]breaks, [ing]breaking, [oke]broke, [oken]broken
+care, [s]cares, [d]cared, [ing]caring
 car, [s]cars
 pretty, [ier]prettier, [iest]prettiest
 idea, [s]ideas
 ah, [ah]aah
 fun, [ner]funner, [nest]funnest
 another
-someone
-cool, [er]cooler, [est]coolest, [ed]cooled, [ing]cooling, [s]cools
-real
-happy, [ier]happier, [iest]happiest
+someone, ['s]someone's
+cool, [s]cools, [ed]cooled, [ing]cooling, [er]cooler, [est]coolest
+real, [ly]really
+happy, [ily]happily, [ier]happier, [iest]happiest
 whole
-week, [s]weeks
+week, [s]weeks, [ly]weekly
 job, [s]jobs
 party, [ies]parties, [ied]partied, [ing]partying
 problem, [s]problems
-second, [s]seconds
-run, [an]ran, [ning]running, [s]runs
+second, [s]seconds, [ly]secondly
+run, [s]runs, [ning]running, [an]ran
 world, [s]worlds
-which
-must
-head, [s]heads, [ing]heading, [ed]headed
-own, [s]owns, [ing]owning, [ed]owned
-stuff, [ed]stuffed, [ing]stuffing, [s]stuffs
+which, ['ve]which've
+must, [n't]mustn't, ['ve]must've
+head, [s]heads, [ed]headed, [ing]heading
+own, [s]owns, [ed]owned, [ing]owning
+stuff, [s]stuffs, [ed]stuffed, [ing]stuffing
 took
 through
 together
 room, [s]rooms
 family, [ies]families
-stay, [ed]stayed, [ing]staying, [s]stays
-miss, [ed]missed, [es]misses, [ing]missing
+stay, [s]stays, [ed]stayed, [ing]staying
+miss, [es]misses, [ed]missed, [ing]missing
 date, [s]dates, [d]dated, [ing]dating
 felt
 tonight
 lose, [s]loses, [ing]losing, [t]lost
-drink, [ank]drank, [ing]drinking, [s]drinks, [unk]drunk
-hand, [s]hands, [ing]handing, [ed]handed
+drink, [s]drinks, [ing]drinking, [ank]drank, [unk]drunk
+hand, [s]hands, [ed]handed, [ing]handing
 son, [s]sons
 stupid, [er]stupider, [est]stupidest
-sound, [ed]sounded, [ing]sounding, [s]sounds
-everybody
-check, [ed]checked, [ing]checking, [s]checks
+sound, [s]sounds, [ed]sounded, [ing]sounding
+everybody, ['s]everybody's
+check, [s]checks, [ed]checked, [ing]checking
 child, [ren]children
-change, [d]changed, [s]changes, [ing]changing
+change, [s]changes, [d]changed, [ing]changing
 course, [s]courses
 game, [s]games
 forget, [s]forgets, [ting]forgetting, [ot]forgot, [otten]forgotten
@@ -292,112 +292,114 @@ dog, [s]dogs
 funny, [ier]funnier, [iest]funniest
 mind, [s]minds, [ed]minded, [ing]minding
 sir, [s]sirs
-hard, [er]harder, [est]hardest
+hard, [ly]hardly, [er]harder, [est]hardest
 honey
 sex, [es]sexes
-face, [s]faces, [ing]facing, [d]faced
-hate, [d]hated, [s]hates, [ing]hating
-suppose, [d]supposed, [s]supposes, [ing]supposing
-worry, [ied]worried, [ies]worries, [ing]worrying
-understand, [ing]understanding, [s]understands, [ood]understood
-excuse, [d]excused, [s]excuses, [ing]excusing
+face, [s]faces, [d]faced, [ing]facing
+hate, [s]hates, [d]hated, [ing]hating
+suppose, [s]supposes, [d]supposed, [ing]supposing
+worry, [ies]worries, [ied]worried, [ing]worrying
+understand, [s]understands, [ing]understanding, [ood]understood
+excuse, [s]excuses, [d]excused, [ing]excusing
 whoa
 movie, [s]movies
 saw
-marry, [ied]married, [ies]marries, [ing]marrying
-pay, [id]paid, [ing]paying, [s]pays
+marry, [ies]marries, [ied]married, [ing]marrying
+pay, [s]pays, [ing]paying, [id]paid
 hour, [s]hours
 while, [s]whiles
 crazy, [ier]crazier, [iest]craziest
-end, [ed]ended, [ing]ending, [s]ends
-walk, [ed]walked, [ing]walking, [s]walks
-hope, [d]hoped, [s]hopes, [ing]hoping
+end, [s]ends, [ed]ended, [ing]ending
+walk, [s]walks, [ed]walked, [ing]walking
+hope, [s]hopes, [d]hoped, [ing]hoping
 hot, [ter]hotter, [test]hottest
-most
+most, [ly]mostly
 mother, [s]mothers
-pick, [ed]picked, [ing]picking, [s]picks
+pick, [s]picks, [ed]picked, [ing]picking
 word, [s]words
 same, [ness]sameness
 women
 yourself, [ves]yourselves
-buy, [ought]bought, [ing]buying, [s]buys
+buy, [s]buys, [ing]buying, [ought]bought
 ready, [ier]readier, [iest]readiest
-seem, [ed]seemed, [ing]seeming, [s]seems
-open, [ed]opened, [ing]opening, [s]opens
-sleep, [ing]sleeping, [s]sleeps, [pt]slept
-point, [s]points, [ing]pointing, [ed]pointed
-die, [d]died, [s]dies, [ying]dying
+seem, [s]seems, [ed]seemed, [ing]seeming
+open, [s]opens, [ed]opened, [ing]opening
+sleep, [s]sleeps, [ing]sleeping, [pt]slept
+point, [s]points, [ed]pointed, [ing]pointing
+die, [s]dies, [d]died, [ying]dying
 father, [s]fathers
 story, [ies]stories
-question, [s]questions, [ing]questioning, [ed]questioned
+question, [s]questions, [ed]questioned, [ing]questioning
 already
 part, [s]parts
-sit, [at]sat, [s]sits, [ting]sitting
+sit, [s]sits, [ting]sitting, [at]sat
 lady, [ies]ladies
-read, [ing]reading, [s]reads
+read, [s]reads, [ing]reading
 book, [s]books, [ed]booked, [ing]booking
 number, [s]numbers
 deal, [s]deals, [ing]dealing, [t]dealt
 write, [s]writes, [ing]writing, [ten]written, [ote]wrote
-wear, [ing]wearing, [s]wears, [ore]wore, [orn]worn
+wear, [s]wears, [ing]wearing, [ore]wore, [orn]worn
 morning, [s]mornings
 tomorrow, [s]tomorrows
 four, [s]fours
 many
 once
 seen
-somebody
-drive, [n]driven, [s]drives, [ing]driving, [ove]drove
+somebody, ['s]somebody's
+drive, [s]drives, [ing]driving, [n]driven, [ove]drove
 probably
-fire, [s]fires, [ing]firing, [d]fired
+fire, [s]fires, [d]fired, [ing]firing
 without
 such
+won't
 eye, [s]eyes
 wife, [ves]wives
-stand, [ing]standing, [s]stands, [ood]stood
+stand, [s]stands, [ing]standing, [ood]stood
 since
 hit, [s]hits, [ting]hitting
-throw, [ew]threw, [ing]throwing, [n]thrown, [s]throws
-close, [r]closer, [st]closest, [s]closes, [ing]closing, [d]closed
-dead
+throw, [s]throws, [ing]throwing, [ew]threw, [n]thrown
+close, [s]closes, [d]closed, [ing]closing, [ly]closely, [r]closer, [st]closest
+dead, [ly]deadly
 myself
 aw
-matter, [s]matters, [ing]mattering, [ed]mattered
+matter, [s]matters, [ed]mattered, [ing]mattering
 dinner, [s]dinners
 anyone
-phone, [telephone]telephone, [s]phones
-plan, [s]plans, [ning]planning, [ned]planned
+phone, [s]phones, [telephone]telephone
+plan, [s]plans, [ned]planned, [ning]planning
 each
 anyway
 television, [s]televisions
-learn, [ed]learned, [ing]learning, [s]learns
+learn, [s]learns, [ed]learned, [ing]learning
 shut, [s]shuts, [ting]shutting
 town, [s]towns
 beautiful
-might
+might, ['ve]might've
 both
-spend, [ing]spending, [s]spends, [t]spent
+spend, [s]spends, [ing]spending, [t]spent
 office, [s]offices
 yet
-save, [d]saved, [s]saves, [ing]saving
+save, [s]saves, [d]saved, [ing]saving
 true, [r]truer, [st]truest
 sweet, [er]sweeter, [est]sweetest
 until
 fight, [s]fights, [ing]fighting, [ought]fought
 food, [s]foods
-send, [ing]sending, [s]sends, [t]sent
-hold, [eld]held, [ing]holding, [s]holds
-high, [er]higher, [est]highest
-welcome, [s]welcomes, [ing]welcoming, [d]welcomed
+send, [s]sends, [ing]sending, [t]sent
+hold, [s]holds, [ing]holding, [eld]held
+high, [ly]highly, [er]higher, [est]highest
+gonna
+welcome, [s]welcomes, [d]welcomed, [ing]welcoming
 anymore
 also
-wish, [ed]wished, [es]wishes, [ing]wishing
+wish, [es]wishes, [ed]wished, [ing]wishing
 news
 christmas
 ten
-hang, [ed]hanged, [ing]hanging, [s]hangs, [ung]hung
+hang, [s]hangs, [ed]hanged, [ing]hanging, [ung]hung
 business, [es]businesses
-win, [ning]winning, [s]wins, [on]won
+win, [s]wins, [ning]winning, [on]won
 couple, [s]couples
 totally
 door, [s]doors
@@ -407,14 +409,14 @@ parent, [s]parents
 few, [er]fewer, [est]fewest
 month, [s]months
 gave
-easy, [ier]easier, [iest]easiest
+easy, [ily]easily, [ier]easier, [iest]easiest
 ow
-hurt, [ing]hurting, [s]hurts
+hurt, [s]hurts, [ing]hurting
 nobody
 picture, [s]pictures, [d]pictured, [ing]picturing
 bite, [s]bites, [ing]biting, []bit, [ten]bitten
 ok
-perfect
+perfect, [ly]perfectly
 free, [r]freer, [st]freest
 cut, [s]cuts, [ting]cutting
 young, [er]younger, [est]youngest
@@ -423,53 +425,53 @@ line, [s]lines, [d]lined, [ing]lining
 set, [s]sets, [ting]setting
 whatever
 brother, [s]brothers
-kiss, [ed]kissed, [es]kisses, [ing]kissing
+kiss, [es]kisses, [ed]kissed, [ing]kissing
 ago
-dance, [d]danced, [s]dances, [ing]dancing
+dance, [s]dances, [d]danced, [ing]dancing
 ball, [s]balls
 finally
 its
 stick, [s]sticks, [ing]sticking, [uck]stuck
 ha, [h]hah
-important
+important, [ly]importantly
 heart, [s]hearts
 fat, [ter]fatter, [test]fattest
 class, [es]classes
-shoot, [ing]shooting, [s]shoots, [t]shot
+shoot, [s]shoots, [ing]shooting, [t]shot
 catch, [es]catches, [ing]catching, [ught]caught
 side, [s]sides
-dream, [s]dreams, [ing]dreaming, [ed]dreamed, [t]dreamt
+dream, [s]dreams, [ed]dreamed, [ing]dreaming, [t]dreamt
 hair, [s]hairs
-sign, [s]signs, [ing]signing, [ed]signed
+sign, [s]signs, [ed]signed, [ing]signing
 wedding, [s]weddings
 reason, [s]reasons
-become, [ame]became, [s]becomes, [ing]becoming
+become, [s]becomes, [ing]becoming, [ame]became
 least
 joke, [s]jokes, [d]joked, [ing]joking
 special, [s]specials
-answer, [s]answers, [ing]answering, [ed]answered
+answer, [s]answers, [ed]answered, [ing]answering
 under
 bed, [s]beds
 paper, [s]papers
-different
-order, [s]orders, [ing]ordering, [ed]ordered
+different, [ly]differently
+order, [s]orders, [ed]ordered, [ing]ordering
 mine
 six
 wrote
 speak, [s]speaks, [ing]speaking, [oke]spoke, [oken]spoken
-suck, [s]sucks, [ing]sucking, [ed]sucked
+suck, [s]sucks, [ed]sucked, [ing]sucking
 sometimes
 bet, [s]bets, [ting]betting
 city, [ies]cities
-wonder, [ed]wondered, [ing]wondering, [s]wonders
+wonder, [s]wonders, [ed]wondered, [ing]wondering
 alone
 half, [ves]halves
 dude, [s]dudes
-realize, [d]realized, [s]realizes, [ing]realizing
+realize, [s]realizes, [d]realized, [ing]realizing
 birthday, [s]birthdays
-enjoy, [ed]enjoyed, [ing]enjoying, [s]enjoys
+enjoy, [s]enjoys, [ed]enjoyed, [ing]enjoying
 fact, [s]facts
-figure, [d]figured, [s]figures, [ing]figuring
+figure, [s]figures, [d]figured, [ing]figuring
 soon
 bar, [s]bars
 relationship, [s]relationships
@@ -482,29 +484,29 @@ song, [s]songs
 front, [s]fronts
 bye
 coffee, [s]coffees
-fall, [en]fallen, [ing]falling, [s]falls, [ell]fell
-promise, [s]promises, [ing]promising, [d]promised
+fall, [s]falls, [ing]falling, [en]fallen, [ell]fell
+promise, [s]promises, [d]promised, [ing]promising
 awesome
 sick, [er]sicker, [est]sickest
 apartment, [s]apartments
-pull, [ed]pulled, [ing]pulling, [s]pulls
-act, [s]acts, [ing]acting, [ed]acted
+pull, [s]pulls, [ed]pulled, [ing]pulling
+act, [s]acts, [ed]acted, [ing]acting
 box, [es]boxes
-decide, [d]decided, [s]decides, [ing]deciding
+decide, [s]decides, [d]decided, [ing]deciding
 store, [s]stores
-lie, [ay]lay, [d]lied, [s]lies, [ying]lying
+lie, [s]lies, [d]lied, [ying]lying, [ay]lay
 ad
 lunch, [es]lunches
 anybody
-dress, [es]dresses, [ing]dressing, [ed]dressed
+dress, [es]dresses, [ed]dressed, [ing]dressing
 afraid
 buddy, [ies]buddies
-surprise, [s]surprises, [ing]surprising, [d]surprised
+surprise, [s]surprises, [d]surprised, [ing]surprising
 cute, [r]cuter, [st]cutest
-touch, [es]touches, [ing]touching, [ed]touched
-smell, [s]smells, [ing]smelling, [ed]smelled, [t]smelt
+touch, [es]touches, [ed]touched, [ing]touching
+smell, [s]smells, [ed]smelled, [ing]smelling, [t]smelt
 bathroom, [s]bathrooms
-rest, [s]rests, [ing]resting, [ed]rested
+rest, [s]rests, [ed]rested, [ing]resting
 steal, [s]steals, [ing]stealing, [ole]stole, [olen]stolen
 full, [er]fuller, [est]fullest
 company, [ies]companies
@@ -514,7 +516,7 @@ moment, [s]moments
 case, [s]cases
 though, []tho
 inside, [s]insides
-clean, [s]cleans, [ing]cleaning, [ed]cleaned, [er]cleaner, [est]cleanest
+clean, [s]cleans, [ed]cleaned, [ing]cleaning, [er]cleaner, [est]cleanest
 body, [ies]bodies
 light, [s]lights, [ed]lighted, [ing]lighting, [t]lit, [er]lighter, [est]lightest
 mrs
@@ -525,10 +527,10 @@ held
 fast, [er]faster, [est]fastest
 either
 grow, [s]grows, [ing]growing, [ew]grew, [n]grown
-kick, [s]kicks, [ing]kicking, [ed]kicked
+kick, [s]kicks, [ed]kicked, [ing]kicking
 build, [s]builds, [ing]building, [t]built
-drop, [s]drops, [ping]dropping, [ped]dropped
-pass, [es]passes, [ing]passing, [ed]passed
+drop, [s]drops, [ped]dropped, [ping]dropping
+pass, [es]passes, [ed]passed, [ing]passing
 table, [s]tables
 ticket, [s]tickets
 cat, [s]cats
@@ -537,18 +539,18 @@ girlfriend, [s]girlfriends
 seat, [s]seats, [ed]seated, [ing]seating
 hat, [s]hats
 terrible
-laugh, [s]laughs, [ing]laughing, [ed]laughed
+laugh, [s]laughs, [ed]laughed, [ing]laughing
 beer, [s]beers
 club, [s]clubs
-amaze, [s]amazes, [ing]amazing, [d]amazed
+amaze, [s]amazes, [d]amazed, [ing]amazing
 gift, [s]gifts
-serious
+serious, [ly]seriously
 trouble, [s]troubles, [d]troubled, [ing]troubling
 street, [s]streets
 worst
 team, [s]teams
 blow, [s]blows, [ing]blowing, [ew]blew, [n]blown
-cry, [ies]cries, [ing]crying, [ied]cried
+cry, [ies]cries, [ied]cried, [ing]crying
 zero
 beat, [s]beats, [ing]beating, [en]beaten
 eh
@@ -558,115 +560,115 @@ twenty
 early, [ier]earlier, [iest]earliest
 seven
 rule, [s]rules, [d]ruled, [ing]ruling
-finish, [es]finishes, [ing]finishing, [ed]finished
+finish, [es]finishes, [ed]finished, [ing]finishing
 hidden
 threw
 proven
 gentleman, [en]gentlemen
-freak, [s]freaks, [ing]freaking, [ed]freaked
-dear, [er]dearer, [est]dearest, [s]dears
+freak, [s]freaks, [ed]freaked, [ing]freaking
+dear, [s]dears, [er]dearer, [est]dearest
 small, [er]smaller, [est]smallest
 children
 sweetie, [s]sweeties
-return, [s]returns, [ing]returning, [ed]returned
+return, [s]returns, [ed]returned, [ing]returning
 piece, [s]pieces
 shoe, [s]shoes
 outside, [s]outsides
 white, [r]whiter, [st]whitest
-step, [s]steps, [ping]stepping, [ped]stepped
+step, [s]steps, [ped]stepped, [ping]stepping
 bag, [s]bags
-excite, [s]excites, [ing]exciting, [d]excited
+excite, [s]excites, [d]excited, [ing]exciting
 wonderful
 sell, [s]sells, [ing]selling, [old]sold
 seriously
 worse
 country, [ies]countries
 mouth, [s]mouths
-secret, [s]secrets
+secret, [s]secrets, [ly]secretly
 quite
 sense, [s]senses, [d]sensed, [ing]sensing
 smart, [er]smarter, [est]smartest
 husband, [s]husbands
 shh, []sh, [h]shhh
-invite, [s]invites, [ing]inviting, [d]invited
+invite, [s]invites, [d]invited, [ing]inviting
 yours
 behind
 key, [s]keys
 red, [der]redder, [dest]reddest
 present, [s]presents, [ed]presented, [ing]presenting
-agree, [s]agrees, [ing]agreeing, [d]agreed
+agree, [s]agrees, [d]agreed, [ing]agreeing
 machine, [s]machines
-scare, [s]scares, [ing]scaring, [d]scared
+scare, [s]scares, [d]scared, [ing]scaring
 yep
 fly, [ies]flies, [ing]flying, [ew]flew, [own]flown
 space, [s]spaces
 favorite, [s]favorites
 mad, [der]madder, [dest]maddest
-screw, [s]screws, [ing]screwing, [ed]screwed
+screw, [s]screws, [ed]screwed, [ing]screwing
 truth, [s]truths
 ice, [s]ices
-follow, [s]follows, [ing]following, [ed]followed
+follow, [s]follows, [ed]followed, [ing]following
 idiot, [s]idiots
 absolutely
 against
 american, [s]americans
 human, [s]humans
-notice, [s]notices, [ing]noticing, [d]noticed
+notice, [s]notices, [d]noticed, [ing]noticing
 chicken, [s]chickens
 music
-clear, [er]clearer, [est]clearest, [ed]cleared, [ing]clearing, [s]clears
-join, [s]joins, [ing]joining, [ed]joined
+clear, [s]clears, [ed]cleared, [ing]clearing, [ly]clearly, [er]clearer, [est]clearest
+join, [s]joins, [ed]joined, [ing]joining
 million, [s]millions
-ruin, [s]ruins, [ing]ruining, [ed]ruined
+ruin, [s]ruins, [ed]ruined, [ing]ruining
 ring, [s]rings, [ing]ringing, [ang]rang, [ung]rung
 war, [s]wars
-rock, [s]rocks, [ing]rocking, [ed]rocked
+rock, [s]rocks, [ed]rocked, [ing]rocking
 along
-poor, [er]poorer, [est]poorest
+poor, [ly]poorly, [er]poorer, [est]poorest
 able, [r]abler, [st]ablest
-roll, [s]rolls, [ing]rolling, [ed]rolled
+roll, [s]rolls, [ed]rolled, [ing]rolling
 power, [s]powers, [ed]powered, [ing]powering
-cold, [er]colder, [est]coldest, [s]colds
-cover, [s]covers, [ing]covering, [ed]covered
-fair, [er]fairer, [est]fairest
-relax, [es]relaxes, [ing]relaxing, [ed]relaxed
+cold, [s]colds, [er]colder, [est]coldest
+cover, [s]covers, [ed]covered, [ing]covering
+fair, [ly]fairly, [er]fairer, [est]fairest
+relax, [es]relaxes, [ed]relaxed, [ing]relaxing
 single, [s]singles
 boyfriend, [s]boyfriends
-trust, [s]trusts, [ing]trusting, [ed]trusted
+trust, [s]trusts, [ed]trusted, [ing]trusting
 mistake, [s]mistakes
 luck
 star, [s]stars, [red]starred, [ring]starring
-test, [s]tests, [ing]testing, [ed]tested
+test, [s]tests, [ed]tested, [ing]testing
 group, [s]groups
 daughter, [s]daughters
 college, [s]colleges
 president, [s]presidents
 air, [s]airs, [ed]aired, [ing]airing
-smoke, [s]smokes, [ing]smoking, [d]smoked
+smoke, [s]smokes, [d]smoked, [ing]smoking
 message, [s]messages
 trip, [s]trips, [ped]tripped, [ping]tripping
-fault, [ed]faulted, [ing]faulting, [less]faultless, [lessly]faultlessly, [s]faults
-quick, [er]quicker, [est]quickest
+fault, [less]faultless, [s]faults, [ed]faulted, [ing]faulting
+quick, [ly]quickly, [er]quicker, [est]quickest
 lord, [s]lords
 till
 sort, [s]sorts, [ed]sorted, [ing]sorting
 future, [s]futures
 except
-offer, [s]offers, [ing]offering, [ed]offered
+offer, [s]offers, [ed]offered, [ing]offering
 fish, [es]fishes, [ed]fished, [ing]fishing
 shirt, [s]shirts
 sing, [s]sings, [ing]singing, [ang]sang, [ung]sung
 choice, [s]choices
 attention
-quit, [s]quits, [ting]quitting, [ted]quitted
+quit, [s]quits, [ted]quitted, [ting]quitting
 fifty, [ies]fifties
 leg, [s]legs
-shop, [s]shops, [ping]shopping, [ped]shopped
+shop, [s]shops, [ped]shopped, [ping]shopping
 student, [s]students
 past, [s]pasts
 chair, [s]chairs
 gun, [s]guns
-control, [s]controls, [ling]controlling, [led]controlled
+control, [s]controls, [led]controlled, [ling]controlling
 teach, [es]teaches, [ing]teaching, [aught]taught
 begin, [s]begins, [ning]beginning, [an]began, [un]begun
 death, [s]deaths
@@ -675,12 +677,12 @@ suit, [s]suits, [ed]suited, [ing]suiting
 list, [s]lists, [ed]listed, [ing]listing
 boss, [es]bosses
 instead
-share, [s]shares, [ing]sharing, [d]shared
-lucky, [ier]luckier, [iest]luckiest
-safe, [r]safer, [st]safest
-raise, [s]raises, [ing]raising, [d]raised
+share, [s]shares, [d]shared, [ing]sharing
+lucky, [ily]luckily, [ier]luckier, [iest]luckiest
+safe, [ly]safely, [r]safer, [st]safest
+raise, [s]raises, [d]raised, [ing]raising
 ahh
-explain, [s]explains, [ing]explaining, [ed]explained
+explain, [s]explains, [ed]explained, [ing]explaining
 video, [s]videos
 brain, [s]brains
 completely
@@ -688,61 +690,61 @@ voice, [s]voices
 cake, [s]cakes
 monkey, [s]monkeys
 hundred, [s]hundreds
-fix, [es]fixes, [ing]fixing, [ed]fixed
-entire
-expect, [ed]expected, [ing]expecting, [s]expects
-allow, [s]allows, [ing]allowing, [ed]allowed
+fix, [es]fixes, [ed]fixed, [ing]fixing
+entire, [ly]entirely
+expect, [s]expects, [ed]expected, [ing]expecting
+allow, [s]allows, [ed]allowed, [ing]allowing
 forever
 ugh
-count, [s]counts, [ing]counting, [ed]counted
+count, [s]counts, [ed]counted, [ing]counting
 hide, [s]hides, [ing]hiding, []hid, [den]hidden
 huge, [r]huger, [st]hugest
 interesting
 clothes
-grab, [s]grabs, [bing]grabbing, [bed]grabbed
+grab, [s]grabs, [bed]grabbed, [bing]grabbing
 teacher, [s]teachers
 animal, [s]animals
-burn, [s]burns, [ing]burning, [ed]burned, [t]burnt
+burn, [s]burns, [ed]burned, [ing]burning, [t]burnt
 tough, [er]tougher, [est]toughest
-lead, [s]leads, [ing]leading, [ed]leaded, [d]led
+lead, [s]leads, [ed]leaded, [d]led, [ing]leading
 restaurant, [s]restaurants
 marriage, [s]marriages
 proud, [er]prouder, [est]proudest
-taste, [s]tastes, [ing]tasting, [d]tasted
+taste, [s]tastes, [d]tasted, [ing]tasting
 uncle, [s]uncles
 bought
-push, [es]pushes, [ing]pushing, [ed]pushed
+push, [es]pushes, [ed]pushed, [ing]pushing
 butt, [s]butts
-mess, [es]messes, [ing]messing, [ed]messed
+mess, [es]messes, [ed]messed, [ing]messing
 unless
 feeling, [s]feelings
 park, [s]parks, [ed]parked, [ing]parking
 floor, [s]floors
-fake, [s]fakes, [ing]faking, [d]faked
-handle, [s]handles, [ing]handling, [d]handled
+fake, [s]fakes, [d]faked, [ing]faking
+handle, [s]handles, [d]handled, [ing]handling
 whoo
 cream, [s]creams
 naked
-knock, [s]knocks, [ing]knocking, [ed]knocked
+knock, [s]knocks, [ed]knocked, [ing]knocking
 won
 upset, [s]upsets, [ting]upsetting
 record, [s]records, [ed]recorded, [ing]recording
 straight, [er]straighter, [est]straightest
-apologize, [ing]apologizing, [s]apologizes, [d]apologized
+apologize, [s]apologizes, [d]apologized, [ing]apologizing
 earth
-fill, [s]fills, [ing]filling, [ed]filled
-charge, [s]charges, [ing]charging, [d]charged
+fill, [s]fills, [ed]filled, [ing]filling
+charge, [s]charges, [d]charged, [ing]charging
 pizza, [s]pizzas
 ridiculous
 alive
-pretend, [s]pretends, [ing]pretending, [ed]pretended
+pretend, [s]pretends, [ed]pretended, [ing]pretending
 hospital, [s]hospitals
-sad, [der]sadder, [dest]saddest
+sad, [ly]sadly, [der]sadder, [dest]saddest
 bunch, [es]bunches
 police
 window, [s]windows
 busy, [ier]busier, [iest]busiest
-treat, [s]treats, [ing]treating, [ed]treated
+treat, [s]treats, [ed]treated, [ing]treating
 pie, [s]pies
 honor, [s]honors, [ed]honored, [ing]honoring
 somewhere
@@ -760,17 +762,17 @@ ho
 less
 nine, [s]nines
 thousand, [s]thousands
-embarrass, [es]embarrasses, [ing]embarrassing, [ed]embarrassed
+embarrass, [es]embarrasses, [ed]embarrassed, [ing]embarrassing
 band, [s]bands
-wake, [s]wakes, [ing]waking, [d]waked, [oke]woke
+wake, [s]wakes, [d]waked, [ing]waking, [oke]woke
 none
 santa
-strong, [er]stronger, [est]strongest
-respect, [s]respects, [ing]respecting, [ed]respected
+strong, [ly]strongly, [er]stronger, [est]strongest
+respect, [s]respects, [ed]respected, [ing]respecting
 law, [s]laws
 toilet, [s]toilets
-jump, [s]jumps, [ing]jumping, [ed]jumped
-waste, [s]wastes, [ing]wasting, [d]wasted
+jump, [s]jumps, [ed]jumped, [ing]jumping
+waste, [s]wastes, [d]wasted, [ing]wasting
 tape, [s]tapes, [d]taped, [ing]taping
 egg, [s]eggs
 far, [ther]farther, [urther]further, [thest]farthest, [urthest]furthest
@@ -780,16 +782,16 @@ blue, [r]bluer, [st]bluest
 horrible
 favor, [s]favors
 wall, [s]walls
-report, [s]reports, [ing]reporting, [ed]reported
+report, [s]reports, [ed]reported, [ing]reporting
 art, [s]arts
-cause, [s]causes, [ing]causing, [d]caused
+cause, [s]causes, [d]caused, [ing]causing
 arm, [s]arms
-study, [ies]studies, [ing]studying, [ied]studied
+study, [ies]studies, [ied]studied, [ing]studying
 perhaps
 simple, [r]simpler, [st]simplest
 shower, [s]showers, [ed]showered, [ing]showering
 bus, [es]buses
-appreciate, [s]appreciates, [ing]appreciating, [d]appreciated
+appreciate, [s]appreciates, [d]appreciated, [ing]appreciating
 himself
 candy, [ies]candies
 finger, [s]fingers
@@ -798,19 +800,19 @@ state, [s]states
 trick, [s]tricks, [ed]tricked, [ing]tricking
 possible
 rich, [er]richer, [est]richest
-short, [er]shorter, [est]shortest
+short, [ly]shortly, [er]shorter, [est]shortest
 film, [s]films, [ed]filmed, [ing]filming
 king, [s]kings
 cookie, [s]cookies
 penis, [es]penises
-tie, [s]ties, [ying]tying, [d]tied
+tie, [s]ties, [d]tied, [ying]tying
 history, [ies]histories
-imagine, [s]imagines, [ing]imagining, [d]imagined
+imagine, [s]imagines, [d]imagined, [ing]imagining
 third, [s]thirds
 blood, [s]bloods
 drug, [s]drugs
-prove, [s]proves, [ing]proving, [d]proved, [n]proven
-visit, [s]visits, [ing]visiting, [ed]visited
+prove, [s]proves, [d]proved, [ing]proving, [n]proven
+visit, [s]visits, [ed]visited, [ing]visiting
 alright
 captain, [s]captains
 evening, [s]evenings
@@ -819,30 +821,30 @@ congratulations
 system, [s]systems
 spot, [s]spots, [ted]spotted, [ting]spotting
 feet
-deserve, [s]deserves, [ing]deserving, [d]deserved
-normal
+deserve, [s]deserves, [d]deserved, [ing]deserving
+normal, [ly]normally
 yesterday, [s]yesterdays
 jerk, [s]jerks
 yay
 bird, [s]birds
 nose, [s]noses
-bother, [s]bothers, [ing]bothering, [ed]bothered
+bother, [s]bothers, [ed]bothered, [ing]bothering
 fan, [s]fans
 letter, [s]letters
 rather
 interested
-owe, [s]owes, [ing]owing, [d]owed
+owe, [s]owes, [d]owed, [ing]owing
 pregnant
-pee, [s]pees, [ing]peeing, [d]peed
+pee, [s]pees, [d]peed, [ing]peeing
 left, [s]lefts
-vote, [s]votes, [ing]voting, [d]voted
-judge, [s]judges, [ing]judging, [d]judged
-destroy, [s]destroys, [ing]destroying, [ed]destroyed
+vote, [s]votes, [d]voted, [ing]voting
+judge, [s]judges, [d]judged, [ing]judging
+destroy, [s]destroys, [ed]destroyed, [ing]destroying
 middle, [s]middles
 evil, [est]evilest
 milk, [s]milks
 sport, [s]sports
-admit, [s]admits, [ting]admitting, [ted]admitted
+admit, [s]admits, [ted]admitted, [ting]admitting
 apparently
 conversation, [s]conversations
 obviously
@@ -854,42 +856,42 @@ given
 known
 i'd
 taken
-hurry, [ies]hurries, [ing]hurrying, [ied]hurried
-awful
-accept, [s]accepts, [ing]accepting, [ed]accepted
+hurry, [ies]hurries, [ied]hurried, [ing]hurrying
+awful, [ly]awfully
+accept, [s]accepts, [ed]accepted, [ing]accepting
 dumb, [er]dumber, [est]dumbest
 bit, [s]bits
 heard
-consider, [s]considers, [ing]considering, [ed]considered
-mention, [s]mentions, [ing]mentioning, [ed]mentioned
+consider, [s]considers, [ed]considered, [ing]considering
+mention, [s]mentions, [ed]mentioned, [ing]mentioning
 hungry, [ier]hungrier, [iest]hungriest
 situation, [s]situations
-quiet, [er]quieter, [est]quietest
+quiet, [ly]quietly, [er]quieter, [est]quietest
 twelve, [s]twelves
 teeth
 fantastic
 hole, [s]holes
 plus
-smile, [s]smiles, [ing]smiling, [d]smiled
+smile, [s]smiles, [d]smiled, [ing]smiling
 note, [s]notes
 shown
-honest
+honest, [ly]honestly
 character, [s]characters
 holy, [ier]holier, [iest]holiest
 manager, [s]managers
-warm, [er]warmer, [est]warmest, [ed]warmed, [ing]warming, [s]warms
+warm, [s]warms, [ed]warmed, [ing]warming, [er]warmer, [est]warmest
 lesson, [s]lessons
 soul, [s]souls
-attack, [s]attacks, [ing]attacking, [ed]attacked
+attack, [s]attacks, [ed]attacked, [ing]attacking
 nope
 dark, [er]darker, [est]darkest
 difference, [s]differences
 wine, [s]wines
-fit, [s]fits, [ting]fitting, [ted]fitted
+fit, [s]fits, [ted]fitted, [ting]fitting
 road, [s]roads
 knew
-calm, [s]calms, [ing]calming, [ed]calmed
-personal
+calm, [s]calms, [ed]calmed, [ing]calming
+personal, [ly]personally
 brought
 sold
 clown, [s]clowns
@@ -901,20 +903,20 @@ bowl, [s]bowls, [ed]bowled, [ing]bowling
 mayor, [s]mayors
 sexy, [ier]sexier, [iest]sexiest
 dirty, [ier]dirtier, [iest]dirtiest
-carry, [ies]carries, [ing]carrying, [ied]carried
+carry, [ies]carries, [ied]carried, [ing]carrying
 professor, [s]professors
 usually
-pack, [s]packs, [ing]packing, [ed]packed
+pack, [s]packs, [ed]packed, [ing]packing
 bottle, [s]bottles
 cheese, [s]cheeses
 summer, [s]summers
-remind, [s]reminds, [ing]reminding, [ed]reminded
-lock, [s]locks, [ing]locking, [ed]locked
+remind, [s]reminds, [ed]reminded, [ing]reminding
+lock, [s]locks, [ed]locked, [ing]locking
 afternoon, [s]afternoons
 across
 angry, [ier]angrier, [iest]angriest
 fella, [s]fellas
-reach, [es]reaches, [ing]reaching, [ed]reached
+reach, [es]reaches, [ed]reached, [ing]reaching
 board, [s]boards, [ed]boarded, [ing]boarding
 cup, [s]cups
 lawyer, [s]lawyers
@@ -922,8 +924,8 @@ camera, [s]cameras
 pain, [s]pains
 low, [er]lower, [est]lowest
 giant, [s]giants
-slow, [er]slower, [est]slowest, [ed]slowed, [ing]slowing, [s]slows
-ground, [s]grounds, [ing]grounding, [ed]grounded
+slow, [s]slows, [ed]slowed, [ing]slowing, [ly]slowly, [er]slower, [est]slowest
+ground, [s]grounds, [ed]grounded, [ing]grounding
 desk, [s]desks
 monster, [s]monsters
 experience, [s]experiences, [d]experienced, [ing]experiencing
@@ -931,20 +933,21 @@ race, [s]races, [d]raced, [ing]racing
 certainly
 cop, [s]cops
 credit, [s]credits
-prepare, [s]prepares, [ing]preparing, [d]prepared
-dump, [s]dumps, [ing]dumping, [ed]dumped
+kinda
+prepare, [s]prepares, [d]prepared, [ing]preparing
+dump, [s]dumps, [ed]dumped, [ing]dumping
 anywhere
 breakfast, [s]breakfasts
 church, [es]churches
-hire, [s]hires, [ing]hiring, [d]hired
+hire, [s]hires, [d]hired, [ing]hiring
 decision, [s]decisions
-cost, [s]costs, [ing]costing, [ed]costed
+cost, [s]costs, [ed]costed, [ing]costing
 grade, [s]grades, [d]graded, [ing]grading
 fool, [s]fools, [ed]fooled, [ing]fooling
 pig, [s]pigs
 loser, [s]losers
 robot, [s]robots
-deep, [er]deeper, [est]deepest
+deep, [ly]deeply, [er]deeper, [est]deepest
 chocolate, [s]chocolates
 service, [s]services
 jew
@@ -954,44 +957,44 @@ grandpa, [s]grandpas
 hero, [es]heroes
 shot, [s]shots
 folks
-yell, [s]yells, [ing]yelling, [ed]yelled
+yell, [s]yells, [ed]yelled, [ing]yelling
 magic, [s]magics
 scene, [s]scenes
 bear, [s]bears, [ing]bearing, [ore]bore, [orn]born
 issue, [s]issues
 lovely, [ier]lovelier, [iest]loveliest
-cook, [s]cooks, [ing]cooking, [ed]cooked
+cook, [s]cooks, [ed]cooked, [ing]cooking
 chick, [s]chicks
 costume, [s]costumes
 friday, [s]fridays
 hall, [s]halls
 divorce, [s]divorces, [d]divorced, [ing]divorcing
 ms, [s]mss, [es]mses
-base, [ing]basing, [d]based
-punch, [es]punches, [ing]punching, [ed]punched
-support, [s]supports, [ing]supporting, [ed]supported
+base, [d]based, [ing]basing
+punch, [es]punches, [ed]punched, [ing]punching
+support, [s]supports, [ed]supported, [ing]supporting
 form, [s]forms, [ed]formed, [ing]forming
 forgive, [s]forgives, [ing]forgiving, [ave]forgave, [n]forgiven
-paint, [s]paints, [ing]painting, [ed]painted
+paint, [s]paints, [ed]painted, [ing]painting
 fifteen, [s]fifteens
-ought
-cheat, [s]cheats, [ing]cheating, [ed]cheated
+ought, ['ve]ought've
+cheat, [s]cheats, [ed]cheated, [ing]cheating
 chinese
 public, [s]publics
-create, [s]creates, [ing]creating, [d]created
+create, [s]creates, [d]created, [ing]creating
 fear, [s]fears, [ed]feared, [ing]fearing
 comfortable
 hotel, [s]hotels
 magazine, [s]magazines
-settle, [s]settles, [ing]settling, [d]settled
+settle, [s]settles, [d]settled, [ing]settling
 accident, [s]accidents
 excellent
 neighbor, [s]neighbors
 tip, [s]tips, [ped]tipped, [ping]tipping
-pop, [s]pops, [ping]popping, [ped]popped
+pop, [s]pops, [ped]popped, [ping]popping
 spirit, [s]spirits
-hook, [s]hooks, [ing]hooking, [ed]hooked
-round, [s]rounds, [er]rounder, [est]roundest, [ed]rounded, [ing]rounding
+hook, [s]hooks, [ed]hooked, [ing]hooking
+round, [s]rounds, [ed]rounded, [ing]rounding, [er]rounder, [est]roundest
 cow, [s]cows
 foot, [eet]feet
 building, [s]buildings
@@ -1000,13 +1003,13 @@ ear, [s]ears
 ugly, [ier]uglier, [iest]ugliest
 murder, [s]murders, [ed]murdered, [ing]murdering
 toy, [s]toys
-cancel, [s]cancels, [ing]canceling, [ed]canceled
+cancel, [s]cancels, [ed]canceled, [ing]canceling
 internet
 strange, [r]stranger, [st]strangest
 hug, [s]hugs, [ged]hugged, [ging]hugging
 aunt, [s]aunts
 island, [s]islands
-blame, [s]blames, [ing]blaming, [d]blamed
+blame, [s]blames, [d]blamed, [ing]blaming
 action, [s]actions
 bill, [s]bills
 field, [s]fields
@@ -1015,11 +1018,11 @@ level, [s]levels
 size, [s]sizes
 ran
 cell, [s]cells
-serve, [s]serves, [ing]serving, [d]served
+serve, [s]serves, [d]served, [ing]serving
 shake, [s]shakes, [ing]shaking, [ook]shook, [n]shaken
 mail, [s]mails, [ed]mailed, [ing]mailing
 neck, [s]necks
-forward, [ed]forwarded, [ing]forwarding, [s]forwards
+forward, [s]forwards, [ed]forwarded, [ing]forwarding
 pound, [s]pounds, [ed]pounded, [ing]pounding
 loud, [er]louder, [est]loudest
 plant, [s]plants, [ed]planted, [ing]planting
@@ -1029,32 +1032,32 @@ commercial, [s]commercials
 draw, [s]draws, [ing]drawing, [ew]drew, [n]drawn
 guest, [s]guests
 insane
-fail, [s]fails, [ing]failing, [ed]failed
+fail, [s]fails, [ed]failed, [ing]failing
 adult, [s]adults
 block, [s]blocks, [ed]blocked, [ing]blocking
 pleasure, [s]pleasures
 truck, [s]trucks
 science, [s]sciences
-strike, [s]strikes, [cken]stricken, [ing]striking, [uck]struck
-careful
+strike, [s]strikes, [ing]striking, [cken]stricken, [uck]struck
+careful, [ly]carefully
 nervous
 although
 gas, [es]gases, [ses]gasses
-switch, [es]switches, [ing]switching, [ed]switched
+switch, [es]switches, [ed]switched, [ing]switching
 partner, [s]partners
 ew, [w]eww
-scream, [s]screams, [ing]screaming, [ed]screamed
+scream, [s]screams, [ed]screamed, [ing]screaming
 pool, [s]pools
 sea, [s]seas
 color, [s]colors, [ed]colored, [ing]coloring
-appear, [s]appears, [ing]appearing, [ed]appeared
+appear, [s]appears, [ed]appeared, [ing]appearing
 clearly
 silly, [ier]sillier, [iest]silliest
-feed, [s]feeds, [ing]feeding, [d]fed
-double, [d]doubled, [s]doubles, [ing]doubling
-trap, [s]traps, [ping]trapping, [ped]trapped
+feed, [s]feeds, [d]fed, [ing]feeding
+double, [s]doubles, [d]doubled, [ing]doubling
+trap, [s]traps, [ped]trapped, [ping]trapping
 neither
-wash, [es]washes, [ing]washing, [ed]washed
+wash, [es]washes, [ed]washed, [ing]washing
 stink, [s]stinks, [ing]stinking, [ank]stank, [unk]stunk
 plane, [s]planes
 tiny, [ier]tinier, [iest]tiniest
@@ -1064,20 +1067,20 @@ button, [s]buttons
 lab
 flower, [s]flowers
 memory, [ies]memories
-cash, [ed]cashed, [es]cashes, [ing]cashing
-involve, [s]involves, [ing]involving, [d]involved
+cash, [es]cashes, [ed]cashed, [ing]cashing
+involve, [s]involves, [d]involved, [ing]involving
 madam, [s]madams, ['am]ma'am
 tea, [s]teas
 camp, [s]camps, [ed]camped, [ing]camping
 bike, [s]bikes
 freeze, [s]freezes, [ing]freezing, [oze]froze, [ozen]frozen
-sexual
+sexual, [ly]sexually
 code, [s]codes
-celebrate, [s]celebrates, [ing]celebrating, [d]celebrated
+celebrate, [s]celebrates, [d]celebrated, [ing]celebrating
 couch, [es]couches
 price, [s]prices
 type, [s]types, [d]typed, [ing]typing
-assume, [s]assumes, [ing]assuming, [d]assumed
+assume, [s]assumes, [d]assumed, [ing]assuming
 delicious
 forty, [ies]forties
 player, [s]players
@@ -1093,50 +1096,50 @@ garbage
 client, [s]clients
 lame, [r]lamer, [st]lamest
 project, [s]projects
-dare, [s]dares, [ing]daring, [d]dared
+dare, [s]dares, [d]dared, [ing]daring
 episode, [s]episodes
 glass, [es]glasses
 green, [er]greener, [est]greenest
 award, [s]awards
 unbelievable
 court, [s]courts
-final
+final, [ly]finally
 large, [r]larger, [st]largest
 salad, [s]salads
-complete, [r]completer, [d]completed, [s]completes, [ing]completing
-belong, [s]belongs, [ing]belonging, [ed]belonged
+complete, [s]completes, [d]completed, [ing]completing, [ly]completely, [r]completer
+belong, [s]belongs, [ed]belonged, [ing]belonging
 station, [s]stations
 area, [s]areas
-focus, [i]foci, [es]focuses, [ed]focused, [ing]focusing, [sed]focussed, [ses]focusses, [sing]focussing
+focus, [es]focuses, [ses]focusses, [ed]focused, [sed]focussed, [ing]focusing, [sing]focussing, [i]foci
 crime, [s]crimes
 meat, [s]meats
 romantic
 glasses
 weight, [s]weights
-practice, [d]practiced, [s]practices, [ing]practicing
+practice, [s]practices, [d]practiced, [ing]practicing
 nail, [s]nails, [ed]nailed, [ing]nailing
 cab, [s]cabs
 boring
 ship, [s]ships, [ped]shipped, [ping]shipping
 score, [s]scores, [d]scored, [ing]scoring
 information
-total
+total, [ly]totally
 channel, [s]channels
 page, [s]pages
 suddenly
-text, [s]texts, [ing]texting, [ed]texted
+text, [s]texts, [ed]texted, [ing]texting
 sake, [s]sakes
 thanksgiving, [s]thanksgivings
 private
-certain
+certain, [ly]certainly
 french
 winner, [s]winners
 ma'am
 pen, [s]pens
-design, [ed]designed, [ing]designing, [s]designs
+design, [s]designs, [ed]designed, [ing]designing
 twice
 center, [s]centers
-rent, [s]rents, [ing]renting, [ed]rented
+rent, [s]rents, [ed]rented, [ing]renting
 cousin, [s]cousins
 jealous
 planet, [s]planets
@@ -1150,10 +1153,10 @@ track, [s]tracks, [ed]tracked, [ing]tracking
 dangerous
 nuts
 ourselves
-suggest, [s]suggests, [ing]suggesting, [ed]suggested
+suggest, [s]suggests, [ed]suggested, [ing]suggesting
 officer, [s]officers
 interview, [s]interviews, [ed]interviewed, [ing]interviewing
-concern, [s]concerns, [ing]concerning, [ed]concerned
+concern, [s]concerns, [ed]concerned, [ing]concerning
 meal, [s]meals
 popular
 flight, [s]flights
@@ -1163,21 +1166,21 @@ tear, [s]tears, [ing]tearing, [ore]tore, [orn]torn
 copy, [ies]copies, [ied]copied, [ing]copying
 member, [s]members
 yo
-golf, [ed]golfed, [ing]golfing, [s]golfs
+golf, [s]golfs, [ed]golfed, [ing]golfing
 program, [s]programs, [med]programmed, [ming]programming
-add, [s]adds, [ing]adding, [ed]added
-confuse, [s]confuses, [ing]confusing, [d]confused
+add, [s]adds, [ed]added, [ing]adding
+confuse, [s]confuses, [d]confused, [ing]confusing
 government, [s]governments
 sunday, [s]sundays
 fell
-continue, [s]continues, [ing]continuing, [d]continued
+continue, [s]continues, [d]continued, [ing]continuing
 event, [s]events
 jewish
-press, [es]presses, [ing]pressing, [ed]pressed
+press, [es]presses, [ed]pressed, [ing]pressing
 ate
 nah
 breast, [s]breasts
-email, [s]emails, [ing]emailing, [ed]emailed
+email, [s]emails, [ed]emailed, [ing]emailing
 bank, [s]banks
 kept
 parking, [s]parkings
@@ -1193,7 +1196,7 @@ local, [s]locals
 rat, [s]rats
 career, [s]careers
 juice, [s]juices
-protect, [s]protects, [ing]protecting, [ed]protected
+protect, [s]protects, [ed]protected, [ing]protecting
 shame, [s]shames
 bottom, [s]bottoms
 underwear, [s]underwears
@@ -1204,29 +1207,29 @@ hung
 closet, [s]closets
 meeting, [s]meetings
 sun, [s]suns
-crack, [ed]cracked, [ing]cracking, [s]cracks
-afford, [s]affords, [ing]affording, [ed]afforded
+crack, [s]cracks, [ed]cracked, [ing]cracking
+afford, [s]affords, [ed]afforded, [ing]affording
 bald, [er]balder, [est]baldest
-engage, [s]engages, [ing]engaging, [d]engaged
+engage, [s]engages, [d]engaged, [ing]engaging
 towel, [s]towels
 mall, [s]malls
 regular
 bone, [s]bones
 fart, [s]farts, [ed]farted, [ing]farting
-force, [s]forces, [ing]forcing, [d]forced
+force, [s]forces, [d]forced, [ing]forcing
 taught
 cancer, [s]cancers
-discuss, [es]discusses, [ing]discussing, [ed]discussed
+discuss, [es]discusses, [ed]discussed, [ing]discussing
 fancy, [ier]fancier, [iest]fanciest
 advice
 apple, [s]apples
 everywhere
 holiday, [s]holidays
-slap, [s]slaps, [ping]slapping, [ped]slapped
+slap, [s]slaps, [ped]slapped, [ping]slapping
 common, [er]commoner, [est]commonest
 crush, [es]crushes
 peace
-warn, [s]warns, [ing]warning, [ed]warned
+warn, [s]warns, [ed]warned, [ing]warning
 noise, [s]noises
 super
 thrown
@@ -1234,30 +1237,30 @@ asleep
 bread, [s]breads
 fucking
 porn, [s]porns
-travel, [s]travels, [ing]traveling, [ed]traveled
+travel, [s]travels, [ed]traveled, [ing]traveling
 dying
-borrow, [s]borrows, [ing]borrowing, [ed]borrowed
+borrow, [s]borrows, [ed]borrowed, [ing]borrowing
 department, [s]departments
 plate, [s]plates
-breathe, [s]breathes, [ing]breathing, [d]breathed
+breathe, [s]breathes, [d]breathed, [ing]breathing
 classic
 farm, [s]farms
 disgusting
 tall, [er]taller, [est]tallest
-replace, [s]replaces, [ing]replacing, [d]replaced
+replace, [s]replaces, [d]replaced, [ing]replacing
 somehow
 theater, [s]theaters
-mix, [es]mixes, [ing]mixing, [ed]mixed
-discover, [s]discovers, [ing]discovering, [ed]discovered
+mix, [es]mixes, [ed]mixed, [ing]mixing
+discover, [s]discovers, [ed]discovered, [ing]discovering
 incredible
 plenty
-spell, [s]spells, [ing]spelling, [ed]spelled, [t]spelt
+spell, [s]spells, [ed]spelled, [ing]spelling, [t]spelt
 baseball, [s]baseballs
 comedy, [ies]comedies
-enter, [s]enters, [ing]entering, [ed]entered
-introduce, [s]introduces, [ing]introducing, [d]introduced
+enter, [s]enters, [ed]entered, [ing]entering
+introduce, [s]introduces, [d]introduced, [ing]introducing
 whenever
-near, [er]nearer, [est]nearest
+near, [ly]nearly, [er]nearer, [est]nearest
 pair, [s]pairs
 butter
 possibly
@@ -1267,28 +1270,28 @@ season, [s]seasons
 rain, [s]rains, [ed]rained, [ing]raining
 miracle, [s]miracles
 perfectly
-stare, [s]stares, [ing]staring, [d]stared
+stare, [s]stares, [d]stared, [ing]staring
 flag, [s]flags
 roommate, [s]roommates
 wood, [s]woods
 actor, [s]actors
-land, [s]lands, [ing]landing, [ed]landed
-arrest, [ed]arrested, [ing]arresting, [s]arrests
+land, [s]lands, [ed]landed, [ing]landing
+arrest, [s]arrests, [ed]arrested, [ing]arresting
 prize, [s]prizes
 corner, [s]corners
 fourth, [s]fourths
-sneak, [s]sneaks, [ing]sneaking, [ed]sneaked, [uck]snuck
-dry, [ier]drier, [er]dryer, [iest]driest, [est]dryest, [ied]dried, [ies]dries, [ing]drying
+sneak, [s]sneaks, [ed]sneaked, [ing]sneaking, [uck]snuck
+dry, [ies]dries, [ied]dried, [ing]drying, [ier]drier, [er]dryer, [iest]driest, [est]dryest
 pocket, [s]pockets
-swing, [ing]swinging, [s]swings, [ung]swung
+swing, [s]swings, [ing]swinging, [ung]swung
 lately
 queen, [s]queens
 duck, [s]ducks, [ed]ducked, [ing]ducking
-cross, [es]crosses, [ing]crossing, [ed]crossed
+cross, [es]crosses, [ed]crossed, [ing]crossing
 especially
 lay, [s]lays, [ing]laying, [id]laid
 pressure, [s]pressures
-rip, [s]rips, [ping]ripping, [ped]ripped
+rip, [s]rips, [ped]ripped, [ping]ripping
 assistant, [s]assistants
 north
 often, [er]oftener
@@ -1302,8 +1305,8 @@ pal, [s]pals
 speech, [es]speeches
 bath, [s]baths
 search, [es]searches, [ed]searched, [ing]searching
-challenge, [d]challenged, [s]challenges, [ing]challenging
-bust, [s]busts, [ing]busting, [ed]busted
+challenge, [s]challenges, [d]challenged, [ing]challenging
+bust, [s]busts, [ed]busted, [ing]busting
 gee
 handsome, [r]handsomer, [st]handsomest
 safety, [ies]safeties
@@ -1316,21 +1319,21 @@ poop, [s]poops, [ed]pooped, [ing]pooping
 monday, [s]mondays
 customer, [s]customers
 healthy, [ier]healthier, [iest]healthiest
-invent, [s]invents, [ing]inventing, [ed]invented
+invent, [s]invents, [ed]invented, [ing]inventing
 princess, [es]princesses
 chip, [s]chips, [ped]chipped, [ping]chipping
 merry, [ier]merrier, [iest]merriest
 someday
-bang, [s]bangs, [ing]banging, [ed]banged
+bang, [s]bangs, [ed]banged, [ing]banging
 doubt, [s]doubts, [ed]doubted, [ing]doubting
 blind, [er]blinder, [est]blindest
-solve, [s]solves, [ing]solving, [d]solved
+solve, [s]solves, [d]solved, [ing]solving
 sweater, [s]sweaters
 terrific
 wet, [ter]wetter, [test]wettest
 valentine, [s]valentines
 coach, [es]coaches, [ed]coached, [ing]coaching
-beg, [s]begs, [ging]begging, [ged]begged
+beg, [s]begs, [ged]begged, [ging]begging
 cigarette, [s]cigarettes
 sugar, [s]sugars
 uhh
@@ -1338,7 +1341,7 @@ weekend, [s]weekends
 wind, [s]winds, [ing]winding, [ound]wound
 heat, [s]heats, [ed]heated, [ing]heating
 sock, [s]socks, [x]sox
-correct, [ed]corrected, [ing]correcting, [s]corrects
+correct, [s]corrects, [ed]corrected, [ing]correcting, [ly]correctly
 emergency, [ies]emergencies
 mood, [s]moods
 peanut, [s]peanuts
@@ -1347,10 +1350,10 @@ tight, [er]tighter, [est]tightest
 gum, [s]gums
 moon, [s]moons
 nature, [s]natures
-mark, [ed]marked, [ing]marking, [s]marks
+mark, [s]marks, [ed]marked, [ing]marking
 angel, [s]angels
 corporate
-exist, [s]exists, [ing]existing, [ed]existed
+exist, [s]exists, [ed]existed, [ing]existing
 ghost, [s]ghosts
 sauce, [s]sauces
 stomach, [s]stomachs
@@ -1370,14 +1373,14 @@ market, [s]markets
 chose
 goodness
 pillow, [s]pillows
-lift, [s]lifts, [ing]lifting, [ed]lifted
-arrive, [s]arrives, [ing]arriving, [d]arrived
+lift, [s]lifts, [ed]lifted, [ing]lifting
+arrive, [s]arrives, [d]arrived, [ing]arriving
 mountain, [s]mountains
-slip, [s]slips, [ping]slipping, [ped]slipped
+slip, [s]slips, [ped]slipped, [ping]slipping
 belt, [s]belts
 museum, [s]museums
 oil, [s]oils
-escape, [d]escaped, [s]escapes, [ing]escaping
+escape, [s]escapes, [d]escaped, [ing]escaping
 professional, [s]professionals
 airplane, [s]airplanes
 airport, [s]airports
@@ -1392,7 +1395,7 @@ national
 bully, [ies]bullies, [ied]bullied, [ing]bullying
 alien, [s]aliens
 nurse, [s]nurses, [d]nursed, [ing]nursing
-bless, [es]blesses, [ing]blessing, [ed]blessed
+bless, [es]blesses, [ed]blessed, [ing]blessing
 cartoon, [s]cartoons
 swim, [s]swims, [ming]swimming, [am]swam, [um]swum
 contact, [s]contacts, [ed]contacted, [ing]contacting
@@ -1403,17 +1406,17 @@ theory, [ies]theories
 according
 guilty, [ier]guiltier, [iest]guiltiest
 potato, [es]potatoes
-chase, [s]chases, [ing]chasing, [d]chased
+chase, [s]chases, [d]chased, [ing]chasing
 dig, [s]digs, [ging]digging, [ug]dug
 dish, [es]dishes
 uncomfortable
-wrap, [s]wraps, [ping]wrapping, [ped]wrapped
+wrap, [s]wraps, [ped]wrapped, [ping]wrapping
 twin, [s]twins
 cheap, [er]cheaper, [est]cheapest
 employee, [s]employees, [s]employes
 master, [s]masters, [ed]mastered, [ing]mastering
 massage, [s]massages, [d]massaged, [ing]massaging
-perform, [s]performs, [ing]performing, [ed]performed
+perform, [s]performs, [ed]performed, [ing]performing
 spring, [s]springs
 tour, [s]tours
 trash, [es]trashes, [ed]trashed, [ing]trashing
@@ -1430,7 +1433,7 @@ wing, [s]wings, [ed]winged, [ing]winging
 celebrity, [ies]celebrities
 period, [s]periods
 barely
-ignore, [s]ignores, [ing]ignoring, [d]ignored
+ignore, [s]ignores, [d]ignored, [ing]ignoring
 language, [s]languages
 laundry, [ies]laundries
 social
@@ -1438,7 +1441,7 @@ soft, [er]softer, [est]softest
 pet, [s]pets, [ted]petted, [ting]petting
 apology, [ies]apologies
 concert, [s]concerts
-disappoint, [s]disappoints, [ing]disappointing, [ed]disappointed
+disappoint, [s]disappoints, [ed]disappointed, [ing]disappointing
 knife, [ves]knives
 audition, [s]auditions, [ed]auditioned, [ing]auditioning
 hilarious
@@ -1446,27 +1449,27 @@ blanket, [s]blankets
 leader, [s]leaders
 neighborhood, [s]neighborhoods
 west
-bury, [ies]buries, [ing]burying, [ied]buried
+bury, [ies]buries, [ied]buried, [ing]burying
 sheet, [s]sheets
-suffer, [s]suffers, [ing]suffering, [ed]suffered
+suffer, [s]suffers, [ed]suffered, [ing]suffering
 tax, [es]taxes
 alarm, [s]alarms, [ed]alarmed, [ing]alarming
 wore
-receive, [s]receives, [ing]receiving, [d]received
+receive, [s]receives, [d]received, [ing]receiving
 sometime
 split, [s]splits, [ting]splitting
 apart
 bomb, [s]bombs, [ed]bombed, [ing]bombing
-spin, [ning]spinning, [s]spins, [un]spun
+spin, [s]spins, [ning]spinning, [un]spun
 soda, [s]sodas
 talent, [s]talents
 account, [s]accounts
-convince, [s]convinces, [ing]convincing, [d]convinced
+convince, [s]convinces, [d]convinced, [ing]convincing
 dessert, [s]desserts
 purpose, [s]purposes
 weak, [er]weaker, [est]weakest
-cheer, [s]cheers, [ing]cheering, [ed]cheered
-release, [d]released, [s]releases, [ing]releasing
+cheer, [s]cheers, [ed]cheered, [ing]cheering
+release, [s]releases, [d]released, [ing]releasing
 schedule, [s]schedules, [d]scheduled, [ing]scheduling
 research, [es]researches
 tongue, [s]tongues
@@ -1477,12 +1480,12 @@ bug, [s]bugs, [ged]bugged, [ging]bugging
 battle, [s]battles
 license, [s]licenses
 nut, [s]nuts
-wipe, [d]wiped, [s]wipes, [ing]wiping
+wipe, [s]wipes, [d]wiped, [ing]wiping
 male, [s]males
 health
-natural
+natural, [ly]naturally
 risk, [s]risks, [ed]risked, [ing]risking
-wave, [d]waved, [s]waves, [ing]waving
+wave, [s]waves, [d]waved, [ing]waving
 gorgeous
 steak, [s]steaks
 vagina, [s]vaginas
@@ -1490,9 +1493,9 @@ female, [s]females
 audience, [s]audiences
 knee, [s]knees
 term, [s]terms
-trade, [d]traded, [s]trades, [ing]trading
-load, [ed]loaded, [ing]loading, [s]loads
-sue, [s]sues, [ing]suing, [d]sued
+trade, [s]trades, [d]traded, [ing]trading
+load, [s]loads, [ed]loaded, [ing]loading
+sue, [s]sues, [d]sued, [ing]suing
 whether
 artist, [s]artists
 bean, [s]beans
@@ -1505,11 +1508,11 @@ painting, [s]paintings
 truly
 circle, [s]circles, [d]circled, [ing]circling
 army, [ies]armies
-avoid, [s]avoids, [ing]avoiding, [ed]avoided
+avoid, [s]avoids, [ed]avoided, [ing]avoiding
 gang, [s]gangs
 nerd, [s]nerds
 others
-bump, [ed]bumped, [ing]bumping, [s]bumps
+bump, [s]bumps, [ed]bumped, [ing]bumping
 worn
 appointment, [s]appointments
 lesbian, [s]lesbians
@@ -1521,9 +1524,9 @@ pot, [s]pots
 responsible
 salesman, [en]salesmen
 wallet, [s]wallets
-commit, [s]commits, [ting]committing, [ted]committed
+commit, [s]commits, [ted]committed, [ting]committing
 example, [s]examples
-obvious
+obvious, [ly]obviously
 pirate, [s]pirates
 radio, [s]radios
 due
@@ -1531,14 +1534,14 @@ familiar
 homework
 birth, [s]births
 canadian
-prefer, [s]prefers, [ring]preferring, [red]preferred
-rub, [s]rubs, [bing]rubbing, [bed]rubbed
+prefer, [s]prefers, [red]preferred, [ring]preferring
+rub, [s]rubs, [bed]rubbed, [bing]rubbing
 sky, [ies]skies
 basically
-deliver, [s]delivers, [ing]delivering, [ed]delivered
-laboratory, []lab, [s]labs, [ies]laboratories
+deliver, [s]delivers, [ed]delivered, [ing]delivering
+laboratory, [s]labs, [ies]laboratories, []lab
 patient, [s]patients
-insult, [ed]insulted, [ing]insulting, [s]insults
+insult, [s]insults, [ed]insulted, [ing]insulting
 eleven, [s]elevens
 package, [s]packages
 sixty, [ies]sixties
@@ -1551,7 +1554,7 @@ ocean, [s]oceans
 percent, [s]percents
 above
 alcohol, [s]alcohols
-crash, [es]crashes, [ing]crashing, [ed]crashed
+crash, [es]crashes, [ed]crashed, [ing]crashing
 insurance, [s]insurances
 nuclear
 pathetic
@@ -1559,23 +1562,25 @@ row, [s]rows
 sight, [s]sights
 available
 brave, [r]braver, [st]bravest
-climb, [s]climbs, [ing]climbing, [ed]climbed
-earn, [s]earns, [ing]earning, [ed]earned
+climb, [s]climbs, [ed]climbed, [ing]climbing
+earn, [s]earns, [ed]earned, [ing]earning
 east
-impress, [es]impresses, [ing]impressing, [ed]impressed
+impress, [es]impresses, [ed]impressed, [ing]impressing
 league, [s]leagues
 online
 within
 sent
 became
 lives
+y'all
+gotta
 writer, [s]writers
 crowd, [s]crowds
-flip, [s]flips, [ping]flipping, [ped]flipped
+flip, [s]flips, [ped]flipped, [ping]flipping
 blew
 bum, [s]bums, [med]bummed, [ming]bumming
 heck
-drag, [s]drags, [ging]dragging, [ged]dragged
+drag, [s]drags, [ged]dragged, [ging]dragging
 funeral, [s]funerals
 literally
 lousy, [ier]lousier, [iest]lousiest
@@ -1583,72 +1588,73 @@ opinion, [s]opinions
 spit, [s]spits, [ting]spitting, [at]spat
 van, [s]vans
 behavior, [s]behaviors
-complain, [s]complains, [ing]complaining, [ed]complained
+complain, [s]complains, [ed]complained, [ing]complaining
 itself
 mirror, [s]mirrors
 recently
 stripper, [s]strippers
 subject, [s]subjects
-slide, []slid, [s]slides, [ing]sliding
+slide, [s]slides, [ing]sliding, []slid
 bright, [er]brighter, [est]brightest
-general
+general, [ly]generally
 kidney, [s]kidneys
 result, [s]results
+ain't
 corn, [s]corns
 grandmother, [s]grandmothers
 nightmare, [s]nightmares
 ours
 yellow, [er]yellower
 christian, [s]christians
-doughnut, [s]doughnuts, [nut]donut, [nuts]donuts
-original
+doughnut, [s]doughnuts, [nuts]donuts, [nut]donut
+original, [ly]originally
 position, [s]positions
 paid
 led
 cannot
 quarter, [s]quarters
-annoy, [ed]annoyed, [ing]annoying, [s]annoys
+annoy, [s]annoys, [ed]annoyed, [ing]annoying
 traffic
-physical, [s]physicals
+physical, [s]physicals, [ly]physically
 file, [s]files, [d]filed, [ing]filing
-rush, [ed]rushed, [es]rushes, [ing]rushing
+rush, [es]rushes, [ed]rushed, [ing]rushing
 cure, [s]cures, [d]cured, [ing]curing
 telephone, [s]telephones
-actual
+actual, [ly]actually
 banana, [s]bananas
 conference, [s]conferences
 lake, [s]lakes
 medical
 medicine, [s]medicines
 spoken
-pray, [ed]prayed, [ing]praying, [s]prays
-shave, [d]shaved, [n]shaven, [s]shaves, [ing]shaving
+pray, [s]prays, [ed]prayed, [ing]praying
+shave, [s]shaves, [d]shaved, [ing]shaving, [n]shaven
 tub, [s]tubs
-bake, [d]baked, [s]bakes, [ing]baking
+bake, [s]bakes, [d]baked, [ing]baking
 option, [s]options
 south
 review, [s]reviews, [ed]reviewed, [ing]reviewing
 creepy, [ier]creepier, [iest]creepiest
 eventually
-interrupt, [ed]interrupted, [ing]interrupting, [s]interrupts
+interrupt, [s]interrupts, [ed]interrupted, [ing]interrupting
 library, [ies]libraries
 rude, [r]ruder, [st]rudest
 host, [s]hosts, [ed]hosted, [ing]hosting
-grand, [er]grander, [est]grandest, [s]grands
-advertisement, []ad, [s]ads, [s]advertisements
+grand, [s]grands, [er]grander, [est]grandest
+advertisement, [s]ads, [s]advertisements, []ad
 danger, [s]dangers
 fourteen
 math, [s]maths
-propose, [d]proposed, [s]proposes, [ing]proposing
+propose, [s]proposes, [d]proposed, [ing]proposing
 thursday, [s]thursdays
 darling, [s]darlings
-gather, [ed]gathered, [ing]gathering, [s]gathers
+gather, [s]gathers, [ed]gathered, [ing]gathering
 mostly
 bubble, [s]bubbles
 energy, [ies]energies
 heavy, [ier]heavier, [iest]heaviest
 laser, [s]lasers
-manage, [d]managed, [s]manages, [ing]managing
+manage, [s]manages, [d]managed, [ing]managing
 meanwhile
 network, [s]networks
 weapon, [s]weapons
@@ -1660,9 +1666,9 @@ tuesday, [s]tuesdays
 version, [s]versions
 faith, [s]faiths
 innocent
-remove, [d]removed, [s]removes, [ing]removing
-survive, [d]survived, [s]survives, [ing]surviving
-twist, [ed]twisted, [ing]twisting, [s]twists
+remove, [s]removes, [d]removed, [ing]removing
+survive, [s]survives, [d]survived, [ing]surviving
+twist, [s]twists, [ed]twisted, [ing]twisting
 poison, [s]poisons, [ed]poisoned, [ing]poisoning
 orange, [s]oranges
 bee, [s]bees
@@ -1677,8 +1683,8 @@ chop, [s]chops, [ped]chopped, [ping]chopping
 bored
 clock, [s]clocks
 indeed
-skip, [ped]skipped, [ping]skipping, [s]skips
-remain, [ed]remained, [ing]remaining, [s]remains
+skip, [s]skips, [ped]skipped, [ping]skipping
+remain, [s]remains, [ed]remained, [ing]remaining
 style, [s]styles
 surgery, [ies]surgeries
 toe, [s]toes
@@ -1691,41 +1697,41 @@ midnight
 simply
 spanish
 boom
-describe, [d]described, [s]describes, [ing]describing
-legal
+describe, [s]describes, [d]described, [ing]describing
+legal, [ly]legally
 mexican, [s]mexicans
 powerful, [l]powerfull
 series
 wire, [s]wires
-demand, [ed]demanded, [ing]demanding, [s]demands
+demand, [s]demands, [ed]demanded, [ing]demanding
 candle, [s]candles
 diaper, [s]diapers
 direction, [s]directions
 eighteen
-express, [ed]expressed, [es]expresses, [ing]expressing
+express, [es]expresses, [ed]expressed, [ing]expressing
 plastic, [s]plastics
 responsibility, [ies]responsibilities
 shelves
-starve, [d]starved, [s]starves, [ing]starving
+starve, [s]starves, [d]starved, [ing]starving
 united
 worker, [s]workers
-benefit, [s]benefits, [ing]benefiting, [ting]benefitting, [ed]benefited, [ted]benefitted
-major, [ed]majored, [ing]majoring, [ly]majorly, [s]majors
+benefit, [s]benefits, [ed]benefited, [ted]benefitted, [ing]benefiting, [ting]benefitting
+major, [s]majors, [ed]majored, [ing]majoring, [ly]majorly
 witness, [es]witnesses, [ed]witnessed, [ing]witnessing
 immediately
 nowhere
-separate, [d]separated, [s]separates, [ing]separating
-emotional
+separate, [s]separates, [d]separated, [ing]separating
+emotional, [ly]emotionally
 hardly
 pilot, [s]pilots
 vampire, [s]vampires
 attitude, [s]attitudes
 balloon, [s]balloons
-exact
+exact, [ly]exactly
 frankly
 hip, [s]hips
 prank, [s]pranks
-spare, [d]spared, [s]spares, [ing]sparing, [r]sparer
+spare, [s]spares, [d]spared, [ing]sparing, [r]sparer
 damage, [s]damages, [d]damaged, [ing]damaging
 announcement, [s]announcements
 effect, [s]effects
@@ -1733,25 +1739,25 @@ golden
 nipple, [s]nipples
 rough, [er]rougher, [est]roughest
 waiter, [s]waiters
-print, [ed]printed, [ing]printing, [s]prints
-sweat, [ed]sweated, [ing]sweating, [s]sweats
+print, [s]prints, [ed]printed, [ing]printing
+sweat, [s]sweats, [ed]sweated, [ing]sweating
 architect, [s]architects
 beauty, [ies]beauties
 mate, [s]mates
-official
+official, [ly]officially
 homeless
 musical, [s]musicals
-volunteer, [ed]volunteered, [ing]volunteering, [s]volunteers
+volunteer, [s]volunteers, [ed]volunteered, [ing]volunteering
 wide, [r]wider, [st]widest
-ski, [ed]skied, [ing]skiing, [s]skis
+ski, [s]skis, [ed]skied, [ing]skiing
 contract, [s]contracts
-recognize, [d]recognized, [s]recognizes, [ing]recognizing
+recognize, [s]recognizes, [d]recognized, [ing]recognizing
 scientist, [s]scientists
 shoulder, [s]shoulders
 successful
 turd, [s]turds
-snap, [ped]snapped, [ping]snapping, [s]snaps
-attempt, [ed]attempted, [ing]attempting, [s]attempts
+snap, [s]snaps, [ped]snapped, [ping]snapping
+attempt, [s]attempts, [ed]attempted, [ing]attempting
 basement, [s]basements
 degree, [s]degrees
 fortune, [s]fortunes
@@ -1767,9 +1773,9 @@ role, [s]roles
 snack, [s]snacks
 sucker, [s]suckers
 tag, [s]tags
-pitch, [ed]pitched, [es]pitches, [ing]pitching
+pitch, [es]pitches, [ed]pitched, [ing]pitching
 chef, [s]chefs
-chew, [ed]chewed, [ing]chewing, [s]chews
+chew, [s]chews, [ed]chewed, [ing]chewing
 evidence
 fantasy, [ies]fantasies
 operation, [s]operations
@@ -1787,15 +1793,15 @@ written
 began
 built
 broke
-hunt, [ed]hunted, [ing]hunting, [s]hunts
+hunt, [s]hunts, [ed]hunted, [ing]hunting
 menu, [s]menus
 mystery, [ies]mysteries
 regret, [s]regrets, [ted]regretted, [ting]regretting
 technically
 ton, [s]tons
-thrill, [ed]thrilled, [ing]thrilling, [s]thrills
+thrill, [s]thrills, [ed]thrilled, [ing]thrilling
 limit, [s]limits, [ed]limited, [ing]limiting
-attract, [ed]attracted, [ing]attracting, [s]attracts
+attract, [s]attracts, [ed]attracted, [ing]attracting
 aware
 chest, [s]chests
 dentist, [s]dentists
@@ -1804,9 +1810,9 @@ junior
 pencil, [s]pencils
 sentence, [s]sentences
 sixteen, [s]sixteens
-squeeze, [d]squeezed, [s]squeezes, [ing]squeezing
+squeeze, [s]squeezes, [d]squeezed, [ing]squeezing
 exercise, [s]exercises, [d]exercised, [ing]exercising
-boo, [ed]booed, [ing]booing, [s]boos
+boo, [s]boos, [ed]booed, [ing]booing
 lobster, [s]lobsters
 success, [es]successes
 terrorist, [s]terrorists
@@ -1814,7 +1820,7 @@ storm, [s]storms, [ed]stormed, [ing]storming
 fashion, [s]fashions
 glove, [s]gloves
 item, [s]items
-recommend, [ed]recommended, [ing]recommending, [s]recommends
+recommend, [s]recommends, [ed]recommended, [ing]recommending
 fed
 tuna, [s]tunas
 warehouse, [s]warehouses
@@ -1823,8 +1829,8 @@ lazy, [ier]lazier, [iest]laziest
 tank, [s]tanks
 whale, [s]whales
 zone, [s]zones
-panic, [ked]panicked, [king]panicking, [s]panics
-bond, [ed]bonded, [ing]bonding, [s]bonds
+panic, [s]panics, [ked]panicked, [king]panicking
+bond, [s]bonds, [ed]bonded, [ing]bonding
 fry, [ies]fries, [ied]fried, [ing]frying
 bachelor, [s]bachelors
 chain, [s]chains
@@ -1846,9 +1852,9 @@ taco, [s]tacos
 thin, [ner]thinner, [nest]thinnest
 stress, [es]stresses, [ed]stressed, [ing]stressing
 aside
-distract, [ed]distracted, [ing]distracting, [s]distracts
+distract, [s]distracts, [ed]distracted, [ing]distracting
 hehe
-humiliate, [d]humiliated, [s]humiliates, [ing]humiliating
+humiliate, [s]humiliates, [d]humiliated, [ing]humiliating
 locker, [s]lockers
 native
 performance, [s]performances
@@ -1863,20 +1869,20 @@ breakup, [s]breakups
 device, [s]devices
 garden, [s]gardens
 pink, [er]pinker, [est]pinkest
-represent, [ed]represented, [ing]representing, [s]represents
+represent, [s]represents, [ed]represented, [ing]representing
 thirteen, [s]thirteens
 treasure, [s]treasures
 flash, [es]flashes, [ed]flashed, [ing]flashing
 opposite, [s]opposites
 amount, [s]amounts
 newspaper, [s]newspapers
-cast, [ing]casting, [s]casts
+cast, [s]casts, [ing]casting
 ashamed
 champion, [s]champions
 per
 scout, [s]scouts
 guitar, [s]guitars
-mental
+mental, [ly]mentally
 sensitive
 curse, [s]curses, [d]cursed, [ing]cursing
 shock, [s]shocks, [ed]shocked, [ing]shocking
@@ -1897,7 +1903,7 @@ pancake, [s]pancakes
 stranger, [s]strangers
 charity, [ies]charities
 freedom, [s]freedoms
-pour, [ed]poured, [ing]pouring, [s]pours
+pour, [s]pours, [ed]poured, [ing]pouring
 tradition, [s]traditions
 beef, [s]beefs
 bullet, [s]bullets
@@ -1906,27 +1912,27 @@ disaster, [s]disasters
 factory, [ies]factories
 forest, [s]forests
 odd
-provide, [d]provided, [s]provides, [ing]providing
-repeat, [ed]repeated, [ing]repeating, [s]repeats
+provide, [s]provides, [d]provided, [ing]providing
+repeat, [s]repeats, [ed]repeated, [ing]repeating
 section, [s]sections
 subway, [s]subways
 firm, [s]firms, [er]firmer, [est]firmest
-choke, [d]choked, [s]chokes, [ing]choking
+choke, [s]chokes, [d]choked, [ing]choking
 cowboy, [s]cowboys
 dirt
 frog, [s]frogs
 pumpkin, [s]pumpkins
-swallow, [ed]swallowed, [ing]swallowing, [s]swallows
+swallow, [s]swallows, [ed]swallowed, [ing]swallowing
 bacon
 clever, [er]cleverer, [est]cleverest
 competition, [s]competitions
 heh
-lick, [ed]licked, [ing]licking, [s]licks
+lick, [s]licks, [ed]licked, [ing]licking
 mission, [s]missions
 soap, [s]soaps
 tail, [s]tails
 tattoo, [s]tattoos
-sudden
+sudden, [ly]suddenly
 living, [s]livings
 activity, [ies]activities
 bridge, [s]bridges
@@ -1935,27 +1941,27 @@ diet, [s]diets
 theme, [s]themes
 university, [ies]universities
 mug, [s]mugs, [ged]mugged, [ging]mugging
-post, [ed]posted, [ing]posting, [s]posts
-suspect, [ed]suspected, [ing]suspecting, [s]suspects
+post, [s]posts, [ed]posted, [ing]posting
+suspect, [s]suspects, [ed]suspected, [ing]suspecting
 champagne, [s]champagnes
 charming
-compare, [d]compared, [s]compares, [ing]comparing
+compare, [s]compares, [d]compared, [ing]comparing
 gut, [s]guts
 map, [s]maps
 napkin, [s]napkins
 reward, [s]rewards, [ed]rewarded, [ing]rewarding
-apply, [ied]applied, [ies]applies, [ing]applying
-collect, [ed]collected, [ing]collecting, [s]collects
+apply, [ies]applies, [ied]applied, [ing]applying
+collect, [s]collects, [ed]collected, [ing]collecting
 cupcake, [s]cupcakes
 fridge, [s]fridges
 imagination, [s]imaginations
 pad, [s]pads
 script, [s]scripts
-whip, [ped]whipped, [ping]whipping, [s]whips
+whip, [s]whips, [ped]whipped, [ping]whipping
 affair, [s]affairs
 beyond
 citizen, [s]citizens
-grant, [ed]granted, [ing]granting, [s]grants
+grant, [s]grants, [ed]granted, [ing]granting
 junk, [s]junks
 magical
 hm
@@ -1969,35 +1975,35 @@ clue, [s]clues
 suicide, [s]suicides
 wednesday, [s]wednesdays
 friendly, [ier]friendlier, [iest]friendliest
-march, [ed]marched, [es]marches, [ing]marching
-claim, [ed]claimed, [ing]claiming, [s]claims
+march, [es]marches, [ed]marched, [ing]marching
+claim, [s]claims, [ed]claimed, [ing]claiming
 judgement
 sox
 flown
-complicate, [d]complicated, [s]complicates, [ing]complicating
+complicate, [s]complicates, [d]complicated, [ing]complicating
 generation, [s]generations
 grave, [s]graves
-require, [d]required, [s]requires, [ing]requiring
+require, [s]requires, [d]required, [ing]requiring
 stair, [s]stairs
 comment, [s]comments, [ed]commented, [ing]commenting
 request, [s]requests, [ed]requested, [ing]requesting
 album, [s]albums
 stood
-depend, [ed]depended, [ing]depending, [s]depends
+depend, [s]depends, [ed]depended, [ing]depending
 maid, [s]maids
 moron, [s]morons
-necessary
+necessary, [ily]necessarily
 oven, [s]ovens
-refer, [red]referred, [ring]referring, [s]refers
-scratch, [ed]scratched, [es]scratches, [ing]scratching
-spill, [ed]spilled, [ing]spilling, [s]spills, [t]spilt
+refer, [s]refers, [red]referred, [ring]referring
+scratch, [es]scratches, [ed]scratched, [ing]scratching
+spill, [s]spills, [ed]spilled, [ing]spilling, [t]spilt
 stain, [s]stains
 racist, [s]racists
 standard, [s]standards
-adopt, [ed]adopted, [ing]adopting, [s]adopts
-brush, [ed]brushed, [es]brushes, [ing]brushing
+adopt, [s]adopts, [ed]adopted, [ing]adopting
+brush, [es]brushes, [ed]brushed, [ing]brushing
 delivery, [ies]deliveries
-disappear, [ed]disappeared, [ing]disappearing, [s]disappears
+disappear, [s]disappears, [ed]disappeared, [ing]disappearing
 elementary
 humor, [s]humors
 amazing
@@ -2018,27 +2024,27 @@ drawer, [s]drawers
 further
 incredibly
 loose, [r]looser, [st]loosest
-refuse, [d]refused, [s]refuses, [ing]refusing
+refuse, [s]refuses, [d]refused, [ing]refusing
 beaten
 lit
 selfish
 village, [s]villages
 anger, [s]angers
-assure, [d]assured, [s]assures, [ing]assuring
+assure, [s]assures, [d]assured, [ing]assuring
 bingo
 bunny, [ies]bunnies
-crawl, [ed]crawled, [ing]crawling, [s]crawls
-desperate
+crawl, [s]crawls, [ed]crawled, [ing]crawling
+desperate, [ly]desperately
 elevator, [s]elevators
 goat, [s]goats
 honeymoon, [s]honeymoons
-insist, [ed]insisted, [ing]insisting, [s]insists
+insist, [s]insists, [ed]insisted, [ing]insisting
 penny, [ies]pennies
-usual
+usual, [ly]usually
 beloved
 festival, [s]festivals
 tennis
-threaten, [ed]threatened, [ing]threatening, [s]threatens
+threaten, [s]threatens, [ed]threatened, [ing]threatening
 web, [s]webs
 beginning, [s]beginnings
 cigar, [s]cigars
@@ -2055,7 +2061,7 @@ strength, [s]strengths
 accidentally
 ancient
 collection, [s]collections
-include, [d]included, [s]includes, [ing]including
+include, [s]includes, [d]included, [ing]including
 muffin, [s]muffins
 offense, [s]offenses
 screen, [s]screens
@@ -2071,60 +2077,60 @@ winter, [s]winters
 tool, [s]tools
 steam, [s]steams, [ed]steamed, [ing]steaming
 blast, [s]blasts, [ed]blasted, [ing]blasting
-bend, [ing]bending, [s]bends, [t]bent
+bend, [s]bends, [ing]bending, [t]bent
 commitment, [s]commitments
 sworn
-disturb, [ed]disturbed, [ing]disturbing, [s]disturbs
+disturb, [s]disturbs, [ed]disturbed, [ing]disturbing
 joy, [s]joys
 presentation, [s]presentations
 fled
-shove, [d]shoved, [s]shoves, [ing]shoving
+shove, [s]shoves, [d]shoved, [ing]shoving
 tube, [s]tubes
 being, [s]beings
 german, [s]germans
 eaten
 jar, [s]jars
 mint, [s]mints
-punish, [ed]punished, [es]punishes, [ing]punishing
+punish, [es]punishes, [ed]punished, [ing]punishing
 remote, [s]remotes
-sink, [ank]sank, [ing]sinking, [s]sinks, [unk]sunk, [unken]sunken
+sink, [s]sinks, [ing]sinking, [ank]sank, [unk]sunk, [unken]sunken
 exchange, [s]exchanges, [d]exchanged, [ing]exchanging
 cap, [s]caps
 criminal, [s]criminals
-inspire, [d]inspired, [s]inspires, [ing]inspiring
+inspire, [s]inspires, [d]inspired, [ing]inspiring
 main
 panda, [s]pandas
 smooth, [er]smoother, [est]smoothest
 thumb, [s]thumbs
 woke
-abandon, [ed]abandoned, [ing]abandoning, [s]abandons
-affect, [ed]affected, [ing]affecting, [s]affects
+abandon, [s]abandons, [ed]abandoned, [ing]abandoning
+affect, [s]affects, [ed]affected, [ing]affecting
 beard, [s]beards
 bucket, [s]buckets
 county, [ies]counties
-gain, [ed]gained, [ing]gaining, [s]gains
+gain, [s]gains, [ed]gained, [ing]gaining
 poem, [s]poems
 reporter, [s]reporters
 training, [s]trainings
 opening, [s]openings
 among, [st]amongst
 battery, [ies]batteries
-deny, [ied]denied, [ies]denies, [ing]denying
+deny, [ies]denies, [ied]denied, [ing]denying
 electric
 flavor, [s]flavors
-forbid, [ade]forbade, [den]forbidden, [ding]forbidding, [s]forbids
+forbid, [s]forbids, [ding]forbidding, [ade]forbade, [den]forbidden
 fudge, [s]fudges
 hooray
-obsess, [ed]obsessed, [es]obsesses, [ing]obsessing
+obsess, [es]obsesses, [ed]obsessed, [ing]obsessing
 positive
-rob, [bed]robbed, [bing]robbing, [s]robs
+rob, [s]robs, [bed]robbed, [bing]robbing
 signal, [s]signals
 solid
 website, [s]websites
 geez
 aye, []ay
 century, [ies]centuries
-click, [ed]clicked, [ing]clicking, [s]clicks
+click, [s]clicks, [ed]clicked, [ing]clicking
 cracker, [s]crackers
 effort, [s]efforts
 gate, [s]gates
@@ -2144,14 +2150,14 @@ appropriate
 coincidence, [s]coincidences
 furniture
 lemon, [s]lemons
-mock, [ed]mocked, [ing]mocking, [s]mocks
+mock, [s]mocks, [ed]mocked, [ing]mocking
 normally
 physics
 sack, [s]sacks
 stock, [s]stocks
 wheelchair, [s]wheelchairs
-rise, [n]risen, [s]rises, [ing]rising, [ose]rose
-announce, [d]announced, [s]announces, [ing]announcing
+rise, [s]rises, [ing]rising, [n]risen, [ose]rose
+announce, [s]announces, [d]announced, [ing]announcing
 bagel, [s]bagels
 cocktail, [s]cocktails
 committee, [s]committees
@@ -2172,7 +2178,7 @@ makeup, [s]makeups
 nation, [s]nations
 senior, [s]seniors
 childhood, [s]childhoods
-develop, [ed]developed, [ing]developing, [s]develops
+develop, [s]develops, [ed]developed, [ing]developing
 reference, [s]references
 ads
 shorts
@@ -2184,11 +2190,11 @@ below
 cloud, [s]clouds
 distance, [s]distances
 drove
-exhaust, [ed]exhausted, [ing]exhausting, [s]exhausts
+exhaust, [s]exhausts, [ed]exhausted, [ing]exhausting
 goal, [s]goals
 suggestion, [s]suggestions
 grocery, [ies]groceries
-rescue, [d]rescued, [s]rescues, [ing]rescuing
+rescue, [s]rescues, [d]rescued, [ing]rescuing
 belief, [s]beliefs
 inch, [es]inches
 jury, [ies]juries
@@ -2198,22 +2204,22 @@ reservation, [s]reservations
 spider, [s]spiders
 squirrel, [s]squirrels
 topic, [s]topics
-toss, [ed]tossed, [es]tosses, [ing]tossing
+toss, [es]tosses, [ed]tossed, [ing]tossing
 uniform, [s]uniforms
 violence, [s]violences
 zoo, [s]zoos
 cruel, [er]crueler, [ler]crueller, [est]cruelest, [lest]cruellest
-dial, [ed]dialed, [ing]dialing, [s]dials
+dial, [s]dials, [ed]dialed, [ing]dialing
 jeans
 pile, [s]piles
 pure, [r]purer, [st]purest
 romance, [s]romances
 slave, [s]slaves
 slowly
-approach, [ed]approached, [es]approaches, [ing]approaching
-tap, [ped]tapped, [ping]tapping, [s]taps
+approach, [es]approaches, [ed]approached, [ing]approaching
+tap, [s]taps, [ped]tapped, [ping]tapping
 stole
-rap, [ped]rapped, [ping]rapping, [s]raps
+rap, [s]raps, [ped]rapped, [ping]rapping
 awake
 belly, [ies]bellies
 booth, [s]booths
@@ -2222,61 +2228,61 @@ opera, [s]operas
 pipe, [s]pipes
 poster, [s]posters
 russian, [s]russians
-sweep, [ing]sweeping, [s]sweeps, [pt]swept
+sweep, [s]sweeps, [ing]sweeping, [pt]swept
 sword, [s]swords
 ultimate
 dip, [s]dips, [ped]dipped, [ping]dipping
 lack, [s]lacks, [ed]lacked, [ing]lacking
 average, [s]averages
 debate, [s]debates
-explode, [d]exploded, [s]explodes, [ing]exploding
-float, [ed]floated, [ing]floating, [s]floats
+explode, [s]explodes, [d]exploded, [ing]exploding
+float, [s]floats, [ed]floated, [ing]floating
 justice
 poker, [s]pokers
 pride, [s]prides
 policemen
 stricken
-psych, [ed]psyched, [ing]psyching, [s]psychs
+psych, [s]psychs, [ed]psyched, [ing]psyching
 rare, [r]rarer, [st]rarest
 rumor, [s]rumors
 title, [s]titles
 vision, [s]visions
 tho
-wrestle, [d]wrestled, [s]wrestles, [ing]wrestling
-spray, [ed]sprayed, [ing]spraying, [s]sprays
+wrestle, [s]wrestles, [d]wrestled, [ing]wrestling
+spray, [s]sprays, [ed]sprayed, [ing]spraying
 column, [s]columns
-connect, [ed]connected, [ing]connecting, [s]connects
+connect, [s]connects, [ed]connected, [ing]connecting
 hockey
 bases
-kidnap, [ed]kidnaped, [ing]kidnaping, [ped]kidnapped, [ping]kidnapping, [s]kidnaps
+kidnap, [s]kidnaps, [ed]kidnaped, [ped]kidnapped, [ing]kidnaping, [ping]kidnapping
 limo, [s]limos
 painful
 path, [s]paths
 permission, [s]permissions
 prince, [s]princes
 senator, [s]senators
-smash, [ed]smashed, [es]smashes, [ing]smashing
+smash, [es]smashes, [ed]smashed, [ing]smashing
 anytime
 bat, [s]bats
 ceremony, [ies]ceremonies
-declare, [d]declared, [s]declares, [ing]declaring
+declare, [s]declares, [d]declared, [ing]declaring
 helpful
 iron, [s]irons
 rope, [s]ropes
-sail, [ed]sailed, [ing]sailing, [s]sails
-attend, [ed]attended, [ing]attending, [s]attends
-doom, [ed]doomed, [ing]dooming, [s]dooms
+sail, [s]sails, [ed]sailed, [ing]sailing
+attend, [s]attends, [ed]attended, [ing]attending
+doom, [s]dooms, [ed]doomed, [ing]dooming
 education, [s]educations
-flush, [ed]flushed, [es]flushes, [ing]flushing
-melt, [ed]melted, [ing]melting, [s]melts
-pardon, [ed]pardoned, [ing]pardoning, [s]pardons
+flush, [es]flushes, [ed]flushed, [ing]flushing
+melt, [s]melts, [ed]melted, [ing]melting
+pardon, [s]pardons, [ed]pardoned, [ing]pardoning
 passion, [s]passions
 personally
 popcorn
 zombie, [s]zombies
-root, [ed]rooted, [ing]rooting, [s]roots
+root, [s]roots, [ed]rooted, [ing]rooting
 ankle, [s]ankles
-bail, [ed]bailed, [ing]bailing, [s]bails
+bail, [s]bails, [ed]bailed, [ing]bailing
 bowling
 discount, [s]discounts
 entertainment, [s]entertainments
@@ -2291,7 +2297,7 @@ crises
 businessmen
 halves
 donuts
-betray, [ed]betrayed, [ing]betraying, [s]betrays
+betray, [s]betrays, [ed]betrayed, [ing]betraying
 bracelet, [s]bracelets
 brownie, [s]brownies
 creative
@@ -2300,7 +2306,7 @@ negative
 pickle, [s]pickles
 puzzle, [s]puzzles
 recipe, [s]recipes
-stab, [bed]stabbed, [bing]stabbing, [s]stabs
+stab, [s]stabs, [bed]stabbed, [bing]stabbing
 toward, [s]towards
 wherever
 psychic, [s]psychics
@@ -2331,48 +2337,48 @@ pretzel, [s]pretzels
 routine, [s]routines
 sand, [s]sands
 someplace
-stretch, [ed]stretched, [es]stretches, [ing]stretching
-whack, [ed]whacked, [ing]whacking, [s]whacks
+stretch, [es]stretches, [ed]stretched, [ing]stretching
+whack, [s]whacks, [ed]whacked, [ing]whacking
 sang
 bloody, [ier]bloodier, [iest]bloodiest
 brand, [s]brands
 british
 budget, [s]budgets
 cabin, [s]cabins
-determine, [d]determined, [s]determines, [ing]determining
-doggie, [y]doggy, [s]doggies
-entertain, [ed]entertained, [ing]entertaining, [s]entertains
+determine, [s]determines, [d]determined, [ing]determining
+doggie, [s]doggies, [y]doggy
+entertain, [s]entertains, [ed]entertained, [ing]entertaining
 helmet, [s]helmets
 media
 motion, [s]motions
-poke, [d]poked, [s]pokes, [ing]poking
+poke, [s]pokes, [d]poked, [ing]poking
 practically
 scotch, [es]scotches
 source, [s]sources
-spoil, [ed]spoiled, [ing]spoiling, [s]spoils, [t]spoilt
-teenager, [s]teenagers, []teen, [s]teens
+spoil, [s]spoils, [ed]spoiled, [ing]spoiling, [t]spoilt
+teenager, [s]teenagers, [s]teens, []teen
 turtle, [s]turtles
 harm, [s]harms, [ed]harmed, [ing]harming
 balance, [s]balances, [d]balanced, [ing]balancing
 authority, [ies]authorities
-bleed, [d]bled, [ing]bleeding, [s]bleeds
-compete, [d]competed, [s]competes, [ing]competing
+bleed, [s]bleeds, [d]bled, [ing]bleeding
+compete, [s]competes, [d]competed, [ing]competing
 confidence
 convention, [s]conventions
-defend, [ed]defended, [ing]defending, [s]defends
-heal, [ed]healed, [ing]healing, [s]heals
+defend, [s]defends, [ed]defended, [ing]defending
+heal, [s]heals, [ed]healed, [ing]healing
 hippie, [s]hippies, [y]hippy
 phase, [s]phases
 puppet, [s]puppets
-respond, [ed]responded, [ing]responding, [s]responds
-reveal, [ed]revealed, [ing]revealing, [s]reveals
+respond, [s]responds, [ed]responded, [ing]responding
+reveal, [s]reveals, [ed]revealed, [ing]revealing
 sharp, [er]sharper, [est]sharpest
-transfer, [red]transferred, [ring]transferring, [s]transfers
+transfer, [s]transfers, [red]transferred, [ring]transferring
 wig, [s]wigs
-loan, [ed]loaned, [ing]loaning, [s]loans
+loan, [s]loans, [ed]loaned, [ing]loaning
 drill, [s]drills, [ed]drilled, [ing]drilling
 object, [s]objects, [ed]objected, [ing]objecting
-plug, [ged]plugged, [ging]plugging, [s]plugs
+plug, [s]plugs, [ged]plugged, [ging]plugging
 aisle, [s]aisles
 command, [s]commands
 detective, [s]detectives
@@ -2381,29 +2387,29 @@ exit, [s]exits
 expert, [s]experts
 industry, [ies]industries
 mature, [r]maturer
-pump, [ed]pumped, [ing]pumping, [s]pumps
+pump, [s]pumps, [ed]pumped, [ing]pumping
 whom
 cough, [s]coughs, [ed]coughed, [ing]coughing
 comedian, [s]comedians, [enne]comedienne
 compliment, [s]compliments
 fork, [s]forks
-guarantee, [d]guaranteed, [ing]guaranteeing, [s]guarantees
+guarantee, [s]guarantees, [d]guaranteed, [ing]guaranteeing
 magician, [s]magicians
 murderer, [s]murderers
-occur, [red]occurred, [ring]occurring, [s]occurs
+occur, [s]occurs, [red]occurred, [ring]occurring
 pork
 soccer
 whistle, [s]whistles, [d]whistled, [ing]whistling
-direct, [ed]directed, [ing]directing, [s]directs, [er]directer
-wreck, [ed]wrecked, [ing]wrecking, [s]wrecks
+direct, [s]directs, [ed]directed, [ing]directing, [ly]directly, [er]directer
+wreck, [s]wrecks, [ed]wrecked, [ing]wrecking
 access, [es]accesses
 actress, [es]actresses
 backup, [s]backups
 bam
-behave, [d]behaved, [s]behaves, [ing]behaving
-encourage, [d]encouraged, [s]encourages, [ing]encouraging
+behave, [s]behaves, [d]behaved, [ing]behaving
+encourage, [s]encourages, [d]encouraged, [ing]encouraging
 estate, [s]estates
-flirt, [ed]flirted, [ing]flirting, [s]flirts
+flirt, [s]flirts, [ed]flirted, [ing]flirting
 handicap, [s]handicaps
 hose, [s]hoses
 incident, [s]incidents
@@ -2412,11 +2418,11 @@ occasion, [s]occasions
 route, [s]routes
 secretary, [ies]secretaries
 guide, [s]guides, [d]guided, [ing]guiding
-vomit, [ed]vomited, [ing]vomiting, [s]vomits
-torture, [d]tortured, [s]tortures, [ing]torturing
+vomit, [s]vomits, [ed]vomited, [ing]vomiting
+torture, [s]tortures, [d]tortured, [ing]torturing
 classy, [ier]classier, [iest]classiest
-confess, [ed]confessed, [es]confesses, [ing]confessing
-drown, [ed]drowned, [ing]drowning, [s]drowns
+confess, [es]confesses, [ed]confessed, [ing]confessing
+drown, [s]drowns, [ed]drowned, [ing]drowning
 duh
 environment, [s]environments
 false
@@ -2427,15 +2433,15 @@ tale, [s]tales
 talented
 threat, [s]threats
 vegetable, [s]vegetables
-quote, [d]quoted, [s]quotes, [ing]quoting
-ketchup, [catsup]catsup, [s]ketchups
+quote, [s]quotes, [d]quoted, [ing]quoting
+ketchup, [s]ketchups, [catsup]catsup
 amen
 capital, [s]capitals
 cruise, [s]cruises
 forth
-judgment, [ement]judgement, [ements]judgements, [s]judgments
+judgment, [ements]judgements, [s]judgments, [ement]judgement
 nonsense
-offend, [ed]offended, [ing]offending, [s]offends
+offend, [s]offends, [ed]offended, [ing]offending
 pepper, [s]peppers
 phrase, [s]phrases
 picnic, [s]picnics
@@ -2443,47 +2449,47 @@ privacy
 self, [ves]selves
 shitty, [ier]shittier, [iest]shittiest
 coin, [s]coins, [ed]coined, [ing]coining
-mouse, [ice]mice, [s]mouses
-attach, [ed]attached, [es]attaches, [ing]attaching
+mouse, [s]mouses, [ice]mice
+attach, [es]attaches, [ed]attached, [ing]attaching
 billion, [s]billions
 cheers
 coma, [s]comas
-contain, [ed]contained, [ing]containing, [s]contains
+contain, [s]contains, [ed]contained, [ing]containing
 earring, [s]earrings
 fascinating
 gal, [s]gals
 ham, [s]hams
-pronounce, [d]pronounced, [s]pronounces, [ing]pronouncing
+pronounce, [s]pronounces, [d]pronounced, [ing]pronouncing
 sample, [s]samples
 victory, [ies]victories
-fax, [ed]faxed, [es]faxes, [ing]faxing
-sacrifice, [d]sacrificed, [s]sacrifices, [ing]sacrificing
+fax, [es]faxes, [ed]faxed, [ing]faxing
+sacrifice, [s]sacrifices, [d]sacrificed, [ing]sacrificing
 behold
 cereal, [s]cereals
-concentrate, [d]concentrated, [s]concentrates, [ing]concentrating
+concentrate, [s]concentrates, [d]concentrated, [ing]concentrating
 depressed
 drama, [s]dramas
 explanation, [s]explanations
 fate, [s]fates
 hallway, [s]hallways
 ninety, [ies]nineties
-particular
+particular, [ly]particularly
 pleased
 response, [s]responses
 liquor, [s]liquors
-lower, [s]lowers, [ing]lowering, [ed]lowered
+lower, [s]lowers, [ed]lowered, [ing]lowering
 miserable
 pin, [s]pins
-purchase, [d]purchased, [s]purchases, [ing]purchasing
-satisfy, [ied]satisfied, [ies]satisfies, [ing]satisfying
+purchase, [s]purchases, [d]purchased, [ing]purchasing
+satisfy, [ies]satisfies, [ied]satisfied, [ing]satisfying
 sexually
-shout, [ed]shouted, [ing]shouting, [s]shouts
+shout, [s]shouts, [ed]shouted, [ing]shouting
 site, [s]sites
 thee
 unit, [s]units
 complaint, [s]complaints
 condo, [s]condos
-donate, [d]donated, [s]donates, [ing]donating
+donate, [s]donates, [d]donated, [ing]donating
 fur, [s]furs
 gravy, [ies]gravies
 imaginary
@@ -2493,7 +2499,7 @@ nearly
 tiger, [s]tigers
 valuable
 flow, [s]flows, [ed]flowed, [ing]flowing
-monitor, [ed]monitored, [ing]monitoring, [s]monitors
+monitor, [s]monitors, [ed]monitored, [ing]monitoring
 alcoholic, [s]alcoholics
 counselor, [s]counselors
 failure, [s]failures
@@ -2504,38 +2510,38 @@ peach, [es]peaches
 roller, [s]rollers
 staff, [s]staffs, [ves]staves
 thief, [ves]thieves
-approve, [d]approved, [s]approves, [ing]approving
+approve, [s]approves, [d]approved, [ing]approving
 campus, [es]campuses
 coast, [s]coasts
 dinosaur, [s]dinosaurs
 directly
-haunt, [ed]haunted, [ing]haunting, [s]haunts
+haunt, [s]haunts, [ed]haunted, [ing]haunting
 location, [s]locations
 owner, [s]owners
 treatment, [s]treatments
 trunk, [s]trunks
 abortion, [s]abortions
-bark, [ed]barked, [ing]barking, [s]barks
+bark, [s]barks, [ed]barked, [ing]barking
 bartender, [s]bartenders
 brunch, [es]brunches
 casual
 chaos
 chief, [s]chiefs
 dust, [s]dusts
-intend, [ed]intended, [ing]intending, [s]intends
+intend, [s]intends, [ed]intended, [ing]intending
 lottery, [ies]lotteries
 personality, [ies]personalities
-publish, [ed]published, [es]publishes, [ing]publishing
+publish, [es]publishes, [ed]published, [ing]publishing
 sausage, [s]sausages
 underneath
 unfair
 violent
 wizard, [s]wizards
 aboard
-argue, [d]argued, [s]argues, [ing]arguing
+argue, [s]argues, [d]argued, [ing]arguing
 badly
 bush, [es]bushes
-fold, [ed]folded, [ing]folding, [s]folds
+fold, [s]folds, [ed]folded, [ing]folding
 footage
 height, [s]heights
 labor, [s]labors
@@ -2543,15 +2549,15 @@ nephew, [s]nephews
 punk, [s]punks
 reaction, [s]reactions
 shy, [ier]shier, [er]shyer, [est]shyest
-shrink, [s]shrinks, [ank]shrank, [ing]shrinking, [unk]shrunk, [unken]shrunken
-comfort, [ed]comforted, [ing]comforting, [s]comforts
+shrink, [s]shrinks, [ing]shrinking, [ank]shrank, [unk]shrunk, [unken]shrunken
+comfort, [s]comforts, [ed]comforted, [ing]comforting
 cage, [s]cages
 civil
 colonel, [s]colonels
 courage
 delightful
 emotion, [s]emotions
-expose, [d]exposed, [s]exposes, [ing]exposing
+expose, [s]exposes, [d]exposed, [ing]exposing
 fence, [s]fences
 glue, [s]glues
 noodle, [s]noodles
@@ -2560,7 +2566,7 @@ pole, [s]poles
 refrigerator, [s]refrigerators
 skull, [s]skulls
 taxi, [es]taxies, [s]taxis
-swell, [ed]swelled, [ing]swelling, [s]swells, [ollen]swollen
+swell, [s]swells, [ed]swelled, [ing]swelling, [ollen]swollen
 airline, [s]airlines
 background, [s]backgrounds
 bravo
@@ -2576,9 +2582,9 @@ session, [s]sessions
 soldier, [s]soldiers
 urine
 virgin, [s]virgins
-wander, [ed]wandered, [ing]wandering, [s]wanders
+wander, [s]wanders, [ed]wandered, [ing]wandering
 carrot, [s]carrots
-chili, [s]chilis, [e]chile, [es]chiles, [es]chilies, [li]chilli, [lies]chillies
+chili, [s]chilis, [es]chiles, [es]chilies, [lies]chillies, [e]chile, [li]chilli
 circus, [es]circuses
 former
 generous
@@ -2590,7 +2596,7 @@ prostitute, [s]prostitutes
 shelter, [s]shelters
 sperm, [s]sperms
 technology, [ies]technologies
-phony, [ey]phoney, [ies]phonies
+phony, [ies]phonies, [ey]phoney
 agent, [s]agents
 ability, [ies]abilities
 risen
@@ -2598,23 +2604,23 @@ awfully
 cherry, [ies]cherries
 discussion, [s]discussions
 documentary, [ies]documentaries
-invest, [ed]invested, [ing]investing, [s]invests
+invest, [s]invests, [ed]invested, [ing]investing
 jet, [s]jets
 knowledge
 minister, [s]ministers
 bent
 motherfucker, [s]motherfuckers
 offensive
-promote, [d]promoted, [s]promotes, [ing]promoting
-retire, [d]retired, [s]retires, [ing]retiring
+promote, [s]promotes, [d]promoted, [ing]promoting
+retire, [s]retires, [d]retired, [ing]retiring
 singer, [s]singers
 specific
-tuck, [ed]tucked, [ing]tucking, [s]tucks
+tuck, [s]tucks, [ed]tucked, [ing]tucking
 sin, [s]sins
 chart, [s]charts
 drew
 grader, [s]graders
-tunnel, [ed]tunneled, [ing]tunneling, [s]tunnels
+tunnel, [s]tunnels, [ed]tunneled, [ing]tunneling
 ant, [s]ants
 bull, [s]bulls
 carefully
@@ -2625,17 +2631,17 @@ exam, [s]exams
 helicopter, [s]helicopters
 moustache
 rate, [s]rates
-recall, [ed]recalled, [ing]recalling, [s]recalls
-reject, [ed]rejected, [ing]rejecting, [s]rejects
-spy, [ied]spied, [ies]spies, [ing]spying
+recall, [s]recalls, [ed]recalled, [ing]recalling
+reject, [s]rejects, [ed]rejected, [ing]rejecting
+spy, [ies]spies, [ied]spied, [ing]spying
 therapy, [ies]therapies
 upper
 sponge, [s]sponges
 profit, [s]profits
 pity, [ies]pities, [ied]pitied, [ing]pitying
-buzz, [ed]buzzed, [es]buzzes, [ing]buzzing
+buzz, [es]buzzes, [ed]buzzed, [ing]buzzing
 assignment, [s]assignments
-bounce, [d]bounced, [s]bounces, [ing]bouncing
+bounce, [s]bounces, [d]bounced, [ing]bouncing
 branch, [es]branches
 daily
 dice, [s]dices
@@ -2646,37 +2652,37 @@ fraud, [s]frauds
 pit, [s]pits
 status, [es]statuses
 stroke, [s]strokes
-terrify, [ied]terrified, [ies]terrifies, [ing]terrifying
-yogurt, [hurt]yoghurt, [s]yogurts
+terrify, [ies]terrifies, [ied]terrified, [ing]terrifying
+yogurt, [s]yogurts, [hurt]yoghurt
 random
 blond, [e]blonde, [er]blonder
 cube, [s]cubes
 military, [ies]militaries
 wax, [es]waxes, [ed]waxed, [ing]waxing
 alley, [s]alleys
-arrange, [d]arranged, [s]arranges, [ing]arranging
+arrange, [s]arranges, [d]arranged, [ing]arranging
 coupon, [s]coupons
-ditch, [ed]ditched, [es]ditches, [ing]ditching
+ditch, [es]ditches, [ed]ditched, [ing]ditching
 drunk, [er]drunker, [est]drunkest
 edge, [s]edges
-gamble, [d]gambled, [s]gambles, [ing]gambling
+gamble, [s]gambles, [d]gambled, [ing]gambling
 gray, [er]grayer, [ey]grey
 hostage, [s]hostages
-inform, [ed]informed, [ing]informing, [s]informs
+inform, [s]informs, [ed]informed, [ing]informing
 likely, [ier]likelier, [iest]likeliest
 mask, [s]masks
 nasty, [ier]nastier, [iest]nastiest
 olympics
 panties
 priest, [s]priests
-shine, [d]shined, [s]shines, [ing]shining, [one]shone
-equal, [ed]equaled, [ing]equaling, [s]equals
+shine, [s]shines, [d]shined, [ing]shining, [one]shone
+equal, [s]equals, [ed]equaled, [ing]equaling
 capable
 corporation, [s]corporations
-delete, [d]deleted, [s]deletes, [ing]deleting
+delete, [s]deletes, [d]deleted, [ing]deleting
 dental
 engagement, [s]engagements
-entitle, [d]entitled, [s]entitles, [ing]entitling
+entitle, [s]entitles, [d]entitled, [ing]entitling
 howdy
 ironic
 movement, [s]movements
@@ -2695,12 +2701,12 @@ mustard
 procedure, [s]procedures
 progress, [es]progresses
 scale, [s]scales
-select, [ed]selected, [ing]selecting, [s]selects
+select, [s]selects, [ed]selected, [ing]selecting
 rib, [s]ribs
 armed
 astronaut, [s]astronauts
 backyard, [s]backyards
-capture, [d]captured, [s]captures, [ing]capturing
+capture, [s]captures, [d]captured, [ing]capturing
 cart, [s]carts
 casino, [s]casinos
 catholic
@@ -2709,14 +2715,14 @@ desert, [s]deserts
 executive, [s]executives
 foreign
 fully
-lean, [ed]leaned, [ing]leaning, [s]leans
+lean, [s]leans, [ed]leaned, [ing]leaning
 novel, [s]novels
 species
-weigh, [ed]weighed, [ing]weighing, [s]weighs
+weigh, [s]weighs, [ed]weighed, [ing]weighing
 weirdo, [s]weirdos
 shadow, [s]shadows
-accomplish, [ed]accomplished, [es]accomplishes, [ing]accomplishing
-define, [d]defined, [s]defines, [ing]defining
+accomplish, [es]accomplishes, [ed]accomplished, [ing]accomplishing
+define, [s]defines, [d]defined, [ing]defining
 equipment
 fever, [s]fevers
 gig, [s]gigs
@@ -2725,7 +2731,7 @@ intelligent
 karate
 manner, [s]manners
 marijuana
-operate, [d]operated, [s]operates, [ing]operating
+operate, [s]operates, [d]operated, [ing]operating
 quest, [s]quests
 raisin, [s]raisins
 religious
@@ -2739,17 +2745,17 @@ appearance, [s]appearances
 cave, [s]caves
 drunken
 fireman, [en]firemen
-graduate, [d]graduated, [s]graduates, [ing]graduating
+graduate, [s]graduates, [d]graduated, [ing]graduating
 hammer, [s]hammers
 naughty, [ier]naughtier, [iest]naughtiest
 salary, [ies]salaries
 signature, [s]signatures
 border, [s]borders
 autograph, [s]autographs, [ed]autographed, [ing]autographing
-seek, [ing]seeking, [s]seeks, [ought]sought
+seek, [s]seeks, [ing]seeking, [ought]sought
 afterwards
 curtain, [s]curtains
-defeat, [ed]defeated, [ing]defeating, [s]defeats
+defeat, [s]defeats, [ed]defeated, [ing]defeating
 desire, [s]desires
 firework, [s]fireworks
 habit, [s]habits
@@ -2775,7 +2781,7 @@ dibs
 financial
 flat, [ter]flatter, [test]flattest
 identity, [ies]identities
-register, [ed]registered, [ing]registering, [s]registers
+register, [s]registers, [ed]registered, [ing]registering
 shocking
 shopping
 sixth, [s]sixths
@@ -2785,12 +2791,12 @@ target, [s]targets
 teenage
 thick, [er]thicker, [est]thickest
 counter, [s]counters
-whoop, [s]whoops, [ing]whooping, [ed]whooped
+whoop, [s]whoops, [ed]whooped, [ing]whooping
 agency, [ies]agencies
 carnival, [s]carnivals
-confirm, [ed]confirmed, [ing]confirming, [s]confirms
+confirm, [s]confirms, [ed]confirmed, [ing]confirming
 corpse, [s]corpses
-disagree, [d]disagreed, [ing]disagreeing, [s]disagrees
+disagree, [s]disagrees, [d]disagreed, [ing]disagreeing
 hill, [s]hills
 hopefully
 lamb, [s]lambs
@@ -2828,30 +2834,30 @@ oy
 punishment, [s]punishments
 rally, [ies]rallies
 reception, [s]receptions
-resist, [ed]resisted, [ing]resisting, [s]resists
+resist, [s]resists, [ed]resisted, [ing]resisting
 sore, [r]sorer, [st]sorest
 union, [s]unions
-accuse, [d]accused, [s]accuses, [ing]accusing
+accuse, [s]accuses, [d]accused, [ing]accusing
 ape, [s]apes
 badge, [s]badges
 barn, [s]barns
 buck, [s]bucks
-divide, [d]divided, [s]divides, [ing]dividing
+divide, [s]divides, [d]divided, [ing]dividing
 eternity, [ies]eternities
 hopeless
 intervention, [s]interventions
 mattress, [es]mattresses
 millionaire, [s]millionaires
-observe, [d]observed, [s]observes, [ing]observing
-react, [ed]reacted, [ing]reacting, [s]reacts
+observe, [s]observes, [d]observed, [ing]observing
+react, [s]reacts, [ed]reacted, [ing]reacting
 speaker, [s]speakers
 spicy, [ier]spicier, [iest]spiciest
-stadium, [a]stadia, [s]stadiums
+stadium, [s]stadiums, [a]stadia
 syndrome, [s]syndromes
 unhappy, [ier]unhappier, [iest]unhappiest
 vow, [s]vows
 youth, [s]youths
-admire, [d]admired, [s]admires, [ing]admiring
+admire, [s]admires, [d]admired, [ing]admiring
 ambulance, [s]ambulances
 bonus, [es]bonuses
 commission, [s]commissions
@@ -2863,28 +2869,28 @@ immigrant, [s]immigrants
 injury, [ies]injuries
 intense
 journal, [s]journals
-launch, [ed]launched, [es]launches, [ing]launching
+launch, [es]launches, [ed]launched, [ing]launching
 medal, [s]medals
 mile, [s]miles
 semester, [s]semesters
 tire, [s]tires
-worship, [ed]worshiped, [ing]worshiping, [s]worships
+worship, [s]worships, [ed]worshiped, [ing]worshiping
 seed, [s]seeds
 dot, [s]dots
-hike, [d]hiked, [s]hikes, [ing]hiking
+hike, [s]hikes, [d]hiked, [ing]hiking
 alert, [s]alerts
 confident
 currently
 disco, [s]discos
-found, [s]founds, [ing]founding, [ed]founded
+found, [s]founds, [ed]founded, [ing]founding
 selves
-frustrate, [d]frustrated, [s]frustrates, [ing]frustrating
-improve, [d]improved, [s]improves, [ing]improving
+frustrate, [s]frustrates, [d]frustrated, [ing]frustrating
+improve, [s]improves, [d]improved, [ing]improving
 intercourse, [s]intercourses
 investment, [s]investments
 jelly, [ies]jellies
-protest, [ed]protested, [ing]protesting, [s]protests
-seal, [ed]sealed, [ing]sealing, [s]seals
+protest, [s]protests, [ed]protested, [ing]protesting
+seal, [s]seals, [ed]sealed, [ing]sealing
 silent
 temperature, [s]temperatures
 testicle, [s]testicles
@@ -2895,12 +2901,12 @@ bow, [s]bows
 castle, [s]castles
 labs
 swollen
-dine, [d]dined, [s]dines, [ing]dining
+dine, [s]dines, [d]dined, [ing]dining
 fiance, [s]fiances
 goo
 governor, [s]governors
 lotion, [s]lotions
-measure, [d]measured, [s]measures, [ing]measuring
+measure, [s]measures, [d]measured, [ing]measuring
 modern
 spent
 meant
@@ -2914,8 +2920,8 @@ reasonable
 scam, [s]scams
 shift, [s]shifts
 sneaker, [s]sneakers
-straighten, [ed]straightened, [ing]straightening, [s]straightens
-unlike
+straighten, [s]straightens, [ed]straightened, [ing]straightening
+unlike, [ly]unlikely
 bench, [es]benches
 blowjob, [s]blowjobs
 championship, [s]championships
@@ -2926,7 +2932,7 @@ guilt, [s]guilts
 horny, [ier]hornier, [iest]horniest
 intimate
 laughter
-lend, [ing]lending, [s]lends, [t]lent
+lend, [s]lends, [ing]lending, [t]lent
 organization, [s]organizations
 purple
 rice, [s]rices
@@ -2935,31 +2941,31 @@ sheep
 upside, [s]upsides
 vehicle, [s]vehicles
 seventy, [ies]seventies
-reverse, [d]reversed, [s]reverses, [ing]reversing
-achieve, [d]achieved, [s]achieves, [ing]achieving
+reverse, [s]reverses, [d]reversed, [ing]reversing
+achieve, [s]achieves, [d]achieved, [ing]achieving
 addiction, [s]addictions
 architecture, [s]architectures
 demon, [s]demons
 freezer, [s]freezers
-honk, [ed]honked, [ing]honking, [s]honks
-install, [ed]installed, [ing]installing, [s]installs
+honk, [s]honks, [ed]honked, [ing]honking
+install, [s]installs, [ed]installed, [ing]installing
 mascot, [s]mascots
 massive
 metal, [s]metals
 nest, [s]nests
 nineteen
 possibility, [ies]possibilities
-praise, [d]praised, [s]praises, [ing]praising
+praise, [s]praises, [d]praised, [ing]praising
 prescription, [s]prescriptions
-produce, [d]produced, [s]produces, [ing]producing
+produce, [s]produces, [d]produced, [ing]producing
 salmon, [s]salmons
-surround, [ed]surrounded, [ing]surrounding, [s]surrounds
+surround, [s]surrounds, [ed]surrounded, [ing]surrounding
 tragedy, [ies]tragedies
 troll, [s]trolls
 wagon, [s]wagons
-whisper, [ed]whispered, [ing]whispering, [s]whispers
+whisper, [s]whispers, [ed]whispered, [ing]whispering
 yummy, [ier]yummier, [iest]yummiest
-ban, [ned]banned, [ning]banning, [s]bans
+ban, [s]bans, [ned]banned, [ning]banning
 butterfly, [ies]butterflies
 ceiling, [s]ceilings
 constantly
@@ -2970,7 +2976,7 @@ misunderstanding, [s]misunderstandings
 reunion, [s]reunions
 sacred
 sergeant, [s]sergeants
-solo, [i]soli, [s]solos
+solo, [s]solos, [i]soli
 syrup, [s]syrups
 therefore
 timing, [s]timings
@@ -2979,18 +2985,18 @@ ballet, [s]ballets
 blade, [s]blades
 celebration, [s]celebrations
 cheesecake, [s]cheesecakes
-communicate, [d]communicated, [s]communicates, [ing]communicating
-cripple, [d]crippled, [s]cripples, [ing]crippling
+communicate, [s]communicates, [d]communicated, [ing]communicating
+cripple, [s]cripples, [d]crippled, [ing]crippling
 dozen, [s]dozens
 following
 heel, [s]heels
 lad, [s]lads
 noon, [s]noons
 onion, [s]onions
-relieve, [d]relieved, [s]relieves, [ing]relieving
+relieve, [s]relieves, [d]relieved, [ing]relieving
 saving, [s]savings
 scheme, [s]schemes
-skate, [d]skated, [s]skates, [ing]skating
+skate, [s]skates, [d]skated, [ing]skating
 sung
 rode
 application, [s]applications
@@ -2998,22 +3004,22 @@ cinnamon
 coconut, [s]coconuts
 construction, [s]constructions
 easter, [s]easters
-explore, [d]explored, [s]explores, [ing]exploring
+explore, [s]explores, [d]explored, [ing]exploring
 highway, [s]highways
-imply, [ied]implied, [ies]implies, [ing]implying
+imply, [ies]implies, [ied]implied, [ing]implying
 pottery, [ies]potteries
-soak, [ed]soaked, [ing]soaking, [s]soaks
+soak, [s]soaks, [ed]soaked, [ing]soaking
 sticker, [s]stickers
 survivor, [s]survivors
 task, [s]tasks
 yoga
-leap, [ed]leaped, [ing]leaping, [s]leaps, [t]leapt
+leap, [s]leaps, [ed]leaped, [ing]leaping, [t]leapt
 beast, [s]beasts
 biology, [ies]biologies
-carve, [d]carved, [s]carves, [ing]carving
+carve, [s]carves, [d]carved, [ing]carving
 destiny, [ies]destinies
 detention, [s]detentions
-grill, [ed]grilled, [ing]grilling, [s]grills
+grill, [s]grills, [ed]grilled, [ing]grilling
 potential
 rehearsal, [s]rehearsals
 related
@@ -3021,15 +3027,15 @@ ribbon, [s]ribbons
 spaghetti
 stuffing, [s]stuffings
 surely
-drain, [ed]drained, [ing]draining, [s]drains
+drain, [s]drains, [ed]drained, [ing]draining
 drum, [s]drums
 accountant, [s]accountants
-chill, [ed]chilled, [ing]chilling, [s]chills
+chill, [s]chills, [ed]chilled, [ing]chilling
 coaster, [s]coasters
 conditioner, [s]conditioners
 cone, [s]cones
 deaf
-dismiss, [ed]dismissed, [es]dismisses, [ing]dismissing
+dismiss, [es]dismisses, [ed]dismissed, [ing]dismissing
 error, [s]errors
 hers
 jewelry, [ies]jewelries
@@ -3038,9 +3044,9 @@ naturally
 nickel, [s]nickels
 scissors
 secretly
-smack, [ed]smacked, [ing]smacking, [s]smacks
+smack, [s]smacks, [ed]smacked, [ing]smacking
 supportive
-tick, [ed]ticked, [ing]ticking, [s]ticks
+tick, [s]ticks, [ed]ticked, [ing]ticking
 waffle, [s]waffles
 wicked, [est]wickedest
 wisdom, [s]wisdoms
@@ -3052,7 +3058,7 @@ deadly
 delicate
 document, [s]documents
 emotionally
-establish, [ed]established, [es]establishes, [ing]establishing
+establish, [es]establishes, [ed]established, [ing]establishing
 flute, [s]flutes
 gorilla, [s]gorillas
 groom, [s]grooms
@@ -3062,19 +3068,19 @@ maker, [s]makers
 martini, [s]martinis
 mud, [s]muds
 needy, [ier]needier, [iest]neediest
-reduce, [d]reduced, [s]reduces, [ing]reducing
+reduce, [s]reduces, [d]reduced, [ing]reducing
 retarded
 rod, [s]rods
 rubber, [s]rubbers
 rug, [s]rugs
-steer, [ed]steered, [ing]steering, [s]steers
+steer, [s]steers, [ed]steered, [ing]steering
 symbol, [s]symbols
-testify, [ied]testified, [ies]testifies, [ing]testifying
+testify, [ies]testifies, [ied]testified, [ing]testifying
 thirsty, [ier]thirstier, [iest]thirstiest
 traditional
-succeed, [ed]succeeded, [ing]succeeding, [s]succeeds
+succeed, [s]succeeds, [ed]succeeded, [ing]succeeding
 mob, [s]mobs
-mustache, [oustache]moustache, [s]mustaches
+mustache, [s]mustaches, [oustache]moustache
 basic
 behalf
 booty, [ies]booties
@@ -3086,26 +3092,26 @@ exciting
 greetings
 medication, [s]medications
 necessarily
-organize, [d]organized, [s]organizes, [ing]organizing
-overreact, [ed]overreacted, [ing]overreacting, [s]overreacts
+organize, [s]organizes, [d]organized, [ing]organizing
+overreact, [s]overreacts, [ed]overreacted, [ing]overreacting
 pageant, [s]pageants
 principle, [s]principles
 rabbi, [s]rabbis
-sneeze, [d]sneezed, [s]sneezes, [ing]sneezing
+sneeze, [s]sneezes, [d]sneezed, [ing]sneezing
 tasty, [ier]tastier, [iest]tastiest
 tobacco, [s]tobaccos
 whee
 facility, [ies]facilities
 skirt, [s]skirts
 torn
-dedicate, [d]dedicated, [s]dedicates, [ing]dedicating
+dedicate, [s]dedicates, [d]dedicated, [ing]dedicating
 despite
-download, [ed]downloaded, [ing]downloading, [s]downloads
+download, [s]downloads, [ed]downloaded, [ing]downloading
 fetus, [es]fetuses
-frighten, [ed]frightened, [ing]frightening, [s]frightens
+frighten, [s]frightens, [ed]frightened, [ing]frightening
 grateful
 gravity, [ies]gravities
-hail, [ed]hailed, [ing]hailing, [s]hails
+hail, [s]hails, [ed]hailed, [ing]hailing
 hay, [s]hays
 hideous
 hobby, [ies]hobbies
@@ -3127,29 +3133,29 @@ sofa, [s]sofas
 tavern, [s]taverns
 toaster, [s]toasters
 annual
-bathe, [d]bathed, [s]bathes, [ing]bathing
+bathe, [s]bathes, [d]bathed, [ing]bathing
 burrito, [s]burritos
-catalog, [s]catalogs, [ue]catalogue, [ues]catalogues
+catalog, [s]catalogs, [ues]catalogues, [ue]catalogue
 cheerleader, [s]cheerleaders
 combination, [s]combinations
-combine, [d]combined, [s]combines, [ing]combining
+combine, [s]combines, [d]combined, [ing]combining
 conclusion, [s]conclusions
 cotton, [s]cottons
 crab, [s]crabs
-erase, [d]erased, [s]erases, [ing]erasing
+erase, [s]erases, [d]erased, [ing]erasing
 fairly
 fund, [s]funds
-hog, [ged]hogged, [ging]hogging, [s]hogs
+hog, [s]hogs, [ged]hogged, [ging]hogging
 hurricane, [s]hurricanes
 july, [s]julys
 mansion, [s]mansions
 motorcycle, [s]motorcycles
 pigeon, [s]pigeons
 politics
-proper
-qualify, [ied]qualified, [ies]qualifies, [ing]qualifying
+proper, [ly]properly
+qualify, [ies]qualifies, [ied]qualified, [ing]qualifying
 receptionist, [s]receptionists
-recover, [ed]recovered, [ing]recovering, [s]recovers
+recover, [s]recovers, [ed]recovered, [ing]recovering
 sarcasm, [s]sarcasms
 sheriff, [s]sheriffs
 shoo
@@ -3171,9 +3177,9 @@ fabric, [s]fabrics
 herpes
 hobo, [es]hoboes, [s]hobos
 hybrid, [s]hybrids
-increase, [d]increased, [s]increases, [ing]increasing
+increase, [s]increases, [d]increased, [ing]increasing
 meth, [s]meths
-prevent, [ed]prevented, [ing]preventing, [s]prevents
+prevent, [s]prevents, [ed]prevented, [ing]preventing
 prisoner, [s]prisoners
 protection, [s]protections
 forgot
@@ -3184,9 +3190,9 @@ blown
 gentlemen
 catalogue
 queer, [er]queerer, [est]queerest
-refresh, [ed]refreshed, [es]refreshes, [ing]refreshing
+refresh, [es]refreshes, [ed]refreshed, [ing]refreshing
 shush
-strap, [ped]strapped, [ping]strapping, [s]straps
+strap, [s]straps, [ped]strapped, [ping]strapping
 tray, [s]trays
 yuck
 academy, [ies]academies
@@ -3198,18 +3204,18 @@ bladder, [s]bladders
 cult, [s]cults
 dealer, [s]dealers
 flesh, [es]fleshes
-fulfill, [ed]fulfilled, [ing]fulfilling, [s]fulfills
+fulfill, [s]fulfills, [ed]fulfilled, [ing]fulfilling
 hint, [s]hints
-hump, [ed]humped, [ing]humping, [s]humps
-identify, [ied]identified, [ies]identifies, [ing]identifying
-intimidate, [d]intimidated, [s]intimidates, [ing]intimidating
+hump, [s]humps, [ed]humped, [ing]humping
+identify, [ies]identifies, [ied]identified, [ing]identifying
+intimidate, [s]intimidates, [d]intimidated, [ing]intimidating
 leather, [s]leathers
 madness
 merely
 mole, [s]moles
 nazi, [s]nazis
 passionate
-recent, [er]recenter
+recent, [ly]recently, [er]recenter
 satellite, [s]satellites
 shook
 shampoo, [s]shampoos
@@ -3217,13 +3223,13 @@ sleepy, [ier]sleepier, [iest]sleepiest
 smug, [gest]smuggest
 straw, [s]straws
 supermarket, [s]supermarkets
-tend, [ed]tended, [ing]tending, [s]tends
+tend, [s]tends, [ed]tended, [ing]tending
 umbrella, [s]umbrellas
 wrestler, [s]wrestlers
 bud, [s]buds
 boner, [s]boners
 riot, [s]riots
-bid, [ding]bidding, [s]bids
+bid, [s]bids, [ding]bidding
 chess
 chin, [s]chins
 clip, [s]clips
@@ -3233,7 +3239,7 @@ deed, [s]deeds
 destruction, [s]destructions
 display, [s]displays
 eighth, [s]eighths
-eliminate, [d]eliminated, [s]eliminates, [ing]eliminating
+eliminate, [s]eliminates, [d]eliminated, [ing]eliminating
 homosexual, [s]homosexuals
 invention, [s]inventions
 marathon, [s]marathons
@@ -3244,7 +3250,7 @@ paperwork
 pilgrim, [s]pilgrims
 psst
 replacement, [s]replacements
-surrender, [ed]surrendered, [ing]surrendering, [s]surrenders
+surrender, [s]surrenders, [ed]surrendered, [ing]surrendering
 towards
 vacuum, [s]vacuums
 mice
@@ -3255,7 +3261,7 @@ done
 knives
 dryer, [s]dryers
 editor, [s]editors
-evolve, [d]evolved, [s]evolves, [ing]evolving
+evolve, [s]evolves, [d]evolved, [ing]evolving
 germ, [s]germs
 grace, [s]graces
 harsh, [er]harsher, [est]harshest
@@ -3272,7 +3278,7 @@ overnight
 particularly
 payment, [s]payments
 scenario, [s]scenarios
-scrub, [bed]scrubbed, [bing]scrubbing, [s]scrubs
+scrub, [s]scrubs, [bed]scrubbed, [bing]scrubbing
 shiny, [ier]shinier, [iest]shiniest
 thoughtful
 tops
@@ -3280,39 +3286,39 @@ tribe, [s]tribes
 worthless
 retirement, [s]retirements
 righty
-absolute
+absolute, [ly]absolutely
 breeze, [s]breezes
 dug
 adjustment, [s]adjustments
 adoption, [s]adoptions
 anyhow
 athlete, [s]athletes
-burst, [ed]bursted, [ing]bursting, [s]bursts
+burst, [s]bursts, [ed]bursted, [ing]bursting
 cocoa, [s]cocoas
 courtesy, [ies]courtesies
-current
+current, [ly]currently
 dough
-embrace, [d]embraced, [s]embraces, [ing]embracing
+embrace, [s]embraces, [d]embraced, [ing]embracing
 foolish
-locate, [d]located, [s]locates, [ing]locating
+locate, [s]locates, [d]located, [ing]locating
 memo, [s]memos
 mentally
 minor
-moo, [ed]mooed, [ing]mooing, [s]moos
-raccoon, [s]raccoons, [oon]racoon, [oons]racoons
-seduce, [d]seduced, [s]seduces, [ing]seducing
+moo, [s]moos, [ed]mooed, [ing]mooing
+raccoon, [s]raccoons, [oons]racoons, [oon]racoon
+seduce, [s]seduces, [d]seduced, [ing]seducing
 sleeve, [s]sleeves
-strangle, [d]strangled, [s]strangles, [ing]strangling
+strangle, [s]strangles, [d]strangled, [ing]strangling
 sunshine
-tickle, [d]tickled, [s]tickles, [ing]tickling
+tickle, [s]tickles, [d]tickled, [ing]tickling
 tower, [s]towers
 troop, [s]troops
 volume, [s]volumes
 wingman, [en]wingmen
 wuss, [es]wusses
-constant
+constant, [ly]constantly
 cue, [s]cues
-acknowledge, [d]acknowledged, [s]acknowledges, [ing]acknowledging
+acknowledge, [s]acknowledges, [d]acknowledged, [ing]acknowledging
 addition, [s]additions
 bass, [es]basses
 blessing, [s]blessings
@@ -3321,16 +3327,16 @@ classroom, [s]classrooms
 clinic, [s]clinics
 coward, [s]cowards
 driveway, [s]driveways
-elect, [ed]elected, [ing]electing, [s]elects
+elect, [s]elects, [ed]elected, [ing]electing
 fist, [s]fists
-indicate, [d]indicated, [s]indicates, [ing]indicating
+indicate, [s]indicates, [d]indicated, [ing]indicating
 ingredient, [s]ingredients
 instance, [s]instances
 june, [s]junes
-lighten, [ed]lightened, [ing]lightening, [s]lightens
+lighten, [s]lightens, [ed]lightened, [ing]lightening
 mailman, [en]mailmen
 meteor, [s]meteors
-mop, [ped]mopped, [ping]mopping, [s]mops
+mop, [s]mops, [ped]mopped, [ping]mopping
 noble, [r]nobler, [st]noblest
 pajamas
 physically
@@ -3338,15 +3344,15 @@ pro, [s]pros
 regarding
 reverend, [s]reverends
 slutty, [ier]sluttier, [iest]sluttiest
-sniff, [ed]sniffed, [ing]sniffing, [s]sniffs
+sniff, [s]sniffs, [ed]sniffed, [ing]sniffing
 mushroom, [s]mushrooms
 advanced
 driven
 grey
 struck
 forgotten
-dive, [d]dived, [s]dives, [ing]diving, [ove]dove
-amuse, [d]amused, [s]amuses, [ing]amusing
+dive, [s]dives, [d]dived, [ing]diving, [ove]dove
+amuse, [s]amuses, [d]amused, [ing]amusing
 ancestor, [s]ancestors
 attic, [s]attics
 broccoli
@@ -3367,20 +3373,20 @@ nude
 pan, [s]pans
 paradise, [s]paradises
 pervert, [s]perverts
-pinch, [ed]pinched, [es]pinches, [ing]pinching
+pinch, [es]pinches, [ed]pinched, [ing]pinching
 rotten
 seventh, [s]sevenths
 similar
 tractor, [s]tractors
 vanilla, [s]vanillas
-violate, [d]violated, [s]violates, [ing]violating
-zip, [ped]zipped, [ping]zipping, [s]zips
+violate, [s]violates, [d]violated, [ing]violating
+zip, [s]zips, [ped]zipped, [ping]zipping
 bedtime, [s]bedtimes
 cape, [s]capes
 crossword, [s]crosswords
 designer, [s]designers
 enormous
-extreme, [st]extremest
+extreme, [ly]extremely, [st]extremest
 fragile
 genetic
 length, [s]lengths
@@ -3392,7 +3398,7 @@ meatball, [s]meatballs
 messy, [ier]messier, [iest]messiest
 mount, [s]mounts
 navy, [ies]navies
-oppose, [d]opposed, [s]opposes, [ing]opposing
+oppose, [s]opposes, [d]opposed, [ing]opposing
 passenger, [s]passengers
 playground, [s]playgrounds
 possession, [s]possessions
@@ -3407,8 +3413,8 @@ thou
 urinal, [s]urinals
 wah
 republican, [s]republicans
-abuse, [d]abused, [s]abuses, [ing]abusing
-adjust, [ed]adjusted, [ing]adjusting, [s]adjusts
+abuse, [s]abuses, [d]abused, [ing]abusing
+adjust, [s]adjusts, [ed]adjusted, [ing]adjusting
 approval, [s]approvals
 certificate, [s]certificates
 complex
@@ -3417,7 +3423,7 @@ era, [s]eras
 exhibit, [s]exhibits
 fame
 gene, [s]genes
-hop, [ped]hopped, [ping]hopping, [s]hops
+hop, [s]hops, [ped]hopped, [ping]hopping
 invisible
 kitten, [s]kittens
 laptop, [s]laptops
@@ -3425,9 +3431,9 @@ maniac, [s]maniacs
 myth, [s]myths
 needle, [s]needles
 prime
-puke, [d]puked, [s]pukes, [ing]puking
+puke, [s]pukes, [d]puked, [ing]puking
 rating, [s]ratings
-reserve, [d]reserved, [s]reserves, [ing]reserving
+reserve, [s]reserves, [d]reserved, [ing]reserving
 sarcastic
 shelf, [ves]shelves
 skeleton, [s]skeletons
@@ -3438,31 +3444,31 @@ virus, [es]viruses
 weakness, [es]weaknesses
 barrel, [s]barrels
 applause, [s]applauses
-boil, [ed]boiled, [ing]boiling, [s]boils
-brag, [ged]bragged, [ging]bragging, [s]brags
-buckle, [d]buckled, [s]buckles, [ing]buckling
+boil, [s]boils, [ed]boiled, [ing]boiling
+brag, [s]brags, [ged]bragged, [ging]bragging
+buckle, [s]buckles, [d]buckled, [ing]buckling
 burglar, [s]burglars
 caller, [s]callers
 carton, [s]cartons
 donkey, [s]donkeys
 environmental
-expand, [ed]expanded, [ing]expanding, [s]expands
+expand, [s]expands, [ed]expanded, [ing]expanding
 flu, [s]flus
 forehead, [s]foreheads
-greet, [ed]greeted, [ing]greeting, [s]greets
+greet, [s]greets, [ed]greeted, [ing]greeting
 illness, [es]illnesses
-injure, [d]injured, [s]injures, [ing]injuring
+injure, [s]injures, [d]injured, [ing]injuring
 lifestyle, [s]lifestyles
 objection, [s]objections
 outrage, [s]outrages
 pasta, [s]pastas
-practical
+practical, [ly]practically
 recess, [es]recesses
-recycle, [d]recycled, [s]recycles, [ing]recycling
-rehearse, [d]rehearsed, [s]rehearses, [ing]rehearsing
+recycle, [s]recycles, [d]recycled, [ing]recycling
+rehearse, [s]rehearses, [d]rehearsed, [ing]rehearsing
 roast, [s]roasts
 salsa, [s]salsas
-shred, [ded]shredded, [ding]shredding, [s]shreds
+shred, [s]shreds, [ded]shredded, [ding]shredding
 sloppy, [ier]sloppier, [iest]sloppiest
 somewhat
 suitcase, [s]suitcases
@@ -3476,8 +3482,8 @@ bikini, [s]bikinis
 bun, [s]buns
 swung
 clubhouse, [s]clubhouses
-confront, [ed]confronted, [ing]confronting, [s]confronts
-contribute, [d]contributed, [s]contributes, [ing]contributing
+confront, [s]confronts, [ed]confronted, [ing]confronting
+contribute, [s]contributes, [d]contributed, [ing]contributing
 critic, [s]critics
 depressing
 dime, [s]dimes
@@ -3499,7 +3505,7 @@ poet, [s]poets
 quietly
 relative, [s]relatives
 safely
-slam, [med]slammed, [ming]slamming, [s]slams
+slam, [s]slams, [med]slammed, [ming]slamming
 surprisingly
 testing, [s]testings
 throughout
@@ -3520,29 +3526,29 @@ atheist, [s]atheists
 chamber, [s]chambers
 cheeseburger, [s]cheeseburgers
 conscience, [s]consciences
-cuddle, [d]cuddled, [s]cuddles, [ing]cuddling
+cuddle, [s]cuddles, [d]cuddled, [ing]cuddling
 existence, [s]existences
 gallery, [ies]galleries
 instinct, [s]instincts
 instruction, [s]instructions
 loyal
-maintain, [ed]maintained, [ing]maintaining, [s]maintains
+maintain, [s]maintains, [ed]maintained, [ing]maintaining
 maintenance
 meaningless
-memorize, [d]memorized, [s]memorizes, [ing]memorizing
+memorize, [s]memorizes, [d]memorized, [ing]memorizing
 missile, [s]missiles
 moist, [er]moister
-nag, [ged]nagged, [ging]nagging, [s]nags
+nag, [s]nags, [ged]nagged, [ging]nagging
 paintball, [s]paintballs
 pattern, [s]patterns
 physicist, [s]physicists
 pointless
-polish, [ed]polished, [es]polishes, [ing]polishing
+polish, [es]polishes, [ed]polished, [ing]polishing
 reading, [s]readings
 sitcom, [s]sitcoms
-slight, [er]slighter, [est]slightest
+slight, [ly]slightly, [er]slighter, [est]slightest
 softball, [s]softballs
-strip, [ped]stripped, [ping]stripping, [s]strips
+strip, [s]strips, [ped]stripped, [ping]stripping
 temple, [s]temples
 wooden
 inner, [most]innermost
@@ -3555,7 +3561,7 @@ awareness
 baggage
 closing
 cricket, [s]crickets
-decorate, [d]decorated, [s]decorates, [ing]decorating
+decorate, [s]decorates, [d]decorated, [ing]decorating
 definition, [s]definitions
 development, [s]developments
 discipline, [s]disciplines
@@ -3563,7 +3569,7 @@ ending, [s]endings
 entry, [ies]entries
 explosion, [s]explosions
 frozen
-hack, [ed]hacked, [ing]hacking, [s]hacks
+hack, [s]hacks, [ed]hacked, [ing]hacking
 homemade
 hunter, [s]hunters
 kite, [s]kites
@@ -3577,21 +3583,21 @@ password, [s]passwords
 pledge, [s]pledges
 pond, [s]ponds
 resolution, [s]resolutions
-rig, [ged]rigged, [ging]rigging, [s]rigs
+rig, [s]rigs, [ged]rigged, [ging]rigging
 sector, [s]sectors
 sunset, [s]sunsets
 superior
 surgeon, [s]surgeons
-tease, [d]teased, [s]teases, [ing]teasing
+tease, [s]teases, [d]teased, [ing]teasing
 thus
 vegetarian, [s]vegetarians
-videotape, [d]videotaped, [s]videotapes, [ing]videotaping
+videotape, [s]videotapes, [d]videotaped, [ing]videotaping
 workout, [s]workouts
 wound, [s]wounds
 pyramid, [s]pyramids
 buffet, [s]buffets
 antique, [s]antiques
-appeal, [ed]appealed, [ing]appealing, [s]appeals
+appeal, [s]appeals, [ed]appealed, [ing]appealing
 arrangement, [s]arrangements
 blues
 closure, [s]closures
@@ -3603,31 +3609,31 @@ ill
 lid, [s]lids
 method, [s]methods
 outrageous
-peel, [ed]peeled, [ing]peeling, [s]peels
+peel, [s]peels, [ed]peeled, [ing]peeling
 rash, [es]rashes
 sophisticated
 stool, [s]stools
-struggle, [d]struggled, [s]struggles, [ing]struggling
+struggle, [s]struggles, [d]struggled, [ing]struggling
 subtle, [r]subtler, [st]subtlest
-suspend, [ed]suspended, [ing]suspending, [s]suspends
+suspend, [s]suspends, [ed]suspended, [ing]suspending
 tension, [s]tensions
 wealthy, [ier]wealthier, [iest]wealthiest
 cushion, [s]cushions
 rebel, [s]rebels
 mafia
-aim, [ed]aimed, [ing]aiming, [s]aims
+aim, [s]aims, [ed]aimed, [ing]aiming
 auto, [s]autos
 bowel, [s]bowels
 bummer, [s]bummers
-cater, [ed]catered, [ing]catering, [s]caters
+cater, [s]caters, [ed]catered, [ing]catering
 chubby, [ier]chubbier
 conflict, [s]conflicts
-convert, [ed]converted, [ing]converting, [s]converts
+convert, [s]converts, [ed]converted, [ing]converting
 dairy, [ies]dairies
 division, [s]divisions
 donation, [s]donations
-edit, [ed]edited, [ing]editing, [s]edits
-expire, [d]expired, [s]expires, [ing]expiring
+edit, [s]edits, [ed]edited, [ing]editing
+expire, [s]expires, [d]expired, [ing]expiring
 flyer, [s]flyers
 freaky, [ier]freakier, [iest]freakiest
 goods
@@ -3635,47 +3641,47 @@ hamster, [s]hamsters
 honesty
 ignorant
 inspiration, [s]inspirations
-masturbate, [d]masturbated, [s]masturbates, [ing]masturbating
+masturbate, [s]masturbates, [d]masturbated, [ing]masturbating
 melon, [s]melons
 metaphor, [s]metaphors
 midget, [s]midgets
 moral
 motel, [s]motels
 net, [s]nets
-participate, [d]participated, [s]participates, [ing]participating
+participate, [s]participates, [d]participated, [ing]participating
 quarterback, [s]quarterbacks
 radiation, [s]radiations
 raw, [er]rawer, [est]rawest
-relate, [d]related, [s]relates, [ing]relating
+relate, [s]relates, [d]related, [ing]relating
 resident, [s]residents
-snuggle, [d]snuggled, [s]snuggles, [ing]snuggling
+snuggle, [s]snuggles, [d]snuggled, [ing]snuggling
 southern, [most]southernmost
 sticky, [ier]stickier, [iest]stickiest
 tin, [s]tins
 workplace, [s]workplaces
-zoom, [ed]zoomed, [ing]zooming, [s]zooms
+zoom, [s]zooms, [ed]zoomed, [ing]zooming
 acting
 spiritual
 slot, [s]slots
-activate, [d]activated, [s]activates, [ing]activating
+activate, [s]activates, [d]activated, [ing]activating
 briefcase, [s]briefcases
 cologne, [s]colognes
 competitive
 depression, [s]depressions
-extend, [ed]extended, [ing]extending, [s]extends
+extend, [s]extends, [ed]extended, [ing]extending
 fighter, [s]fighters
 gently
 gone
 graduation, [s]graduations
 grief, [s]griefs
 growth, [s]growths
-infect, [ed]infected, [ing]infecting, [s]infects
+infect, [s]infects, [ed]infected, [ing]infecting
 latte, [s]lattes
 leak, [s]leaks
 logical
-lure, [d]lured, [s]lures, [ing]luring
+lure, [s]lures, [d]lured, [ing]luring
 macaroni, [s]macaronis
-millennium, [a]millennia, [s]millenniums
+millennium, [s]millenniums, [a]millennia
 olive, [s]olives
 ordinary
 outer, [most]outermost
@@ -3685,27 +3691,27 @@ protocol, [s]protocols
 realistic
 recital, [s]recitals
 remarkable
-sabotage, [d]sabotaged, [s]sabotages, [ing]sabotaging
+sabotage, [s]sabotages, [d]sabotaged, [ing]sabotaging
 sadly
-sparkle, [d]sparkled, [s]sparkles, [ing]sparkling
-tow, [ed]towed, [ing]towing, [s]tows
+sparkle, [s]sparkles, [d]sparkled, [ing]sparkling
+tow, [s]tows, [ed]towed, [ing]towing
 vulnerable
 waters
 wolf, [ves]wolves
 yum
 loaf, [ves]loaves
 perfume, [s]perfumes
-bare, [r]barer, [st]barest
+bare, [ly]barely, [r]barer, [st]barest
 resume, [s]resumes
 scar, [s]scars
 agenda, [s]agendas
-assign, [ed]assigned, [ing]assigning, [s]assigns
-await, [ed]awaited, [ing]awaiting, [s]awaits
+assign, [s]assigns, [ed]assigned, [ing]assigning
+await, [s]awaits, [ed]awaited, [ing]awaiting
 billionaire, [s]billionaires
 bookstore, [s]bookstores
 buyer, [s]buyers
 charade, [s]charades
-collapse, [d]collapsed, [s]collapses, [ing]collapsing
+collapse, [s]collapses, [d]collapsed, [ing]collapsing
 conditioning, [s]conditionings
 consequence, [s]consequences
 crooked
@@ -3713,7 +3719,7 @@ cultural
 dating, [s]datings
 december, [s]decembers
 deli, [s]delis
-examine, [d]examined, [s]examines, [ing]examining
+examine, [s]examines, [d]examined, [ing]examining
 grown
 hormone, [s]hormones
 hush
@@ -3722,13 +3728,13 @@ intention, [s]intentions
 international
 karaoke
 maple, [s]maples
-pose, [d]posed, [s]poses, [ing]posing
+pose, [s]poses, [d]posed, [ing]posing
 psychiatrist, [s]psychiatrists
 repair, [s]repairs
 shotgun, [s]shotguns
 steady, [ier]steadier, [iest]steadiest
 strategy, [ies]strategies
-tempt, [ed]tempted, [ing]tempting, [s]tempts
+tempt, [s]tempts, [ed]tempted, [ing]tempting
 vet, [s]vets
 yikes
 hood, [s]hoods
@@ -3741,13 +3747,13 @@ bathtub, [s]bathtubs
 broad, [er]broader, [est]broadest
 brutal
 campaign, [s]campaigns
-conduct, [ed]conducted, [ing]conducting, [s]conducts
+conduct, [s]conducts, [ed]conducted, [ing]conducting
 innermost
 copier, [s]copiers
 cranky, [ier]crankier, [iest]crankiest
 eternal
 foam, [s]foams
-google, [s]googles, [ing]googling, [d]googled
+google, [s]googles, [d]googled, [ing]googling
 greedy, [ier]greedier, [iest]greediest
 shrunk
 scarves
@@ -3763,19 +3769,19 @@ shaven
 omelette
 kisser, [s]kissers
 lava, [s]lavas
-loosen, [ed]loosened, [ing]loosening, [s]loosens
+loosen, [s]loosens, [ed]loosened, [ing]loosening
 mailbox, [es]mailboxes
 naive
 november, [s]novembers
 particle, [s]particles
 perspective, [s]perspectives
 privilege, [s]privileges
-resolve, [d]resolved, [s]resolves, [ing]resolving
+resolve, [s]resolves, [d]resolved, [ing]resolving
 scarf, [s]scarfs, [ves]scarves
 trainer, [s]trainers
 unable
 unacceptable
-unfortunate
+unfortunate, [ly]unfortunately
 volcano, [es]volcanoes, [s]volcanos
 weed, [s]weeds
 worthy, [ier]worthier, [iest]worthiest
@@ -3794,33 +3800,33 @@ cashmere, [s]cashmeres
 chimp, [s]chimps
 communist, [s]communists
 consultant, [s]consultants
-criticize, [d]criticized, [s]criticizes, [ing]criticizing
+criticize, [s]criticizes, [d]criticized, [ing]criticizing
 cutie, [s]cuties
 shhh
 decaf
-demonstrate, [d]demonstrated, [s]demonstrates, [ing]demonstrating
+demonstrate, [s]demonstrates, [d]demonstrated, [ing]demonstrating
 denial, [s]denials
 distraction, [s]distractions
-dunk, [ed]dunked, [ing]dunking, [s]dunks
+dunk, [s]dunks, [ed]dunked, [ing]dunking
 edition, [s]editions
 embarrassment, [s]embarrassments
 extension, [s]extensions
 frisbee, [s]frisbees
-grind, [ing]grinding, [s]grinds, [ound]ground
+grind, [s]grinds, [ing]grinding, [ound]ground
 hairy, [ier]hairier, [iest]hairiest
 handy, [ier]handier, [iest]handiest
 humble, [r]humbler, [st]humblest
-juggle, [d]juggled, [s]juggles, [ing]juggling
+juggle, [s]juggles, [d]juggled, [ing]juggling
 kit, [s]kits
 loyalty, [ies]loyalties
 lyric, [s]lyrics
 maestro, [s]maestros
 margarita, [s]margaritas
-molest, [ed]molested, [ing]molesting, [s]molests
+molest, [s]molests, [ed]molested, [ing]molesting
 occasionally
-overwhelm, [ed]overwhelmed, [ing]overwhelming, [s]overwhelms
+overwhelm, [s]overwhelms, [ed]overwhelmed, [ing]overwhelming
 pharmacy, [ies]pharmacies
-preserve, [d]preserved, [s]preserves, [ing]preserving
+preserve, [s]preserves, [d]preserved, [ing]preserving
 properly
 restroom, [s]restrooms
 secure
@@ -3829,7 +3835,7 @@ sundae, [s]sundaes
 thai
 toad, [s]toads
 trailer, [s]trailers
-transform, [ed]transformed, [ing]transforming, [s]transforms
+transform, [s]transforms, [ed]transformed, [ing]transforming
 uterus, [es]uteruses
 violation, [s]violations
 weekly
@@ -3837,12 +3843,12 @@ blog, [s]blogs
 flying
 aah
 rang
-advise, [d]advised, [s]advises, [ing]advising
+advise, [s]advises, [d]advised, [ing]advising
 altar, [s]altars
 assembly, [ies]assemblies
 beaver, [s]beavers
 blazer, [s]blazers
-compromise, [d]compromised, [s]compromises, [ing]compromising
+compromise, [s]compromises, [d]compromised, [ing]compromising
 conspiracy, [ies]conspiracies
 critical
 devastated
@@ -3864,24 +3870,24 @@ opponent, [s]opponents
 penguin, [s]penguins
 photographer, [s]photographers
 puffy, [ier]puffier
-racket, [s]rackets, [quet]racquet, [quets]racquets
+racket, [s]rackets, [quets]racquets, [quet]racquet
 region, [s]regions
 robe, [s]robes
-sew, [ed]sewed, [ing]sewing, [n]sewn, [s]sews
-shatter, [ed]shattered, [ing]shattering, [s]shatters
+sew, [s]sews, [ed]sewed, [ing]sewing, [n]sewn
+shatter, [s]shatters, [ed]shattered, [ing]shattering
 sickness
 sidekick, [s]sidekicks
 skank, [s]skanks
 spice, [s]spices
 starter, [s]starters
-stir, [red]stirred, [ring]stirring, [s]stirs
+stir, [s]stirs, [red]stirred, [ring]stirring
 structure, [s]structures
 sub, [s]subs
 tampon, [s]tampons
 touchdown, [s]touchdowns
 pimp, [s]pimps
 brief, [er]briefer, [est]briefest
-barbecue, [s]barbecues, [que]barbeque, [ques]barbeques, [bq]bbq
+barbecue, [s]barbecues, [ques]barbeques, [que]barbeque, [bq]bbq
 anxiety, [ies]anxieties
 bay, [s]bays
 chemistry, [ies]chemistries
@@ -3890,16 +3896,16 @@ diabetes
 diarrhea
 dictionary, [ies]dictionaries
 doorman, [en]doormen
-exploit, [ed]exploited, [ing]exploiting, [s]exploits
+exploit, [s]exploits, [ed]exploited, [ing]exploiting
 fatty, [ies]fatties
 fluid, [s]fluids
 funky, [ier]funkier, [iest]funkiest
 gender, [s]genders
 glitter, [s]glitters
-harass, [ed]harassed, [es]harasses, [ing]harassing
+harass, [es]harasses, [ed]harassed, [ing]harassing
 hen, [s]hens
 improv, [s]improvs
-interfere, [d]interfered, [s]interferes, [ing]interfering
+interfere, [s]interferes, [d]interfered, [ing]interfering
 irony, [ies]ironies
 married
 novelty, [ies]novelties
@@ -3908,7 +3914,7 @@ previous
 rehab, [s]rehabs
 reindeer, [s]reindeers
 reminder, [s]reminders
-resent, [ed]resented, [ing]resenting, [s]resents
+resent, [s]resents, [ed]resented, [ing]resenting
 rodeo, [s]rodeos
 severe, [r]severer, [st]severest
 slippery, [ier]slipperier, [iest]slipperiest
@@ -3921,14 +3927,14 @@ whatsoever
 stunt, [s]stunts
 dock, [s]docks
 accurate
-alter, [ed]altered, [ing]altering, [s]alters
+alter, [s]alters, [ed]altered, [ing]altering
 ash, [es]ashes
 authentic
 basis, [es]bases
 booger, [s]boogers
 broken
 chemical, [s]chemicals
-clap, [ped]clapped, [ping]clapping, [s]claps
+clap, [s]claps, [ped]clapped, [ping]clapping
 closely
 commissioner, [s]commissioners
 communication, [s]communications
@@ -3937,7 +3943,7 @@ engineer, [s]engineers
 federal
 drank
 farther
-fetch, [ed]fetched, [es]fetches, [ing]fetching
+fetch, [es]fetches, [ed]fetched, [ing]fetching
 fried
 glory, [ies]glories
 godfather, [s]godfathers
@@ -3946,7 +3952,7 @@ importantly
 lounge, [s]lounges
 milkshake, [s]milkshakes
 mutant, [s]mutants
-negotiate, [d]negotiated, [s]negotiates, [ing]negotiating
+negotiate, [s]negotiates, [d]negotiated, [ing]negotiating
 notebook, [s]notebooks
 outlet, [s]outlets
 paycheck, [s]paychecks
@@ -3959,22 +3965,22 @@ smiley, [s]smileys
 solar
 spaceship, [s]spaceships
 stem, [s]stems
-sting, [ing]stinging, [s]stings, [ung]stung
+sting, [s]stings, [ing]stinging, [ung]stung
 storage
 suite, [s]suites
-unlock, [ed]unlocked, [ing]unlocking, [s]unlocks
+unlock, [s]unlocks, [ed]unlocked, [ing]unlocking
 urban
 warrior, [s]warriors
 congress
-adore, [d]adored, [s]adores, [ing]adoring
+adore, [s]adores, [d]adored, [ing]adoring
 aggressive
 balcony, [ies]balconies
 beam, [s]beams
 cappuccino, [s]cappuccinos
 charm, [s]charms
 burnt
-consume, [d]consumed, [s]consumes, [ing]consuming
-crank, [ed]cranked, [ing]cranking, [s]cranks
+consume, [s]consumes, [d]consumed, [ing]consuming
+crank, [s]cranks, [ed]cranked, [ing]cranking
 european, [s]europeans
 fatso
 fiction, [s]fictions
@@ -3983,7 +3989,7 @@ holder, [s]holders
 income, [s]incomes
 ink, [s]inks
 instrument, [s]instruments
-jinx, [ed]jinxed, [es]jinxes, [ing]jinxing
+jinx, [es]jinxes, [ed]jinxed, [ing]jinxing
 kindly
 liquid, [s]liquids
 lump, [s]lumps
@@ -3996,28 +4002,28 @@ piggy, [ies]piggies
 pineapple, [s]pineapples
 poo, [s]poos
 porch, [es]porches
-predict, [ed]predicted, [ing]predicting, [s]predicts
+predict, [s]predicts, [ed]predicted, [ing]predicting
 priceless
 priority, [ies]priorities
 ramp, [s]ramps
 receipt, [s]receipts
 rusty, [ier]rustier
 sandal, [s]sandals
-seize, [d]seized, [s]seizes, [ing]seizing
+seize, [s]seizes, [d]seized, [ing]seizing
 servant, [s]servants
 sidewalk, [s]sidewalks
 significant
-slaughter, [ed]slaughtered, [ing]slaughtering, [s]slaughters
+slaughter, [s]slaughters, [ed]slaughtered, [ing]slaughtering
 spine, [s]spines
 stubborn
 shaken
-stumble, [d]stumbled, [s]stumbles, [ing]stumbling
+stumble, [s]stumbles, [d]stumbled, [ing]stumbling
 urge, [s]urges
 urgent
 rebuilt
 spoilt
 veal
-wink, [ed]winked, [ing]winking, [s]winks
+wink, [s]winks, [ed]winked, [ing]winking
 notch, [es]notches
 scum, [s]scums
 sewer, [s]sewers
@@ -4025,7 +4031,7 @@ bargain, [s]bargains
 driving
 remark, [s]remarks
 wacky, [ier]wackier, [iest]wackiest, [hacky]whacky
-abort, [ed]aborted, [ing]aborting, [s]aborts
+abort, [s]aborts, [ed]aborted, [ing]aborting
 active
 aid, [s]aids
 aspirin, [s]aspirins
@@ -4034,11 +4040,11 @@ biggie, [s]biggies
 bold, [er]bolder, [est]boldest
 brat, [s]brats
 cemetery, [ies]cemeteries
-cleanse, [d]cleansed, [s]cleanses, [ing]cleansing
+cleanse, [s]cleanses, [d]cleansed, [ing]cleansing
 colleague, [s]colleagues
 colon, [s]colons
 confusion, [s]confusions
-congratulate, [d]congratulated, [s]congratulates, [ing]congratulating
+congratulate, [s]congratulates, [d]congratulated, [ing]congratulating
 context, [s]contexts
 creeps
 dull, [er]duller, [est]dullest
@@ -4052,22 +4058,22 @@ investor, [s]investors
 irresponsible
 knit, [s]knits, [ted]knitted, [ting]knitting
 meter, [s]meters
-nominate, [d]nominated, [s]nominates, [ing]nominating
+nominate, [s]nominates, [d]nominated, [ing]nominating
 oatmeal
-omelet, [s]omelets, [te]omelette, [tes]omelettes
-overcome, [ame]overcame, [s]overcomes, [ing]overcoming
+omelet, [s]omelets, [tes]omelettes, [te]omelette
+overcome, [s]overcomes, [ing]overcoming, [ame]overcame
 plaque, [s]plaques
-pursue, [d]pursued, [s]pursues, [ing]pursuing
-reflect, [ed]reflected, [ing]reflecting, [s]reflects
+pursue, [s]pursues, [d]pursued, [ing]pursuing
+reflect, [s]reflects, [ed]reflected, [ing]reflecting
 relation, [s]relations
 rep, [s]reps
 retard, [s]retards
 shack, [s]shacks
-sincere, [st]sincerest
+sincere, [ly]sincerely, [st]sincerest
 theft, [s]thefts
 tricky, [ier]trickier, [iest]trickiest
 tummy, [ies]tummies
-undo, [id]undid, [es]undoes, [ing]undoing, [ne]undone
+undo, [es]undoes, [ing]undoing, [id]undid, [ne]undone
 unnecessary
 unpleasant
 vase, [s]vases
@@ -4078,11 +4084,11 @@ thunder, [s]thunders
 bound
 bizarre
 cliff, [s]cliffs
-comb, [ed]combed, [ing]combing, [s]combs
-curl, [ed]curled, [ing]curling, [s]curls
-disable, [d]disabled, [s]disables, [ing]disabling
+comb, [s]combs, [ed]combed, [ing]combing
+curl, [s]curls, [ed]curled, [ing]curling
+disable, [s]disables, [d]disabled, [ing]disabling
 district, [s]districts
-emerge, [d]emerged, [s]emerges, [ing]emerging
+emerge, [s]emerges, [d]emerged, [ing]emerging
 emperor, [s]emperors
 endless
 wept
@@ -4090,7 +4096,7 @@ shone
 panicking
 bled
 eww
-fantasize, [d]fantasized, [s]fantasizes, [ing]fantasizing
+fantasize, [s]fantasizes, [d]fantasized, [ing]fantasizing
 folk, [s]folks
 fortunately
 gap, [s]gaps
@@ -4105,25 +4111,25 @@ nun, [s]nuns
 patience
 pickup, [s]pickups
 portrait, [s]portraits
-possess, [ed]possessed, [es]possesses, [ing]possessing
+possess, [es]possesses, [ed]possessed, [ing]possessing
 rabies
 redneck, [s]rednecks
 regard, [s]regards
 relevant
-restrain, [ed]restrained, [ing]restraining, [s]restrains
+restrain, [s]restrains, [ed]restrained, [ing]restraining
 satisfaction, [s]satisfactions
 secondly
 sip, [s]sips
-sponsor, [ed]sponsored, [ing]sponsoring, [s]sponsors
+sponsor, [s]sponsors, [ed]sponsored, [ing]sponsoring
 sprinkles
 steel, [s]steels
 subtitle, [s]subtitles
-tackle, [d]tackled, [s]tackles, [ing]tackling
+tackle, [s]tackles, [d]tackled, [ing]tackling
 tacky, [ier]tackier, [iest]tackiest
 territory, [ies]territories
 tourist, [s]tourists
 tremendous
-trim, [med]trimmed, [ming]trimming, [s]trims
+trim, [s]trims, [med]trimmed, [ming]trimming
 tux, [es]tuxes
 vegan, [s]vegans
 womb, [s]wombs
@@ -4133,14 +4139,14 @@ bore
 bbq
 absence, [s]absences
 acceptable
-assemble, [d]assembled, [s]assembles, [ing]assembling
+assemble, [s]assembles, [d]assembled, [ing]assembling
 assistance
-bluff, [ed]bluffed, [ing]bluffing, [s]bluffs
-bribe, [d]bribed, [s]bribes, [ing]bribing
-conceive, [d]conceived, [s]conceives, [ing]conceiving
+bluff, [s]bluffs, [ed]bluffed, [ing]bluffing
+bribe, [s]bribes, [d]bribed, [ing]bribing
+conceive, [s]conceives, [d]conceived, [ing]conceiving
 diner, [s]diners
 donor, [s]donors
-expel, [led]expelled, [ling]expelling, [s]expels
+expel, [s]expels, [led]expelled, [ling]expelling
 finals
 garlic, [s]garlics
 groin, [s]groins
@@ -4151,27 +4157,27 @@ inventor, [s]inventors
 mentor, [s]mentors
 mummy, [ies]mummies
 ninth, [s]ninths
-occupy, [ied]occupied, [ies]occupies, [ing]occupying
+occupy, [ies]occupies, [ied]occupied, [ing]occupying
 pamphlet, [s]pamphlets
-pause, [d]paused, [s]pauses, [ing]pausing
+pause, [s]pauses, [d]paused, [ing]pausing
 pretentious
 ranch, [es]ranches
 rooster, [s]roosters
-scramble, [d]scrambled, [s]scrambles, [ing]scrambling
-scrape, [d]scraped, [s]scrapes, [ing]scraping
+scramble, [s]scrambles, [d]scrambled, [ing]scrambling
+scrape, [s]scrapes, [d]scraped, [ing]scraping
 sensation, [s]sensations
 shuttle, [s]shuttles
-stall, [ed]stalled, [ing]stalling, [s]stalls
-summon, [ed]summoned, [ing]summoning, [s]summons
+stall, [s]stalls, [ed]stalled, [ing]stalling
+summon, [s]summons, [ed]summoned, [ing]summoning
 tad, [s]tads
-tan, [ned]tanned, [ning]tanning, [s]tans
+tan, [s]tans, [ned]tanned, [ning]tanning
 tango, [s]tangos
 teeny, [iest]teeniest
 tenth, [s]tenths
 unexpected
 unicorn, [s]unicorns
 unknown
-unpack, [ed]unpacked, [ing]unpacking, [s]unpacks
+unpack, [s]unpacks, [ed]unpacked, [ing]unpacking
 useful
 variety, [ies]varieties
 vicious
@@ -4182,16 +4188,16 @@ photograph, [s]photographs
 jerky
 manure, [s]manures
 razor, [s]razors
-animate, [d]animated, [s]animates, [ing]animating
+animate, [s]animates, [d]animated, [ing]animating
 atmosphere, [s]atmospheres
 boundary, [ies]boundaries
 cardboard, [s]cardboards
-cherish, [ed]cherished, [es]cherishes, [ing]cherishing
+cherish, [es]cherishes, [ed]cherished, [ing]cherishing
 civilization, [s]civilizations
 commander, [s]commanders
-conquer, [ed]conquered, [ing]conquering, [s]conquers
+conquer, [s]conquers, [ed]conquered, [ing]conquering
 convenience, [s]conveniences
-cram, [med]crammed, [ming]cramming, [s]crams
+cram, [s]crams, [med]crammed, [ming]cramming
 deadline, [s]deadlines
 detector, [s]detectors
 dresser, [s]dressers
@@ -4203,14 +4209,14 @@ helpless
 historical
 hottie, [s]hotties
 identical
-initiate, [d]initiated, [s]initiates, [ing]initiating
-investigate, [d]investigated, [s]investigates, [ing]investigating
-itch, [ed]itched, [es]itches, [ing]itching
+initiate, [s]initiates, [d]initiated, [ing]initiating
+investigate, [s]investigates, [d]investigated, [ing]investigating
+itch, [es]itches, [ed]itched, [ing]itching
 juvenile
 latin
 luggage
 mannequin, [s]mannequins
-motivate, [d]motivated, [s]motivates, [ing]motivating
+motivate, [s]motivates, [d]motivated, [ing]motivating
 niece, [s]nieces
 passport, [s]passports
 pharmacist, [s]pharmacists
@@ -4223,7 +4229,7 @@ poisoning, [s]poisonings
 policeman, [en]policemen
 precisely
 profile, [s]profiles
-reconsider, [ed]reconsidered, [ing]reconsidering, [s]reconsiders
+reconsider, [s]reconsiders, [ed]reconsidered, [ing]reconsidering
 ritual, [s]rituals
 robbery, [ies]robberies
 semen
@@ -4233,8 +4239,8 @@ stat, [s]stats
 stunning
 supper, [s]suppers
 tab, [s]tabs
-tolerate, [d]tolerated, [s]tolerates, [ing]tolerating
-translate, [d]translated, [s]translates, [ing]translating
+tolerate, [s]tolerates, [d]tolerated, [ing]tolerating
+translate, [s]translates, [d]translated, [ing]translating
 spat
 tuxedo, [es]tuxedoes, [s]tuxedos
 wand, [s]wands
@@ -4246,11 +4252,11 @@ anchor, [s]anchors
 anthropology
 atom, [s]atoms
 author, [s]authors
-blend, [ed]blended, [ing]blending, [s]blends
-blink, [ed]blinked, [ing]blinking, [s]blinks
+blend, [s]blends, [ed]blended, [ing]blending
+blink, [s]blinks, [ed]blinked, [ing]blinking
 blonde, [s]blondes
 brakes
-breed, [d]bred, [ing]breeding, [s]breeds
+breed, [s]breeds, [d]bred, [ing]breeding
 brochure, [s]brochures
 clay
 coitus
@@ -4258,8 +4264,8 @@ correction, [s]corrections
 curly, [ier]curlier
 custody
 diversity, [ies]diversities
-dodge, [d]dodged, [s]dodges, [ing]dodging
-dye, [d]dyed, [ing]dyeing, [s]dyes
+dodge, [s]dodges, [d]dodged, [ing]dodging
+dye, [s]dyes, [d]dyed, [ing]dyeing
 dynamite, [s]dynamites
 equation, [s]equations
 errand, [s]errands
@@ -4268,48 +4274,48 @@ halftime, [s]halftimes
 hearing, [s]hearings
 hoop, [s]hoops
 hunk, [s]hunks
-invade, [d]invaded, [s]invades, [ing]invading
+invade, [s]invades, [d]invaded, [ing]invading
 invasion, [s]invasions
 jealousy, [ies]jealousies
-jingle, [d]jingled, [s]jingles, [ing]jingling
+jingle, [s]jingles, [d]jingled, [ing]jingling
 judgmental, [emental]judgemental
 kingdom, [s]kingdoms
 lollipop, [s]lollipops
 lying
-manipulate, [d]manipulated, [s]manipulates, [ing]manipulating
+manipulate, [s]manipulates, [d]manipulated, [ing]manipulating
 max, [es]maxes
 mechanic, [s]mechanics
 mode, [s]modes
-narrow, [ed]narrowed, [ing]narrowing, [s]narrows
+narrow, [s]narrows, [ed]narrowed, [ing]narrowing
 oath, [s]oaths
 odor, [s]odors
 outstanding
 owl, [s]owls
 pope, [s]popes
 pursuit, [s]pursuits
-rely, [ied]relied, [ies]relies, [ing]relying
+rely, [ies]relies, [ied]relied, [ing]relying
 reputation, [s]reputations
-restore, [d]restored, [s]restores, [ing]restoring
-rhyme, [d]rhymed, [s]rhymes, [ing]rhyming
+restore, [s]restores, [d]restored, [ing]restoring
+rhyme, [s]rhymes, [d]rhymed, [ing]rhyming
 rum, [s]rums
 scrotum, [s]scrotums
 spoiler, [s]spoilers
 superstar, [s]superstars
 surface, [s]surfaces
 teens
-tweet, [ed]tweeted, [ing]tweeting, [s]tweets
+tweet, [s]tweets, [ed]tweeted, [ing]tweeting
 undercover
 veteran, [s]veterans
 viewer, [s]viewers
-whine, [d]whined, [s]whines, [ing]whining
+whine, [s]whines, [d]whined, [ing]whining
 windshield, [s]windshields
 bait, [s]baits
 epic
 working
 shovel, [s]shovels
-execute, [d]executed, [s]executes, [ing]executing
+execute, [s]executes, [d]executed, [ing]executing
 fireplace, [s]fireplaces
-flee, [d]fled, [ing]fleeing, [s]flees
+flee, [s]flees, [d]fled, [ing]fleeing
 flood, [s]floods
 heritage, [s]heritages
 housewife, [ves]housewives
@@ -4350,16 +4356,16 @@ cheater, [s]cheaters
 clone, [s]clones
 cobra, [s]cobras
 contribution, [s]contributions
-devote, [d]devoted, [s]devotes, [ing]devoting
-doodle, [d]doodled, [s]doodles, [ing]doodling
-ease, [d]eased, [s]eases, [ing]easing
+devote, [s]devotes, [d]devoted, [ing]devoting
+doodle, [s]doodles, [d]doodled, [ing]doodling
+ease, [s]eases, [d]eased, [ing]easing
 erection, [s]erections
 ideal
 lease, [s]leases
 legendary
 absurd
 additional
-advertise, [d]advertised, [s]advertises, [ing]advertising
+advertise, [s]advertises, [d]advertised, [ing]advertising
 appetizer, [s]appetizers
 attraction, [s]attractions
 brick, [s]bricks
@@ -4367,13 +4373,13 @@ canned
 caterer, [s]caterers
 chilly, [ier]chillier, [iest]chilliest
 classmate, [s]classmates
-conclude, [d]concluded, [s]concludes, [ing]concluding
-consult, [ed]consulted, [ing]consulting, [s]consults
+conclude, [s]concludes, [d]concluded, [ing]concluding
+consult, [s]consults, [ed]consulted, [ing]consulting
 correctly
 cozy, [ier]cozier, [iest]coziest
 curiosity, [ies]curiosities
 dorm, [s]dorms
-educate, [d]educated, [s]educates, [ing]educating
+educate, [s]educates, [d]educated, [ing]educating
 educational
 enthusiasm, [s]enthusiasms
 filth
@@ -4389,7 +4395,7 @@ heroin
 horribly
 household, [s]households
 infinite
-inject, [ed]injected, [ing]injecting, [s]injects
+inject, [s]injects, [ed]injected, [ing]injecting
 leaf, [ves]leaves
 link, [s]links
 loving
@@ -4406,8 +4412,8 @@ residence, [s]residences
 shallow, [er]shallower, [est]shallowest
 shipment, [s]shipments
 siren, [s]sirens
-soothe, [d]soothed, [s]soothes, [ing]soothing
-spank, [ed]spanked, [ing]spanking, [s]spanks
+soothe, [s]soothes, [d]soothed, [ing]soothing
+spank, [s]spanks, [ed]spanked, [ing]spanking
 strict, [er]stricter, [est]strictest
 strongly
 superpower, [s]superpowers
@@ -4418,19 +4424,19 @@ grip, [s]grips
 recorder, [s]recorders
 acceptance, [s]acceptances
 acquaintance, [s]acquaintances
-acquire, [d]acquired, [s]acquires, [ing]acquiring
+acquire, [s]acquires, [d]acquired, [ing]acquiring
 alrighty
 alternative, [s]alternatives
 anxious
-applaud, [ed]applauded, [ing]applauding, [s]applauds
+applaud, [s]applauds, [ed]applauded, [ing]applauding
 baloney
 capacity, [ies]capacities
 childish
 cola, [s]colas
-detect, [ed]detected, [ing]detecting, [s]detects
+detect, [s]detects, [ed]detected, [ing]detecting
 exotic
 undone
-giggle, [d]giggled, [s]giggles, [ing]giggling
+giggle, [s]giggles, [d]giggled, [ing]giggling
 gnome, [s]gnomes
 guidance
 historic
@@ -4438,19 +4444,19 @@ kiddo, [s]kiddos
 kosher
 limbo
 marvelous
-minimum, [a]minima, [s]minimums
+minimum, [s]minimums, [a]minima
 missy
 nauseous
 observation, [s]observations
 obstacle, [s]obstacles
-overlook, [ed]overlooked, [ing]overlooking, [s]overlooks
+overlook, [s]overlooks, [ed]overlooked, [ing]overlooking
 philosophy, [ies]philosophies
-recruit, [ed]recruited, [ing]recruiting, [s]recruits
+recruit, [s]recruits, [ed]recruited, [ing]recruiting
 sexuality
 housewives
 shenanigan, [s]shenanigans
 silk, [s]silks
-swipe, [d]swiped, [s]swipes, [ing]swiping
+swipe, [s]swipes, [d]swiped, [ing]swiping
 elves
 topless
 trauma, [s]traumas
@@ -4466,7 +4472,7 @@ thieves
 bred
 stadia
 ashtray, [s]ashtrays
-assist, [ed]assisted, [ing]assisting, [s]assists
+assist, [s]assists, [ed]assisted, [ing]assisting
 banker, [s]bankers
 cafe, [s]cafes
 caffeine
@@ -4478,7 +4484,7 @@ courthouse, [s]courthouses
 criticism, [s]criticisms
 curb, [s]curbs
 dawg, [s]dawgs
-delight, [ed]delighted, [ing]delighting, [s]delights
+delight, [s]delights, [ed]delighted, [ing]delighting
 distant
 dizzy
 dressing, [s]dressings
@@ -4486,14 +4492,14 @@ erotic
 doggy
 eyeball, [s]eyeballs
 facial
-flap, [ped]flapped, [ping]flapping, [s]flaps
+flap, [s]flaps, [ped]flapped, [ping]flapping
 swam
 dreamt
-freshen, [ed]freshened, [ing]freshening, [s]freshens
+freshen, [s]freshens, [ed]freshened, [ing]freshening
 galaxy, [ies]galaxies
 guardian, [s]guardians
 highlight, [s]highlights
-hoard, [ed]hoarded, [ing]hoarding, [s]hoards
+hoard, [s]hoards, [ed]hoarded, [ing]hoarding
 hygiene
 institution, [s]institutions
 keeper, [s]keepers
@@ -4521,7 +4527,7 @@ temporary
 tequila, [s]tequilas
 thankful
 triple
-urinate, [d]urinated, [s]urinates, [ing]urinating
+urinate, [s]urinates, [d]urinated, [ing]urinating
 valid
 winning
 convict, [s]convicts
@@ -4530,7 +4536,7 @@ bitten
 froze
 panicked
 sewn
-floss, [ed]flossed, [es]flosses, [ing]flossing
+floss, [es]flosses, [ed]flossed, [ing]flossing
 stew, [s]stews
 administration, [s]administrations
 auction, [s]auctions
@@ -4543,17 +4549,17 @@ racquet
 outermost
 goddam
 phoney
-brainwash, [ed]brainwashed, [es]brainwashes, [ing]brainwashing
+brainwash, [es]brainwashes, [ed]brainwashed, [ing]brainwashing
 breakdown, [s]breakdowns
 caramel, [s]caramels
 casting, [s]castings
-cease, [d]ceased, [s]ceases, [ing]ceasing
+cease, [s]ceases, [d]ceased, [ing]ceasing
 cheesy, [ier]cheesier, [iest]cheesiest
 choir, [s]choirs
 cocky, [ier]cockier, [iest]cockiest
 contraction, [s]contractions
 creator, [s]creators
-drip, [ped]dripped, [ping]dripping, [s]drips
+drip, [s]drips, [ped]dripped, [ping]dripping
 espresso, [s]espressos
 essence, [s]essences
 exclamation, [s]exclamations
@@ -4569,7 +4575,7 @@ hostess, [es]hostesses
 initiative, [s]initiatives
 liver, [s]livers
 mermaid, [s]mermaids
-mingle, [d]mingled, [s]mingles, [ing]mingling
+mingle, [s]mingles, [d]mingled, [ing]mingling
 moose
 mosquito, [es]mosquitoes, [s]mosquitos
 mural, [s]murals
@@ -4579,13 +4585,13 @@ orphanage, [s]orphanages
 pimple, [s]pimples
 portal, [s]portals
 psychological
-rebuild, [ing]rebuilding, [s]rebuilds, [t]rebuilt
-reckon, [ed]reckoned, [ing]reckoning, [s]reckons
+rebuild, [s]rebuilds, [ing]rebuilding, [t]rebuilt
+reckon, [s]reckons, [ed]reckoned, [ing]reckoning
 recovery, [ies]recoveries
-simulate, [d]simulated, [s]simulates, [ing]simulating
+simulate, [s]simulates, [d]simulated, [ing]simulating
 simulation, [s]simulations
 squad, [s]squads
-technical
+technical, [ly]technically
 tolerance, [s]tolerances
 tribute, [s]tributes
 vice
@@ -4594,7 +4600,7 @@ wilderness, [es]wildernesses
 worm, [s]worms
 trigger, [s]triggers
 calf, [ves]calves
-bind, [ing]binding, [s]binds, [ound]bound
+bind, [s]binds, [ing]binding, [ound]bound
 accomplishment, [s]accomplishments
 admission, [s]admissions
 beside
@@ -4604,13 +4610,13 @@ colorful
 controversial
 courtroom, [s]courtrooms
 crispy, [ier]crispier
-delay, [ed]delayed, [ing]delaying, [s]delays
+delay, [s]delays, [ed]delayed, [ing]delaying
 domestic
 eastern, [most]easternmost
 elsewhere
-exaggerate, [d]exaggerated, [s]exaggerates, [ing]exaggerating
+exaggerate, [s]exaggerates, [d]exaggerated, [ing]exaggerating
 feces
-formula, [e]formulae, [s]formulas
+formula, [s]formulas, [e]formulae
 freeway, [s]freeways
 formulae
 judgemental
@@ -4618,7 +4624,7 @@ stank
 chillies
 shrunken
 staves
-faultless
+faultless, [ly]faultlessly
 grownup, [s]grownups
 hallelujah
 hostile
@@ -4627,18 +4633,18 @@ industrial
 intern, [s]interns
 ironically
 irrelevant
-isolate, [d]isolated, [s]isolates, [ing]isolating
+isolate, [s]isolates, [d]isolated, [ing]isolating
 knot, [s]knots
 landlord, [s]landlords
 leadership, [s]leaderships
 majesty, [ies]majesties
-merge, [d]merged, [s]merges, [ing]merging
+merge, [s]merges, [d]merged, [ing]merging
 slid
 swore
 monologue, [s]monologues
 orgy, [ies]orgies
 overdue
-postpone, [d]postponed, [s]postpones, [ing]postponing
+postpone, [s]postpones, [d]postponed, [ing]postponing
 rag, [s]rags
 registration, [s]registrations
 rhythm, [s]rhythms
@@ -4650,12 +4656,13 @@ shell, [s]shells
 sincerely
 forgiven
 sitter, [s]sitters
-startle, [d]startled, [s]startles, [ing]startling
+startle, [s]startles, [d]startled, [ing]startling
 stripe, [s]stripes
 stroller, [s]strollers
 stud, [s]studs
 subscription, [s]subscriptions
 sunrise, [s]sunrises
+gotcha
 whiskies
 minima
 undid
@@ -4673,11 +4680,11 @@ genii
 racquets
 toupee, [s]toupees
 unconscious
-underestimate, [d]underestimated, [s]underestimates, [ing]underestimating
+underestimate, [s]underestimates, [d]underestimated, [ing]underestimating
 unique
 various
 vein, [s]veins
-weep, [ing]weeping, [s]weeps, [pt]wept
+weep, [s]weeps, [ing]weeping, [pt]wept
 whiskey, [s]whiskeys, [ies]whiskies
 witty, [ier]wittier, [iest]wittiest
 memorial, [s]memorials
