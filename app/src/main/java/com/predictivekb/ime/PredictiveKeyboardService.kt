@@ -21,7 +21,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     companion object {
         /** Punctuation that attaches directly to the previous word, pulling
          * a trailing space back first. Digits and other symbols don't. */
-        private val ATTACHING_PUNCTUATION = setOf('.', ',', '!', '?', ':', ';')
+        private val ATTACHING_PUNCTUATION = setOf('.', ',', '!', '?', ':', ';', ')')
     }
 
     private lateinit var container: FrameLayout
@@ -246,7 +246,10 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             // Swap-window tap: undo the previous auto-completion, replace it.
             // No manually-typed prefix was involved for this word (it was
             // empty when the swap window opened), so the whole word counts
-            // as saved.
+            // as saved. For the *typed* count, only the net change to the
+            // field matters - overwriteLength was already counted when the
+            // original word was committed, so don't re-add the whole new
+            // word on top of that (that double-counts every swap).
             ic.deleteSurroundingText(overwriteLength, 0)
             ic.commitText(WordCasing.apply(word, effectiveShiftStateForCompletion()), 1)
             ic.commitText(" ", 1)
@@ -255,7 +258,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             activeRootFamily = null
             lettersPanel.consumeShiftOnce()
             statsStore.recordCharactersSaved(word.length)
-            statsStore.recordCharactersTyped(word.length + 1)
+            statsStore.recordCharactersTyped(maxOf(0, (word.length + 1) - overwriteLength))
             refreshPredictions()
             return
         }
@@ -268,8 +271,12 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ic.commitText(cased, 1)
         ic.commitText(" ", 1)
         currentWord.clear()
-        statsStore.recordCharactersSaved(maxOf(0, word.length - prefix.length))
-        statsStore.recordCharactersTyped(word.length + 1)
+        // Only the net-new characters beyond what was already typed (and
+        // already counted via onCharKey) should count here - the prefix
+        // portion was counted once already as it was typed letter by letter.
+        val netNew = maxOf(0, word.length - prefix.length)
+        statsStore.recordCharactersSaved(netNew)
+        statsStore.recordCharactersTyped(netNew + 1)
         statsStore.recordWordCompleted()
 
         if (engine.hasFamilyVariants(word)) {
@@ -291,11 +298,32 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             wordStartCapitalized = false
         }
         ic.deleteSurroundingText(1, 0)
-        if (currentWord.isNotEmpty()) {
-            currentWord.deleteCharAt(currentWord.length - 1)
-        }
+        // Re-read the actual word-in-progress from the text field rather
+        // than just trimming the tracked currentWord. This matters when
+        // backspacing into text that wasn't typed through this tracked
+        // flow at all - e.g. the cursor was tapped into the middle of an
+        // existing sentence - where currentWord wouldn't reflect what's
+        // actually there.
+        resyncCurrentWordFromField(ic)
         statsStore.recordBackspace()
         refreshPredictions()
+    }
+
+    /**
+     * Rebuilds [currentWord] from whatever's actually in the text field
+     * immediately before the cursor, scanning back to the nearest word
+     * boundary (anything that isn't a letter or apostrophe). This is what
+     * lets backspacing into an existing word - not just one typed this
+     * session - still show correct completions for it.
+     */
+    private fun resyncCurrentWordFromField(ic: android.view.inputmethod.InputConnection) {
+        val before = ic.getTextBeforeCursor(40, 0)?.toString() ?: ""
+        var start = before.length
+        while (start > 0 && (before[start - 1].isLetter() || before[start - 1] == '\'')) {
+            start--
+        }
+        currentWord.clear()
+        currentWord.append(before.substring(start).lowercase())
     }
 
     override fun onSpace() {
@@ -425,8 +453,3 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ).show()
     }
 }
-
-
-
-
-
