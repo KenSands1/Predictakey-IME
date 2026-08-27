@@ -72,7 +72,7 @@ class PredictionEngine {
                     val closeBracket = part.indexOf("]")
                     val variant = (if (closeBracket >= 0) part.substring(closeBracket + 1) else part)
                         .trim().lowercase()
-                    if (isValidWord(variant)) {
+                    if (isValidVariant(variant)) {
                         allWords.add(variant) // no-op if already present
                         members.add(variant)
                     }
@@ -91,6 +91,21 @@ class PredictionEngine {
 
     private fun isValidWord(word: String): Boolean =
         word.isNotEmpty() && word.all { it.isLetter() || it.code == 39 } // 39 = apostrophe
+
+    /**
+     * Same as [isValidWord] but also permits a phrase completion: exactly
+     * two words separated by a single space (e.g. "for the"). Roots can
+     * never be phrases - only family members - since a phrase isn't
+     * something you type toward the same way a single word is.
+     */
+    private fun isValidVariant(variant: String): Boolean {
+        if (isValidWord(variant)) return true
+        val spaceIdx = variant.indexOf(' ')
+        if (spaceIdx <= 0 || variant.indexOf(' ', spaceIdx + 1) >= 0) return false // 0 or 2+ spaces
+        val first = variant.substring(0, spaceIdx)
+        val second = variant.substring(spaceIdx + 1)
+        return isValidWord(first) && isValidWord(second)
+    }
 
     fun isLoaded(): Boolean = loaded
 
@@ -169,4 +184,3 @@ class PredictionEngine {
         return words.any { it.startsWith(lower) }
     }
 }
-
