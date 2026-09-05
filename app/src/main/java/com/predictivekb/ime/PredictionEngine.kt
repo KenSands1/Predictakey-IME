@@ -32,6 +32,9 @@ class PredictionEngine {
     /** Every word (roots and variants together), in the file's frequency order. */
     private var words: List<String> = emptyList()
 
+    /** Same words as [words], but as a Set for fast exact-match lookups. */
+    private var wordSet: Set<String> = emptySet()
+
     /** Just the root words, in frequency order - what topCompletions draws from. */
     private var roots: List<String> = emptyList()
 
@@ -84,6 +87,7 @@ class PredictionEngine {
         }
 
         words = allWords.toList()
+        wordSet = allWords
         roots = rootWords
         familyOf = families
         loaded = true
@@ -110,22 +114,38 @@ class PredictionEngine {
     fun isLoaded(): Boolean = loaded
 
     companion object {
-        /** Words at least this long require [MIN_PREFIX_FOR_LONG_WORD]
-         * characters typed before they're offered - otherwise a handful of
-         * long, less-common words can dominate the row before you've typed
-         * enough to have actually narrowed things down much. Doesn't apply
-         * to the reserved exact-match slot, since by definition you've
-         * already typed the whole word by then. */
-        private const val LONG_WORD_LENGTH = 8
-        private const val MIN_PREFIX_FOR_LONG_WORD = 4
+        /**
+         * The "primary" candidate-length range at each prefix length - the
+         * range most likely to actually help, given how many characters
+         * are left to save. A candidate outside this range for the current
+         * prefix length can still appear (see [topCompletions]'s soft
+         * gate), but only after every primary candidate has had a chance,
+         * and always ranked below them regardless of frequency.
+         *
+         * At 5+ characters typed, there's no restriction at all - by then
+         * prefix matching alone has almost always narrowed things down to
+         * a handful of candidates, so there's nothing left to protect.
+         */
+        private fun isPrimaryLength(prefixLength: Int, wordLength: Int): Boolean = when (prefixLength) {
+            1 -> wordLength <= 4
+            2 -> wordLength <= 5
+            3 -> wordLength in 5..6      // 4-letter words excluded from primary here
+            4 -> wordLength >= 6         // 5-letter words excluded from primary here
+            else -> true
+        }
     }
 
     /**
      * Returns up to [max] whole ROOT words, ranked most- to least-frequent,
-     * that start with [prefix]. Normally a candidate must be STRICTLY
-     * LONGER than [prefix] - otherwise tapping it would save no letters.
-     * Long words (see [LONG_WORD_LENGTH]) additionally require at least
-     * [MIN_PREFIX_FOR_LONG_WORD] characters typed before they're offered.
+     * that start with [prefix]. A candidate must be STRICTLY LONGER than
+     * [prefix] - otherwise tapping it would save no letters.
+     *
+     * Candidates in the current prefix length's "primary" range (see
+     * [isPrimaryLength]) are always shown first. If they don't fill all
+     * [max] slots, the row widens to include candidates outside that
+     * range - but only to fill what's left over, and always ranked below
+     * every primary candidate, regardless of frequency. Both groups are
+     * separately frequency-ordered within themselves.
      *
      * The one exception: if the prefix EXACTLY matches a root that has a
      * family, that root always gets a RESERVED slot - not just permission
@@ -134,14 +154,18 @@ class PredictionEngine {
      * ("half", "happy", "hand"...), so merely making them eligible still
      * let them get crowded out of all 6 slots. Reserving a slot guarantees
      * that typing a word out fully never cuts off access to its family,
-     * regardless of how much competition exists at that exact prefix.
+     * regardless of how much competition exists at that exact prefix. A
+     * family-less exact match never gets this reserved slot either way -
+     * the space-key indicator already covers finishing it, so a button
+     * would be redundant.
      * Inflected forms themselves are excluded here either way - see
      * [familyMembers] for those.
      */
     fun topCompletions(prefix: String, max: Int = 6): List<String> {
         val lower = prefix.lowercase()
         var exactMatchWithFamily: String? = null
-        val longerMatches = ArrayList<String>()
+        val primary = ArrayList<String>()
+        val fallback = ArrayList<String>()
         for (w in roots) {
             if (!w.startsWith(lower)) continue
             if (w.length == lower.length) {
@@ -149,15 +173,20 @@ class PredictionEngine {
                     exactMatchWithFamily = w
                 }
             } else if (w.length > lower.length) {
-                if (w.length >= LONG_WORD_LENGTH && lower.length < MIN_PREFIX_FOR_LONG_WORD) {
-                    continue
+                if (isPrimaryLength(lower.length, w.length)) {
+                    primary.add(w)
+                } else {
+                    fallback.add(w)
                 }
-                longerMatches.add(w)
             }
         }
         val result = ArrayList<String>(max)
         exactMatchWithFamily?.let { result.add(it) }
-        for (w in longerMatches) {
+        for (w in primary) {
+            if (result.size >= max) break
+            result.add(w)
+        }
+        for (w in fallback) {
             if (result.size >= max) break
             result.add(w)
         }
@@ -165,18 +194,35 @@ class PredictionEngine {
     }
 
     /**
-     * All dictionary words belonging to [root]'s family (the root itself
-     * plus its listed variants), in the file's order. If [root] has no
-     * family, just returns the root itself.
+     * All of [root]'s OTHER family members (not including the root itself -
+     * you already picked it by tapping it), up to [max], in the file's
+     * order. Empty if [root] has no family.
+     *
+     * Excludes the root BEFORE truncating to [max] - not after. Truncating
+     * first and filtering the root out afterward (as an earlier version of
+     * this did) silently drops whichever member landed in the max-th slot
+     * whenever a family has exactly [max] total members including the
+     * root, since the root always gets filtered out downstream regardless
+     * of where it lands in that list.
      */
     fun familyMembers(root: String, max: Int = 6): List<String> {
         val lower = root.lowercase()
-        val members = familyOf[lower] ?: listOf(lower)
-        return members.take(max)
+        val members = familyOf[lower] ?: return emptyList()
+        return members.asSequence().filterNot { it == lower }.take(max).toList()
     }
 
     /** True if [root] has at least one listed inflected form. */
     fun hasFamilyVariants(root: String): Boolean = familyOf.containsKey(root.lowercase())
+
+    /**
+     * True if [text] is, itself, a complete word already (not just a
+     * prefix of a longer one) - either a root or an inflected form.
+     * Powers the space-key indicator: pressing space always just adds a
+     * space after whatever's already typed, so this changes nothing about
+     * what gets committed - it's purely a "yes, that's a real word"
+     * confirmation shown before you do.
+     */
+    fun isExactWord(text: String): Boolean = wordSet.contains(text.lowercase())
 
     /** True if any word in the dictionary starts with [prefix]. */
     fun hasPrefix(prefix: String): Boolean {
@@ -184,3 +230,4 @@ class PredictionEngine {
         return words.any { it.startsWith(lower) }
     }
 }
+
