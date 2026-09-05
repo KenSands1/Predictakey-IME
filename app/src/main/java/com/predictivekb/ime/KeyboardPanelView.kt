@@ -43,6 +43,9 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     /** Which of currentWords have their own family - shown with a trailing "+". */
     private var wordsWithFamily: Set<String> = emptySet()
 
+    /** The word currently shown on the space key, if what's typed exactly matches a dictionary word. */
+    private var exactWord: String? = null
+
     init {
         orientation = VERTICAL
         setBackgroundColor(ContextCompat.getColor(context, R.color.keyboard_bg))
@@ -72,7 +75,12 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         for (i in 0 until 6) {
             val btn = makeKey("", R.drawable.key_bg_prediction, weight = 1f)
             btn.maxLines = 1
-            btn.ellipsize = TextUtils.TruncateAt.END
+            // Truncate from the START, not the end - when several family
+            // members share a long common beginning ("administration" /
+            // "administrative" / "administrator"), cutting off the end
+            // would make them all display identically. The end is what
+            // actually differs, so that's what needs to stay visible.
+            btn.ellipsize = TextUtils.TruncateAt.START
             // Full words vary a lot in length ("we" vs "products"), so let the
             // text shrink to fit rather than truncating whenever possible.
             TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(
@@ -269,6 +277,25 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         return if (word in wordsWithFamily) "$cased+" else cased
     }
 
+    /**
+     * Shows [word] on the space key as confirmation that what's already
+     * been typed is a real, complete dictionary word - or reverts to a
+     * plain "space" label when [word] is null. This is purely visual:
+     * pressing space always just adds a space after whatever's typed
+     * either way, so there's no risk of substituting in something the
+     * user didn't actually type.
+     */
+    fun setExactWordIndicator(word: String?) {
+        exactWord = word
+        if (word != null) {
+            spaceButton.text = WordCasing.apply(word, shiftState)
+            spaceButton.setBackgroundResource(R.drawable.key_bg_space_ready)
+        } else {
+            spaceButton.text = "space"
+            spaceButton.setBackgroundResource(R.drawable.key_bg_space_normal)
+        }
+    }
+
     private fun applyShiftVisuals() {
         shiftButton.text = if (shiftState == ShiftState.CAPS_LOCK) "⇪" else "⇧"
         shiftButton.setBackgroundResource(
@@ -288,8 +315,10 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
                 wordButtons[i].text = displayLabel(currentWords[i])
             }
         }
+        exactWord?.let { spaceButton.text = WordCasing.apply(it, shiftState) }
     }
 }
+
 
 
 
