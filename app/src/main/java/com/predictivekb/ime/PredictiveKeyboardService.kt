@@ -20,8 +20,13 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     companion object {
         /** Punctuation that attaches directly to the previous word, pulling
-         * a trailing space back first. Digits and other symbols don't. */
-        private val ATTACHING_PUNCTUATION = setOf('.', ',', '!', '?', ':', ';', ')')
+         * a trailing space back first. Digits and other symbols don't.
+         * The symbols panel's quote key sends a plain straight quote (")
+         * (confirmed against SymbolKeyboardView's ROW_SYMBOLS_2), so that's
+         * all that's needed here. Deliberately NOT including single-quote/
+         * apostrophe characters, since those are also used inside
+         * contractions ("don't") where pulling back a space would be wrong. */
+        private val ATTACHING_PUNCTUATION = setOf('.', ',', '!', '?', ':', ';', ')', '"')
     }
 
     private lateinit var container: FrameLayout
@@ -147,12 +152,16 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val family = activeRootFamily
         // Frequency order, most to least common - no re-sorting for display.
         val completions = if (family != null) {
-            engine.familyMembers(family).filterNot { it == family }
+            engine.familyMembers(family)
         } else {
             engine.topCompletions(prefix)
         }
         val wordsWithFamily = completions.filter { engine.hasFamilyVariants(it) }.toSet()
         lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily)
+        // Space-key indicator: only meaningful while actually typing toward
+        // a word (not in the family swap window, where prefix is empty).
+        val exact = if (family == null && prefix.isNotEmpty() && engine.isExactWord(prefix)) prefix else null
+        lettersPanel.setExactWordIndicator(exact)
     }
 
     /**
