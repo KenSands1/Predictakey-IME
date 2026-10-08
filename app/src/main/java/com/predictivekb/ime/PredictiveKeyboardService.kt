@@ -19,14 +19,16 @@ import java.io.File
 class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
 
     companion object {
-        /** Punctuation that attaches directly to the previous word, pulling
-         * a trailing space back first. Digits and other symbols don't.
-         * The symbols panel's quote key sends a plain straight quote (")
-         * (confirmed against SymbolKeyboardView's ROW_SYMBOLS_2), so that's
-         * all that's needed here. Deliberately NOT including single-quote/
-         * apostrophe characters, since those are also used inside
-         * contractions ("don't") where pulling back a space would be wrong. */
-        private val ATTACHING_PUNCTUATION = setOf('.', ',', '!', '?', ':', ';', ')', '"')
+        /** Punctuation that ALWAYS attaches directly to the previous word,
+         * pulling a trailing space back first - these never act as an
+         * "opener", so there's no ambiguity. Digits and other symbols don't
+         * attach at all. Deliberately NOT including single-quote/apostrophe
+         * characters, since those are also used inside contractions
+         * ("don't") where pulling back a space would be wrong. The straight
+         * quote (") is handled separately below (see quoteOpen) because the
+         * same key is used for both opening and closing a quoted phrase -
+         * only the closing one should attach. */
+        private val ATTACHING_PUNCTUATION = setOf('.', ',', '!', '?', ':', ';', ')')
     }
 
     private lateinit var container: FrameLayout
@@ -35,6 +37,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     private lateinit var macroPanel: MacroKeyboardView
     private lateinit var macroStore: MacroStore
     private lateinit var statsStore: StatsStore
+    private lateinit var customCompletionsStore: CustomCompletionsStore
 
     private val engine = PredictionEngine()
     private val currentWord = StringBuilder()
@@ -61,6 +64,17 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     /** How many characters (word + trailing space) to delete if the swap window's tapped. */
     private var overwriteLength = 0
 
+    /**
+     * Tracks whether the next straight quote (") typed closes a currently-
+     * open quoted phrase, rather than opening a new one. The same physical
+     * key sends the same character for both roles, so there's no way to
+     * tell just from the character itself - this toggles true on an
+     * opening quote and false again on its matching closing quote. Reset
+     * on a fresh input session and on Enter, so a mismatched/abandoned
+     * quote in one line or field doesn't throw off the next one.
+     */
+    private var quoteOpen = false
+
     override fun onCreate() {
         super.onCreate()
         if (!engine.isLoaded()) {
@@ -68,6 +82,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         }
         macroStore = MacroStore(this)
         statsStore = StatsStore(this)
+        customCompletionsStore = CustomCompletionsStore(this)
     }
 
     override fun onFinishInputView(finishingInput: Boolean) {
@@ -97,6 +112,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         currentWord.clear()
         wordStartCapitalized = false
         activeRootFamily = null
+        quoteOpen = false
         showLetters()
         refreshPredictions()
     }
@@ -151,13 +167,18 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val prefix = currentWord.toString()
         val family = activeRootFamily
         // Frequency order, most to least common - no re-sorting for display.
+        // A saved per-prefix override (drag-reordered and/or edited by the
+        // user - see CustomCompletionsStore) takes priority over whatever
+        // the engine would otherwise compute, but only for plain prefix
+        // completions, never for a root's family-swap row.
         val completions = if (family != null) {
             engine.familyMembers(family)
         } else {
-            engine.topCompletions(prefix)
+            customCompletionsStore.getOverride(prefix) ?: engine.topCompletions(prefix)
         }
-        val wordsWithFamily = completions.filter { engine.hasFamilyVariants(it) }.toSet()
-        lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily)
+        val wordsWithFamily = completions.filter { it.isNotEmpty() && engine.hasFamilyVariants(it) }.toSet()
+        val editablePrefix = if (family == null) prefix else null
+        lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily, editablePrefix)
         // Space-key indicator: only meaningful while actually typing toward
         // a word (not in the family swap window, where prefix is empty).
         val exact = if (family == null && prefix.isNotEmpty() && engine.isExactWord(prefix)) prefix else null
@@ -226,9 +247,17 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
             // Only true attaching punctuation pulls a trailing space back
             // ("word." not "word ."). Digits and other symbols (from the
             // ?123 panel) are left alone - deleting a space before "5" or
-            // "@" would usually be wrong.
-            if (ch in ATTACHING_PUNCTUATION && ic.getTextBeforeCursor(1, 0)?.toString() == " ") {
+            // "@" would usually be wrong. A straight quote is special: it's
+            // only attaching when it's CLOSING a quoted phrase ("word\"" not
+            // "word \""); when it's opening one, the space before it is
+            // exactly where the word boundary belongs, so it must stay.
+            val isClosingQuote = ch == '"' && quoteOpen
+            val shouldAttach = ch in ATTACHING_PUNCTUATION || isClosingQuote
+            if (shouldAttach && ic.getTextBeforeCursor(1, 0)?.toString() == " ") {
                 ic.deleteSurroundingText(1, 0)
+            }
+            if (ch == '"') {
+                quoteOpen = !quoteOpen
             }
             ic.commitText(ch.toString(), 1)
             currentWord.clear()
@@ -356,11 +385,35 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     override fun onEnter() {
         val ic = currentInputConnection ?: return
         activeRootFamily = null
+        quoteOpen = false
         ic.commitText("\n", 1)
         currentWord.clear()
         wordStartCapitalized = false
         statsStore.recordCharactersTyped(1)
         refreshPredictions()
+    }
+
+    /**
+     * A completion row was reordered (drag) or had a slot assigned/changed
+     * (long-press edit) for [prefix]. [newLogicalOrder] is the full
+     * resulting row - not just whatever slot changed - in left-to-right
+     * logical order (already un-reversed if the display is RTL), with ""
+     * for any slot the user left deliberately blank. Persists it, then
+     * redraws immediately if this is still the prefix currently on screen.
+     */
+    override fun onCompletionsChanged(prefix: String, newLogicalOrder: List<String>) {
+        customCompletionsStore.setOverride(prefix, newLogicalOrder)
+        if (activeRootFamily == null && currentWord.toString() == prefix) {
+            refreshPredictions()
+        }
+    }
+
+    /** "Reset row" from the slot-edit dialog: drop [prefix]'s override, back to automatic ranking. */
+    override fun onCompletionOverrideCleared(prefix: String) {
+        customCompletionsStore.clearOverride(prefix)
+        if (activeRootFamily == null && currentWord.toString() == prefix) {
+            refreshPredictions()
+        }
     }
 
     override fun onShiftToggled() {
@@ -462,3 +515,4 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         ).show()
     }
 }
+
