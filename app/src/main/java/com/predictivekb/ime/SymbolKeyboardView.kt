@@ -10,15 +10,18 @@ import androidx.core.content.ContextCompat
 
 /**
  * The numbers/symbols panel: digits where the prediction row would be on
- * the letters panel, then two rows of punctuation, then a bottom action row
- * matching the letters keyboard (comma / space / period / enter) plus the
- * key that switches back to letters.
+ * the letters panel, then three rows of punctuation/symbols, then a bottom
+ * action row matching the letters keyboard (comma / space / period / enter)
+ * plus the key that switches back to letters.
  */
 class SymbolKeyboardView(context: Context) : LinearLayout(context) {
 
     private val ROW_DIGITS = "1234567890"
     private val ROW_SYMBOLS_1 = "@#\$_&-+()/"
     private val ROW_SYMBOLS_2 = "*\"':;!?~"
+    // New row (revision notes 10-08-2026, item 4): % plus the other common
+    // symbols that weren't on the keyboard anywhere yet.
+    private val ROW_SYMBOLS_3 = "%=<>[]{}\\|^"
 
     var listener: KeyboardActionListener? = null
 
@@ -29,6 +32,7 @@ class SymbolKeyboardView(context: Context) : LinearLayout(context) {
 
         addView(buildRow(ROW_DIGITS.toList(), dp(46), 0))
         addView(buildRow(ROW_SYMBOLS_1.toList(), dp(44), 0))
+        addView(buildRow(ROW_SYMBOLS_3.toList(), dp(44), 0))
         addView(buildSymbolsRow2())
         addView(buildActionRow())
     }
@@ -127,3 +131,4 @@ class SymbolKeyboardView(context: Context) : LinearLayout(context) {
     private fun dp(value: Int): Int =
         TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value.toFloat(), resources.displayMetrics).toInt()
 }
+
