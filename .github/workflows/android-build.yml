@@ -21,6 +21,12 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          # The action's default tries to install a package called "tools",
+          # which no longer exists in the newer command-line tools and makes
+          # sdkmanager exit with code 1. The runner already ships the SDK,
+          # so there is nothing extra to install here.
+          packages: ''
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
