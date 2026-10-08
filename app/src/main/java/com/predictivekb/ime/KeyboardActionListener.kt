@@ -36,5 +36,26 @@ interface KeyboardActionListener {
 
     /** The macro panel's page-forward arrow was tapped. */
     fun onNextMacroPage() {}
+
+    // ---- Word-completion customization -------------------------------
+    // Default (empty) bodies so other implementers don't need to care -
+    // only the service acts on these. Fired by KeyboardPanelView's
+    // long-press-and-drag (reorder) and long-press-and-release (edit a
+    // slot, including an empty one) gestures on the word-completion row.
+
+    /**
+     * The completion row for [prefix] was reordered (drag) or had a slot
+     * assigned/changed (long-press edit). [newLogicalOrder] is the FULL
+     * resulting row - not just whichever slot changed - in left-to-right
+     * logical order (already un-reversed if the display is RTL), with ""
+     * for any slot the user left deliberately blank. Meant to be persisted
+     * (see CustomCompletionsStore) and used in place of the engine's own
+     * computed completions whenever this exact prefix comes up again.
+     */
+    fun onCompletionsChanged(prefix: String, newLogicalOrder: List<String>) {}
+
+    /** "Reset row" was chosen from the slot-edit dialog - drop any saved override for [prefix]. */
+    fun onCompletionOverrideCleared(prefix: String) {}
 }
+
 
