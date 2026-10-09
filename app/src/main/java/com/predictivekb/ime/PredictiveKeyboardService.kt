@@ -167,18 +167,19 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
         val prefix = currentWord.toString()
         val family = activeRootFamily
         // Frequency order, most to least common - no re-sorting for display.
-        // A saved per-prefix override (drag-reordered and/or edited by the
-        // user - see CustomCompletionsStore) takes priority over whatever
-        // the engine would otherwise compute, but only for plain prefix
-        // completions, never for a root's family-swap row.
+        // A saved override (drag-reordered and/or edited by the user - see
+        // CustomCompletionsStore) takes priority over whatever the engine
+        // would otherwise compute. This applies both to plain prefix
+        // completions (keyed by the typed prefix) and to a root's family-
+        // swap row (keyed by "family:<root>").
+        val overrideKey = currentOverrideKey()
         val completions = if (family != null) {
-            engine.familyMembers(family)
+            customCompletionsStore.getOverride(overrideKey) ?: engine.familyMembers(family)
         } else {
-            customCompletionsStore.getOverride(prefix) ?: engine.topCompletions(prefix)
+            customCompletionsStore.getOverride(overrideKey) ?: engine.topCompletions(prefix)
         }
         val wordsWithFamily = completions.filter { it.isNotEmpty() && engine.hasFamilyVariants(it) }.toSet()
-        val editablePrefix = if (family == null) prefix else null
-        lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily, editablePrefix)
+        lettersPanel.updateWordCompletions(completions, rtl, wordsWithFamily, overrideKey)
         // Space-key indicator: only meaningful while actually typing toward
         // a word (not in the family swap window, where prefix is empty).
         val exact = if (family == null && prefix.isNotEmpty() && engine.isExactWord(prefix)) prefix else null
@@ -403,7 +404,7 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
      */
     override fun onCompletionsChanged(prefix: String, newLogicalOrder: List<String>) {
         customCompletionsStore.setOverride(prefix, newLogicalOrder)
-        if (activeRootFamily == null && currentWord.toString() == prefix) {
+        if (currentOverrideKey() == prefix) {
             refreshPredictions()
         }
     }
@@ -411,9 +412,21 @@ class PredictiveKeyboardService : InputMethodService(), KeyboardActionListener {
     /** "Reset row" from the slot-edit dialog: drop [prefix]'s override, back to automatic ranking. */
     override fun onCompletionOverrideCleared(prefix: String) {
         customCompletionsStore.clearOverride(prefix)
-        if (activeRootFamily == null && currentWord.toString() == prefix) {
+        if (currentOverrideKey() == prefix) {
             refreshPredictions()
         }
+    }
+
+    /**
+     * The key the row currently on screen is customized under: the typed
+     * prefix for ordinary completions, or "family:<root>" while the
+     * second-stage swap row for a root (e.g. they+ -> they'd / they'll /
+     * they're / they've) is showing. The "family:" form can never collide
+     * with a typed prefix, which only ever contains letters/apostrophes.
+     */
+    private fun currentOverrideKey(): String {
+        val family = activeRootFamily
+        return if (family != null) "family:$family" else currentWord.toString()
     }
 
     override fun onShiftToggled() {
