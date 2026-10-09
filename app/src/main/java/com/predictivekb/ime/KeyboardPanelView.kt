@@ -55,10 +55,10 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
     private var exactWord: String? = null
 
     /**
-     * The exact typed prefix the current word-completion row belongs to, or
-     * null when the row isn't eligible for customization at all (currently:
-     * while showing a root word's family-swap options instead of plain
-     * prefix completions). Non-null is what arms long-press-to-edit and
+     * The key the current word-completion row is customized under (the exact
+     * typed prefix, or "family:<root>" for a root's second-stage swap row),
+     * or null when the row isn't eligible for customization at all.
+     * Non-null is what arms long-press-to-edit and
      * long-press-and-drag-to-reorder on the word row; it's also the key
      * [listener] is told to persist any resulting override under.
      */
@@ -541,7 +541,8 @@ class KeyboardPanelView(context: Context) : LinearLayout(context) {
         val prefix = editablePrefix ?: return
         val slots = currentWords.toMutableList()
         while (slots.size < wordButtons.size) slots.add("")
-        if (index < slots.size) slots[index] = newWord
+        // Collapse stray spaces so a phrase like "they   will" is stored as "they will".
+        if (index < slots.size) slots[index] = newWord.replace(Regex("\\s+"), " ")
         val logicalOrder = if (Prefs.isPredictionRowRtl(context)) slots.reversed() else slots
         listener?.onCompletionsChanged(prefix, logicalOrder)
     }
